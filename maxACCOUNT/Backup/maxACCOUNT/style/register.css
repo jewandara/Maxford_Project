@@ -1,0 +1,341 @@
+﻿/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD ACCOUNT MAIN							----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of ACCOUNT MAIN 			    ----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+/*----	MAXFORD ACCOUNT MAIN	----*/
+    #wrapper {
+        margin:0 auto;
+        font-family:Verdana, sans-serif;
+    }
+    legend {
+        color:#0481b1;
+        font-size:16px;
+        padding:0 10px;
+        background:#fff;
+        -moz-border-radius:4px;
+        box-shadow: 0 1px 5px rgba(4, 129, 177, 0.5);
+        padding:5px 10px;
+        text-transform:uppercase;
+        font-family:Helvetica, sans-serif;
+        font-weight:bold;
+    }
+    fieldset {
+        border-radius:4px;
+        padding:20px;
+        border-color:rgba(4, 129, 177, 0.4);
+        width:900px;
+    }
+    input,
+    textarea {
+        color: #000;
+        background: #fff;
+        border: 0 solid;
+        font-size: 14px;
+        line-height: 1.2em;
+        margin-bottom:15px;
+    }
+    select{
+        color: #000;
+        background: #fff;
+        border: 0 solid;
+        font-size: 14px;
+        line-height: 1.2em;
+        margin-bottom:15px;
+        height: 35px;
+        }
+    option{
+        color: #000;
+        font-size: 12px;
+        line-height: 2.2em;
+        margin-bottom:8px;
+        padding: 6px 4px;
+    }
+        
+    input[type="text"],
+    input[type="password"]{
+        padding: 8px 6px;
+        height: 20px;
+        width:500px;
+    }
+    
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        background:#f5fcfe;
+        text-indent: 0;
+        z-index: 1;
+        color: #000;
+        -webkit-transition-duration: 400ms;
+        -webkit-transition-property: width, background;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-duration: 400ms;
+        -moz-transition-property: width, background;
+        -moz-transition-timing-function: ease;
+        -o-transition-duration: 400ms;
+        -o-transition-property: width, background;
+        -o-transition-timing-function: ease;
+        width: 700px;
+        box-shadow:0 0 5px rgba(4, 129, 177, 0.5);
+    }
+    input[type="submit"]{
+        background: #222;
+        border: none;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+        text-transform:uppercase;
+        color: #eee;
+        cursor: pointer;
+        font-size: 15px;
+        margin: 5px 0;
+        padding: 5px 22px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-border-radius:4px;
+        -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    }
+    textarea {
+        padding:3px;
+        width:100px;
+        height:100px;
+    }
+    textarea:focus {
+        background:#ebf8fd;
+        text-indent: 0;
+        z-index: 1;
+        color: #000;
+        box-shadow:0 0 5px rgba(4, 129, 177, 0.5);
+        border-color:#ccc;
+    }
+    .small {
+        line-height:14px;
+        font-size:12px;
+        color:#000;
+        margin-bottom:3px;
+    }
+.maxCheckBox 	{
+	display:block;
+	width:493px;
+	border:1px solid #000;
+	font-size:14px;
+	padding:7px;
+	color:#000;
+	border-radius:3px 3px 3px 3px;
+}
+.maxCheckBox:hover 	{
+        text-indent: 0;
+        z-index: 1;
+        color: #000;
+        -webkit-transition-duration: 400ms;
+        -webkit-transition-property: width, background;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-duration: 400ms;
+        -moz-transition-property: width, background;
+        -moz-transition-timing-function: ease;
+        -o-transition-duration: 400ms;
+        -o-transition-property: width, background;
+        -o-transition-timing-function: ease;
+        width: 750px;
+        box-shadow:0 0 5px rgba(4, 129, 177, 0.5);
+    
+}
+.maxCheckBox:checked  	{
+background: url('oo.png') 0 0px no-repeat;
+}
+
+.maxTextBox{
+	display:block;
+	width:400px;
+	border:1px solid #000;
+	font-size:18px;
+	padding:7px;
+	color:#4D5059;
+	border-radius:3px 3px 3px 3px;
+	background:#96CFC8;
+	}
+.maxDropDowntBox{
+	display:block;
+	width:415px;
+	border:1px solid #000;
+	font-size:18px;
+	padding:7px;
+	color:#4D5059;
+	border-radius:3px 3px 3px 3px;
+	background:#96CFC8;
+	}
+.maxTextBox:hover 	{
+	box-shadow:0 0 13px #000;
+	border:1px solid #000;
+	}
+.maxTextBox:focus {
+    background-color:#CEDFDC;
+} 
+.maxGrouplabel{
+	display:block;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-left:20px;
+	width:400px;
+	font-size:16px;
+	padding:10px;
+	font-weight:bold;
+	color:#666;
+	}
+.maxTextBoxOut{
+	display:block;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-left:20px;
+	width:400px;
+	height:65px;
+	font-weight:bold;
+	color:#666;
+	}
+.maxErrorText{
+	display:block;
+	margin-top:1px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-left:0px;
+	font-size:11px;
+	color:#F00;
+	}
+.maxGradeSelectBox{
+	display:block;
+	border:1px solid #000;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:18px;
+	padding:10px;
+	height:300px;
+	border-radius:5px 5px 5px 5px;
+	background:#94D8D6;
+	color:#353535;
+	}
+.maxGradeSelectBox:hover{
+	box-shadow:0 0 13px #000;
+	border:1px solid #000;
+	background-color:#DBF2F1;
+	}
+.maxClassSelectBox{
+	display:block;
+	border:1px solid #000;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:18px;
+	padding:10px;
+	border-radius:5px 5px 5px 5px;
+	background:#94D8D6;
+	color:#353535;
+	}
+.maxClassSelectBox li{
+	display:block;
+	border:0px solid #000;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:18px;
+	padding:5px;
+	background:#A2DDDA;
+	color:#353535;
+	}
+.maxSubmitBox{
+	display:block;
+	border:1px solid #000;
+	margin-left:10px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:18px;
+	padding:5px;
+	border-radius:5px 5px 5px 5px;
+	background:#3D595A;
+	color:#fff;
+	}
+.maxSubmitBox:hover{
+	box-shadow:0 0 2px #000;
+	border:1px solid #000;
+	background-color:#888;
+	}
+
+
+
+.maxGradeSelectMenuNavBox{
+	width:200px;
+	background-color:#999;
+	}
+.maxGradeSelectMenuNavBox:hover{
+	background-color:#fff;
+	}
+.maxGradeSelectSubMenuNavBox{
+    display:block; 
+    width:500px;
+	}
+.maxGradeSelectSubMenuNavBox:hover{
+	background-color:#91C4B9;
+	}
+input[type=checkbox]
+{
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  padding: 34px;
+  margin-left:5px;
+  left:28px;
+}
+
+#menu {
+	width: 200px;
+	border-style: solid solid none solid;
+	border-color: #94AA74;
+	border-size: 1px;
+	border-width: 1px;
+	margin: 10px;
+}
+
+
+
+/* Select Classes Menu */	
+#menu li a {
+	height: 32px;
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	height: 24px;
+	text-decoration: none;
+}	
+	
+#menu li a:link, #menu li a:visited {
+	color: #5E7830;
+	display: block;
+	background: url(images/menu1.gif);
+	padding: 8px 0 0 10px;
+}
+	
+#menu li a:hover {
+	color: #26370A;
+	background: url(images/menu1.gif) 0 -32px;
+	padding: 8px 0 0 10px;
+}
+	
+#menu li a:active {
+	color: #26370A;
+	background: url(images/menu1.gif) 0 -64px;
+	padding: 8px 0 0 10px;
+}
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

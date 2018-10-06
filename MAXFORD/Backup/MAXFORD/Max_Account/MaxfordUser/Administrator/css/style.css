@@ -1,0 +1,79 @@
+﻿
+#maxDataGridTable { 
+	width: 100%; 
+	margin: 5px 0 10px 0; 
+	border-collapse:collapse;
+	
+	}
+#maxDataGridTable tr th, #maxImageLabel, #maxTitleLabel, #maxReadMeLabel, #maxDiscripitionLabel, #maxInsertedDateLabel, #maxActiviatedLabel{
+	display:block;
+	background:#639888;
+	padding:2px 2px 2px;
+	border-bottom:1px solid #000;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-style:italic;
+	font-size:12px;
+}
+	
+	
+	
+
+	
+.maxTRData{
+	display:block;
+	padding:0 0 5px 0;
+	border-bottom:1px solid #000;
+	}
+.maxImageLabel{
+	display:block;
+	border:1px solid #000;
+	padding:2px 2px 2px 2px;
+	width:100px;
+	}
+.maxTitleLabelData{
+	overflow:hidden;
+	background:#68D7C4;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	padding-left:8px;
+	text-decoration:none;
+	}
+.maxTitleLabelData a{text-decoration:none;}
+.maxTitleLabelData a:hover{text-decoration:underline; color:#000}
+.maxReadMeLabelData {
+	overflow:hidden;
+	background:#C2EFE7;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	padding-left:8px;
+	}
+.maxDiscripitionLabelData {
+	overflow:hidden;
+	background:#68D7C4;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	padding-left:8px;
+	}
+.maxInsertedDateLabelData {
+	overflow:hidden;
+	background:#C2EFE7;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	padding-left:8px;
+	}
+.maxActiviatedLabelData {
+	overflow:hidden;
+	background:#68D7C4;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	padding-left:8px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	

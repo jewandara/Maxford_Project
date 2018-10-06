@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+
+/************************************************************************************
+smaller than 1000
+*************************************************************************************/
+@media screen and (max-width: 1030px) 
+{
+	.body_container
+	{
+		width:100%;
+	}
+	.banner,.content,.top_ad
+	{
+		width:98%;
+	}
+	.sml_ad
+	{
+		display:none;
+	}
+	.box_ad_con_sml
+	{
+		display: none;
+	}
+	.box_ad_con
+	{
+		margin: 0 !important;
+	}
+	.box_ad
+	{
+		margin: 0 !important;
+	}
+	.wide_ad
+	{
+		margin:0 auto;
+		float:none;
+	}
+	.banner_con
+	{
+		width:49%;
+	}
+	.navigation
+	{
+		width:98%;
+	}
+	.lft_sado,.rgt_sado
+	{
+		display:none;
+	}
+	.navigation ul li a:hover
+	{
+		padding:0 11px;
+		border:none;
+		background:#f0efe5;
+		display:block;
+	}
+	embed,
+	object{
+		max-width: 100%;
+		height: auto;
+		min-height: 300px;
+	}
+}
+/************************************************************************************
+smaller than 750
+*************************************************************************************/
+@media screen and (max-width: 740px) 
+{
+	.sml_ad
+	{
+		display:none;
+	}
+	
+	.search
+	{
+		background:none;
+		padding:0px;
+		border-radius:none;
+		position:inherit;
+		float:left;
+		margin-left:20px;
+		
+	}
+	.search form
+	{
+		float:left;
+		margin-bottom:10px;
+	}
+	
+	.search_button
+	{
+		
+		width:40px;
+		background:#8bb01a url(./images/search.png) center no-repeat; /* Old browsers */
+	}
+	embed,
+	object{
+		max-width: 100%;
+		height: auto;
+		min-height: 300px;
+	}
+	#myframe
+	{
+		overflow: scroll;
+	}
+}
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) 
+{
+	.content
+	{
+		width:98%;
+	}
+	.content_left,.content_right
+	{
+		margin:0 auto;
+		width:100%;
+		float:none;
+	}
+	.v_menu , .tags
+	{
+		margin:0 auto;
+		width:90%;
+		float:none;
+	}
+	.general_list1_con
+	{
+		width:45%;
+	}
+	#myframe
+	{
+		overflow: scroll;
+	}
+	#disptable
+{
+	width: 100% !important;
+}
+}
+/************************************************************************************
+smaller than 480
+*************************************************************************************/
+@media screen and (max-width: 480px) 
+{
+	html 
+	{
+		-webkit-text-size-adjust: none;
+	}
+	.home_list_box
+	{
+		margin:10px auto;
+		width:97%;
+		float:none;
+	}
+	.general_list2_con
+	{
+		margin:10px auto;
+		float:none;
+		width:98%;
+	}
+	.right_menu_box
+	{
+		margin:10px 2%;
+		width:96%;
+	}
+	.sprite-logo
+	{
+		width:34px;
+	}
+	.search
+	{
+		margin:7px 0 10px 20px;
+		
+		
+	}
+	
+	.searchbox:focus
+	{
+		width:60%;
+	}
+	
+	.banner_con
+	{
+		width:99%;
+	}
+	.general_list1_con
+	{
+		margin:0 auto;
+		float:none;
+		width:99%;
+	}
+	#myframe
+	{
+		overflow: scroll;
+	}
+	#s {left: 0px !important; width: 100% !important;}
+	#res {left: 0px !important; top: 60px !important; width: 100% !important;}
+	.try_it_btn
+	{
+		width: auto;
+	}
+	.tryitt iframe
+	{
+	  width: 250px;	
+	}
+	.add_snippet_link
+{
+float:none;	
+}
+#disptable
+{
+	width: 100% !important;
+}
+ul.mysql_list li
+{
+    width:50%;
+    float:left;
+}
+ul.tut li
+{
+    width:50%;
+    float:left;
+}
+#hpage_prev
+{
+	height: 200px !important;
+}
+}

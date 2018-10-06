@@ -1,0 +1,122 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD											----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of Events 					----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+.max_main_event {
+	margin-right:auto;
+    margin-left:auto;
+	margin-top:0px;
+	display:block;
+	width:1019px;
+	height:auto;
+	}
+.max_main_event table{
+	margin-right:auto;
+    margin-left:auto;
+	text-align:center;
+	width:1019px;
+}
+.max_main_event table tr td{
+    padding-bottom:18px;
+    }
+    
+.max_event {
+	margin-right:auto;
+    margin-left:auto;
+	width:234px;
+	height:310px;
+	display:block;
+	background:#CAF7E9;
+	overflow:hidden;
+	box-shadow: 0 0 1px #888888;
+}
+.max_inner_event_box strong a{
+	border-top:3px solid #063;
+	display:block;
+	padding:8px 4px 8px 4px;
+	text-align:left;
+	text-decoration: none;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:13px;
+	color:#066;
+	overflow:hidden;
+	}
+.item_image{
+	height:auto;
+	overflow:hidden;}
+.max_inner_event_box img{
+	width:234px;
+	}
+.event_body{
+	text-align:left;
+	padding: 2px 5px 2px 5px;
+	display:block;
+	height:100px;
+	overflow:hidden;
+	}
+	
+	
+	
+
+.max_read_more{
+    margin-top:-20px;
+	margin-right:auto;
+    margin-left:auto;
+	display:block;
+	width:234px;
+	height:20px;
+	background:#84ECCD;
+	box-shadow: 0 0 1px #888888;
+	}
+.max_read_more a{
+	padding:5px 6px 5px 8px;
+	display:block;
+	width:100px;
+	background:#9FF0D8;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:10px;
+	color:#066;
+	text-decoration:none;
+	}
+.max_read_more a:hover{
+	color:#FFF;
+	text-decoration:underline;
+	background:#04D9A9;
+	}
+.max_read_more p{
+	cursor:default;
+	position:relative;
+	right:-121px;
+	top:-20px;
+	padding:5px 6px 5px 8px;
+	display:block;
+	width:100px;
+	background:#9FF0D8;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:10px;
+	color:#066;
+	}
+	
+	

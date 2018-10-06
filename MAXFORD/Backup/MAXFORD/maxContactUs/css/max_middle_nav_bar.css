@@ -1,0 +1,22 @@
+.maxMiddleContactUsNav{
+	list-style:none;
+	display:block;
+	background:#DDE8E2;
+	padding:10px;
+	}
+.maxMiddleContactUsNav li {
+	display:inline-block;
+}
+.maxMiddleContactUsNav li a{
+	color:#036;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	padding:7px;
+}
+.maxMiddleContactUsNav li a:hover{
+	color:#FFF;
+	background:#6BB6B4;
+	
+}

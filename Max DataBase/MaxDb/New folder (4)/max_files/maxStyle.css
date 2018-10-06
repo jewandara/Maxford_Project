@@ -1,0 +1,81 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	TABLE OF ACCESS									----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is Table of dbo.ACT_SYS_Access				----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+
+.footer {
+	margin-bottom:0px;
+	bottom:0px;
+	width:100%;
+	background:#4BBCB0;
+	}
+
+.footer-tab {
+	width:100%;
+	background:#286055;
+	}
+
+
+.footer-bottom {	
+	width:100%;
+	background:#000;
+	}
+
+
+.wrap { width: 978px; margin: 0 auto; }
+#twocol_wrap { width: 755px; float: right; }
+.layout-a .main { width: 978px; margin-bottom: 20px; }
+.layout-b .main { float: right; width: 728px; margin-bottom: 20px; }
+.layout-b .secondary { float: left; width: 223px; margin-bottom: 20px;}
+.layout-c .main { float: left; width: 728px; margin-bottom: 20px; }
+.layout-c .secondary { float: right; width: 223px; margin-bottom: 20px;  padding-top: 72px;}
+.layout-d .secondary { float: left; width: 223px; margin-bottom: 20px; }
+.layout-d .main { float: left; width: 474px; margin-left: 29px; margin-bottom: 20px; }
+.layout-d .sub { float: left; width: 223px; margin-left: 29px; margin-bottom: 20px; }
+.col, ul.split li, ul.split-a li, ul.split-b li { float: left; }
+.split-a .col { width: 48.5%; margin-left: 3%; }
+.split-b .col, .split-b li { width: 32%; margin-left: 2%; }
+.split .first, .split-a .first, .split-b .first { margin-left: 0; }
+.main .section { background: #fff; border-top: 4px solid #a51c30; }
+.main .col .section { border-top: none; }
+.sub .section { background: #fefefe; }
+.header-mobile { display: none; }
+.content-pad-left { padding: 0 15px; }
+  
+.logo-max-image { margin-left: 1px;}
+  
+  
+  
+  
+
+
+
+

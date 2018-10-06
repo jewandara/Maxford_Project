@@ -1,0 +1,214 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	TABLE OF ACCESS									----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is Table of dbo.ACT_SYS_Access				----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+/*-------------------------------------------
+			MAIN PAGE BODY
+-------------------------------------------*/
+
+*{ margin: 0; padding: 0; line-height: 1; }
+body {
+	background-color: #fff;
+	color: #6c6c6c;
+	font: normal 62.5% Helvetica, Arial, sans-serif; background: url("../../Max_Data/Max_Images/top-back-icon.png") repeat; 
+}
+h1 {
+	margin: 0 0 20px; 
+	color: #333; 
+	font: normal 3.6em/1.44 Georgia, "Times New Roman", serif; 
+}
+.intro-wrap h1 { 
+	color: #fff; 
+	margin-bottom: .2em; 
+	letter-spacing: 1px;
+}
+h2 { 
+	margin: 0 0 20px; 
+	color: #363636; 
+	font: normal 2.2em/1.36 Georgia, "Times New Roman", serif; 
+}
+.sub h2 { 
+	margin: 0 0 8px 0; 
+	font-size: 1.8em; 
+	color: #293352; 
+}
+h3 { 
+	margin: 0 0 20px; 
+	font: 1.8em/1.36 Georgia, "Times New Roman", serif;
+}
+h4 { 
+	color: #363636; 
+	font: bold 1.0em/1.8 Helvetica,Arial,sans-serif; 
+	margin-bottom: 11px; 
+	text-transform: uppercase;
+}
+h5 {
+	color: #A61D31; 
+	font: bold 1.0em/1.8 Helvetica,Arial,sans-serif; 
+	margin-bottom: 11px; 
+	text-transform: uppercase;
+}
+h6 {
+	color: #8c8179;
+	font: bold 1.0em/1.8 Helvetica,Arial,sans-serif;
+	margin-bottom: 11px;
+	text-transform: uppercase;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+	text-decoration: none;
+	color:inherit;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
+	text-decoration: underline;
+}
+
+
+.main h4 { color: #6c6c6c; }
+.alpha { 
+	margin-bottom: 11px; 
+	color: #363636; 
+	font: bold 1.2em Helvetica, Arial, sans-serif; 
+	text-transform: uppercase; }
+p, ul, dl, ol, blockquote, table { margin: 0 0 1.5em; }
+li { font-size: 1.2em; }
+.main li, .sub li { line-height: 1.3; }
+li p { 
+	font-size: 1.08em;
+}
+
+
+
+dd, dl { 
+	font-size: 1.2em; 
+	line-height: 2em;
+}
+p {
+	color: #444; 
+	font-size: 1.3em; 
+	line-height: 2;
+}
+table { border-collapse: collapse;}
+th { text-align: left; }
+th, td { }
+em {
+	font-style: italic;
+}
+strong { 
+	font-weight: bold;
+}
+a {
+	color: #3b7ab8;
+}
+a:hover, a:focus{
+	color: #2d3754; 
+}
+
+
+
+
+
+
+
+/*-------------------------------------------
+		 TOP GREEN SHADO VIEW
+-------------------------------------------*/
+.tophidden{
+        float: left;
+        display: block;
+		width:100%;
+		background  :#003300; 
+		top:-12px;
+        box-shadow: 0 5px 10px #003737;
+        position:fixed;
+        z-index:1000000;
+}
+/*-------------------------------------------
+		 TOP MAXFORD LOGO VIEW
+-------------------------------------------*/
+img.center {
+    display: block;
+    top:20px;
+    text-align: center;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    right:280px;
+  }
+/*-------------------------------------------
+	 TOP GREEN NAVIGETION MENU HEADER
+-------------------------------------------*/
+.header{
+  left: -80%; 
+}
+
+/*-------------------------------------------
+	 TOP GREEN NAVIGETION MENU BAR
+-------------------------------------------*/
+.topbar{
+	text-align: center;
+	top:-12px;
+	float: left; 
+	position: relative;
+	margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+	display: block;
+	background  :#003300; 
+	height:36px;
+	box-shadow: 0 0 10px #003737;
+	border-bottom: 2px solid #9ADCC7;
+}
+.topbar li  {
+	float: left; 
+	list-style: none;
+	text-align: center;  
+}
+.topbar li a 
+{
+	display: block;
+	background: #003300; 
+	color:  #DFFADE;
+	border-top: 12px solid #003300; 
+	border-bottom: 12px solid #003300; 
+	border-left: 12px solid #003300; 
+	border-right: 12px solid #003300; 
+}
+.topbar li a:hover, .topbar li a:focus 
+{
+	display: block;
+	background:#9ADCC7;
+	color:#033;
+	border-top: 13px solid #9ADCC7; 
+	border-bottom: 13px solid #9ADCC7;
+	border-left: 12px solid #9ADCC7;
+	border-right: 12px solid #9ADCC7; 
+}
+
+
+
+/*-------------------------------------------
+    Global combinations
+-------------------------------------------*/

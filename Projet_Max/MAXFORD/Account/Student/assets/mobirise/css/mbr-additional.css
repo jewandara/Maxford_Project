@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
+
+
+
+
+#menu-0 .mbr-brand__name {
+  font-size: 16px;
+}
+#menu-0.mbr-navbar--stuck .mbr-navbar__section {
+  background: #1A605C;
+}
+#menu-0 .mbr-navbar__section {
+  background: #1A605C;
+}
+#menu-0 .mbr-navbar__items a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+#menu-0 .mbr-brand__name a {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+#msg-box2-13 h2 {
+  color: #252525;
+}
+#msg-box2-13 p {
+  color: #252525;
+}
+#features1-17 H3 {
+  font-family: 'Open Sans', sans-serif;
+}
+#features1-17 .btn {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+#contacts1-22 STRONG {
+  color: #4c6972;
+}
+#contacts1-22 P {
+  color: #696363;
+}
+
+
+#menu-28 .mbr-brand__name {
+  font-size: 16px;
+}
+#menu-28.mbr-navbar--stuck .mbr-navbar__section {
+  background: #1A605C;
+}
+#menu-28 .mbr-navbar__section {
+  background: #1A605C;
+}
+#menu-28 .mbr-navbar__items a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+#menu-28 .mbr-brand__name a {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+#msg-box2-30 h2 {
+  color: #252525;
+}
+#msg-box2-30 p {
+  color: #252525;
+}
+#contacts1-32 STRONG {
+  color: #4c6972;
+}
+#contacts1-32 P {
+  color: #696363;
+}

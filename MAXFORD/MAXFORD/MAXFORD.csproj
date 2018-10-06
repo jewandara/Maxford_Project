@@ -1,0 +1,1176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B77DF33C-B2D4-4C3C-AAF6-5C7249B7CCEA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MAXFORD</RootNamespace>
+    <AssemblyName>MAXFORD</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Itanium'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <CodeAnalysisLogFile>bin\MAXFORD.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Itanium'">
+    <OutputPath>bin\Itanium\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <CodeAnalysisLogFile>bin\MAXFORD.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\MAXFORD.dll" />
+    <Content Include="bin\MAXFORD.pdb" />
+    <Content Include="Default.aspx" />
+    <Content Include="maxAboutUs\css\blog.jpg" />
+    <Content Include="maxAboutUs\css\style.css" />
+    <Content Include="maxAboutUs\data\Default.txt" />
+    <Content Include="maxAboutUs\Default.aspx" />
+    <Content Include="maxAboutUs\images\AboutUs.png" />
+    <Content Include="maxAboutUs\images\AboutUs1.png" />
+    <Content Include="maxAboutUs\images\AboutUs2.png" />
+    <Content Include="maxAboutUs\images\bg.png" />
+    <Content Include="maxAboutUs\images\googleLogo.png" />
+    <Content Include="maxAboutUs\images\history.png" />
+    <Content Include="maxAboutUs\images\leadership.png" />
+    <Content Include="maxAboutUs\images\locations.png" />
+    <Content Include="maxAboutUs\images\locations1.png" />
+    <Content Include="maxAboutUs\images\locations2.png" />
+    <Content Include="maxAboutUs\images\max.jpg" />
+    <Content Include="maxAboutUs\images\milstone.png" />
+    <Content Include="maxAboutUs\images\milstone1.png" />
+    <Content Include="maxAboutUs\maxHistory.aspx" />
+    <Content Include="maxAboutUs\maxLeadership.aspx" />
+    <Content Include="maxAboutUs\maxLocation.aspx" />
+    <Content Include="maxAboutUs\maxMilestone.aspx" />
+    <Content Include="maxContactUs\css\blog.jpg" />
+    <Content Include="maxContactUs\css\max_middle_nav_bar.css" />
+    <Content Include="maxContactUs\css\style.css" />
+    <Content Include="maxContactUs\Default.aspx" />
+    <Content Include="maxContactUs\images\adver.png" />
+    <Content Include="maxContactUs\images\bg.png" />
+    <Content Include="maxContactUs\images\contact.png" />
+    <Content Include="maxContactUs\images\contactUs1.png" />
+    <Content Include="maxContactUs\images\contactUs2.png" />
+    <Content Include="maxContactUs\images\contactUs4.png" />
+    <Content Include="maxContactUs\images\contact_1.jpg" />
+    <Content Include="maxContactUs\images\max.jpg" />
+    <Content Include="maxContactUs\maxInform.aspx" />
+    <Content Include="maxEvent\css\Desktop.png" />
+    <Content Include="maxEvent\css\eventstop.png" />
+    <Content Include="maxEvent\css\EventStyle.css" />
+    <Content Include="maxEvent\css\footer.png" />
+    <Content Include="maxEvent\css\icon-sl.png" />
+    <Content Include="maxEvent\css\mail_white_retina.png" />
+    <Content Include="maxEvent\css\maxBaseLogo.png" />
+    <Content Include="maxEvent\css\MaxFord_logo_Below_T.png" />
+    <Content Include="maxEvent\css\search.png" />
+    <Content Include="maxEvent\css\style.css" />
+    <Content Include="maxEvent\css\WowStyle.css" />
+    <Content Include="maxEvent\Default.aspx" />
+    <Content Include="maxEvent\Event.aspx" />
+    <Content Include="maxEvent\img\chrysanthemum.jpg" />
+    <Content Include="maxEvent\img\desert.jpg" />
+    <Content Include="maxEvent\img\FAVERITS.png" />
+    <Content Include="maxEvent\img\FERV.png" />
+    <Content Include="maxEvent\img\hydrangeas.jpg" />
+    <Content Include="maxEvent\img\jellyfish.jpg" />
+    <Content Include="maxEvent\img\koala.jpg" />
+    <Content Include="maxEvent\img\LEATEST.png" />
+    <Content Include="maxEvent\img\lighthouse.jpg" />
+    <Content Include="maxEvent\img\penguins.jpg" />
+    <Content Include="maxEvent\img\POPULAR.png" />
+    <Content Include="maxEvent\img\RELATED.png" />
+    <Content Include="maxEvent\img\tulips.jpg" />
+    <Content Include="maxEvent\img\UPCOMING.png" />
+    <Content Include="maxEvent\img\UPCOMMING.png" />
+    <Content Include="maxEvent\js\functions.js" />
+    <Content Include="maxEvent\js\jquery.js" />
+    <Content Include="maxEvent\js\jquery_002.js" />
+    <Content Include="maxEvent\js\jquery_003.js" />
+    <Content Include="maxEvent\js\script.js" />
+    <Content Include="maxEvent\js\WowJquery.js" />
+    <Content Include="maxEvent\js\wowslider.js" />
+    <Content Include="maxEvent\SlideData.aspx" />
+    <Content Include="maxSchedule\css\style.css" />
+    <Content Include="maxSchedule\Default.aspx" />
+    <Content Include="maxSchedule\images\adver.png" />
+    <Content Include="maxSchedule\images\bg.png" />
+    <Content Include="maxSchedule\images\max.jpg" />
+    <Content Include="maxSchedule\images\Ordinary_Level_10_to_11.png" />
+    <Content Include="maxSchedule\images\Ordinary_Level_6_to_9.png" />
+    <Content Include="maxSchedule\images\Primary_Classes.png" />
+    <Content Include="maxSchedule\images\Scholarship_Exams.png" />
+    <Content Include="maxSchedule\maxAdvancedLevel.aspx" />
+    <Content Include="maxSchedule\maxOrdinaryLevel_10_to_11.aspx" />
+    <Content Include="maxSchedule\maxOrdinaryLevel_6_to_9.aspx" />
+    <Content Include="maxSchedule\maxPrimaryClasses.aspx" />
+    <Content Include="maxSchedule\maxScholarshipExams.aspx" />
+    <Content Include="maxSlide\css\Desktop.png" />
+    <Content Include="maxSlide\css\eventstop.png" />
+    <Content Include="maxSlide\css\footer.png" />
+    <Content Include="maxSlide\css\icon-sl.png" />
+    <Content Include="maxSlide\css\mail_white_retina.png" />
+    <Content Include="maxSlide\css\maxBaseLogo.png" />
+    <Content Include="maxSlide\css\MaxFord_logo_Below_T.png" />
+    <Content Include="maxSlide\css\search.png" />
+    <Content Include="maxSlide\css\style.css" />
+    <Content Include="maxSlide\Default.aspx" />
+    <Content Include="maxSlide\img\chrysanthemum.jpg" />
+    <Content Include="maxSlide\img\desert.jpg" />
+    <Content Include="maxSlide\img\FAVERITS.png" />
+    <Content Include="maxSlide\img\FERV.png" />
+    <Content Include="maxSlide\img\hydrangeas.jpg" />
+    <Content Include="maxSlide\img\jellyfish.jpg" />
+    <Content Include="maxSlide\img\koala.jpg" />
+    <Content Include="maxSlide\img\LEATEST.png" />
+    <Content Include="maxSlide\img\lighthouse.jpg" />
+    <Content Include="maxSlide\img\penguins.jpg" />
+    <Content Include="maxSlide\img\POPULAR.png" />
+    <Content Include="maxSlide\img\RELATED.png" />
+    <Content Include="maxSlide\img\tulips.jpg" />
+    <Content Include="maxSlide\img\UPCOMING.png" />
+    <Content Include="maxSlide\img\UPCOMMING.png" />
+    <Content Include="maxSlide\js\functions.js" />
+    <Content Include="maxSlide\js\jquery.js" />
+    <Content Include="maxSlide\js\jquery_002.js" />
+    <Content Include="maxSlide\js\jquery_003.js" />
+    <Content Include="maxSlide\js\script.js" />
+    <Content Include="maxVideo\css\style.css" />
+    <Content Include="maxVideo\Default.aspx" />
+    <Content Include="maxVideo\img\TITLE.png" />
+    <Content Include="Max_Account\css\max_login_style.css" />
+    <Content Include="Max_Account\css\max_register_style.css" />
+    <Content Include="Max_Account\css\style.css" />
+    <Content Include="Max_Account\css\worning.png" />
+    <Content Include="Max_Account\Default.aspx" />
+    <Content Include="Max_Account\Error.aspx" />
+    <Content Include="Max_Account\Help.aspx" />
+    <Content Include="Max_Account\images\Answer.png" />
+    <Content Include="Max_Account\images\ConPassword.png" />
+    <Content Include="Max_Account\images\ContactNumber.png" />
+    <Content Include="Max_Account\images\Email.png" />
+    <Content Include="Max_Account\images\Error2.png" />
+    <Content Include="Max_Account\images\FullName.png" />
+    <Content Include="Max_Account\images\icon-sl.png" />
+    <Content Include="Max_Account\images\LoginId.png" />
+    <Content Include="Max_Account\images\maxford_footer_logo.png" />
+    <Content Include="Max_Account\images\MaxFord_logo_Below_T.png" />
+    <Content Include="Max_Account\images\maxLoginP.png" />
+    <Content Include="Max_Account\images\maxLoginPass.png" />
+    <Content Include="Max_Account\images\maxLoginU.png" />
+    <Content Include="Max_Account\images\maxLoginUser.png" />
+    <Content Include="Max_Account\images\Password.png" />
+    <Content Include="Max_Account\images\SelectQuestion.png" />
+    <Content Include="Max_Account\images\user.png" />
+    <Content Include="Max_Account\images\worning.png" />
+    <Content Include="Max_Account\Login.aspx" />
+    <Content Include="Max_Account\MaxfordUser\Administrator\css\grd_alt.png" />
+    <Content Include="Max_Account\MaxfordUser\Administrator\css\grd_head.png" />
+    <Content Include="Max_Account\MaxfordUser\Administrator\css\grd_pgr.png" />
+    <Content Include="Max_Account\MaxfordUser\Administrator\css\style.css" />
+    <Content Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\Default.aspx" />
+    <Content Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\Delete.aspx" />
+    <Content Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\maxSlideAdd.aspx" />
+    <Content Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\maxSlideDelete.aspx" />
+    <Content Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\maxSlideUpdate.aspx" />
+    <Content Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\TopBar.ascx" />
+    <Content Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\Update.aspx" />
+    <Content Include="Max_Account\MaxfordUser\MaxConfig\maxMenuSide.ascx" />
+    <Content Include="Max_Account\MaxfordUser\css\Email.png" />
+    <Content Include="Max_Account\MaxfordUser\css\FormStyle.css" />
+    <Content Include="Max_Account\MaxfordUser\css\maxford_footer_logo.png" />
+    <Content Include="Max_Account\MaxfordUser\css\max_login_style.css" />
+    <Content Include="Max_Account\MaxfordUser\css\style.css" />
+    <Content Include="Max_Account\MaxfordUser\css\worning.png" />
+    <Content Include="Max_Account\MaxfordUser\Default.aspx" />
+    <Content Include="Max_Account\MaxfordUser\images\Answer.png" />
+    <Content Include="Max_Account\MaxfordUser\images\Email.png" />
+    <Content Include="Max_Account\MaxfordUser\images\Error2.png" />
+    <Content Include="Max_Account\MaxfordUser\images\icon-sl.png" />
+    <Content Include="Max_Account\MaxfordUser\images\maxford_footer_logo.png" />
+    <Content Include="Max_Account\MaxfordUser\images\worning.png" />
+    <Content Include="Max_Account\Recovery.aspx" />
+    <Content Include="Max_Account\Register.aspx" />
+    <Content Include="Max_Account\Request.aspx" />
+    <Content Include="Max_Account\Unauthorized.aspx" />
+    <Content Include="Max_Data\Max_CSS\arrows.png" />
+    <Content Include="Max_Data\Max_CSS\bullet.png" />
+    <Content Include="Max_Data\Max_CSS\eventTopThree.css" />
+    <Content Include="Max_Data\Max_CSS\footerStyle.css" />
+    <Content Include="Max_Data\Max_CSS\headerStyle.css" />
+    <Content Include="Max_Data\Max_CSS\mainStyle.css" />
+    <Content Include="Max_Data\Max_CSS\max_event_table_style.css" />
+    <Content Include="Max_Data\Max_CSS\max_middle_events.css" />
+    <Content Include="Max_Data\Max_CSS\max_slide_style.css" />
+    <Content Include="Max_Data\Max_CSS\middleNavBar.css" />
+    <Content Include="Max_Data\Max_Editor\adapters\jquery.js" />
+    <Content Include="Max_Data\Max_Editor\ckeditor.js" />
+    <Content Include="Max_Data\Max_Editor\lang\af.js" />
+    <Content Include="Max_Data\Max_Editor\lang\ar.js" />
+    <Content Include="Max_Data\Max_Editor\lang\bg.js" />
+    <Content Include="Max_Data\Max_Editor\lang\bn.js" />
+    <Content Include="Max_Data\Max_Editor\lang\bs.js" />
+    <Content Include="Max_Data\Max_Editor\lang\ca.js" />
+    <Content Include="Max_Data\Max_Editor\lang\cs.js" />
+    <Content Include="Max_Data\Max_Editor\lang\cy.js" />
+    <Content Include="Max_Data\Max_Editor\lang\da.js" />
+    <Content Include="Max_Data\Max_Editor\lang\de.js" />
+    <Content Include="Max_Data\Max_Editor\lang\el.js" />
+    <Content Include="Max_Data\Max_Editor\lang\en-au.js" />
+    <Content Include="Max_Data\Max_Editor\lang\en-ca.js" />
+    <Content Include="Max_Data\Max_Editor\lang\en-gb.js" />
+    <Content Include="Max_Data\Max_Editor\lang\en.js" />
+    <Content Include="Max_Data\Max_Editor\lang\eo.js" />
+    <Content Include="Max_Data\Max_Editor\lang\es.js" />
+    <Content Include="Max_Data\Max_Editor\lang\et.js" />
+    <Content Include="Max_Data\Max_Editor\lang\eu.js" />
+    <Content Include="Max_Data\Max_Editor\lang\fa.js" />
+    <Content Include="Max_Data\Max_Editor\lang\fi.js" />
+    <Content Include="Max_Data\Max_Editor\lang\fo.js" />
+    <Content Include="Max_Data\Max_Editor\lang\fr-ca.js" />
+    <Content Include="Max_Data\Max_Editor\lang\fr.js" />
+    <Content Include="Max_Data\Max_Editor\lang\gl.js" />
+    <Content Include="Max_Data\Max_Editor\lang\gu.js" />
+    <Content Include="Max_Data\Max_Editor\lang\he.js" />
+    <Content Include="Max_Data\Max_Editor\lang\hi.js" />
+    <Content Include="Max_Data\Max_Editor\lang\hr.js" />
+    <Content Include="Max_Data\Max_Editor\lang\hu.js" />
+    <Content Include="Max_Data\Max_Editor\lang\id.js" />
+    <Content Include="Max_Data\Max_Editor\lang\is.js" />
+    <Content Include="Max_Data\Max_Editor\lang\it.js" />
+    <Content Include="Max_Data\Max_Editor\lang\ja.js" />
+    <Content Include="Max_Data\Max_Editor\lang\ka.js" />
+    <Content Include="Max_Data\Max_Editor\lang\km.js" />
+    <Content Include="Max_Data\Max_Editor\lang\ko.js" />
+    <Content Include="Max_Data\Max_Editor\lang\ku.js" />
+    <Content Include="Max_Data\Max_Editor\lang\lt.js" />
+    <Content Include="Max_Data\Max_Editor\lang\lv.js" />
+    <Content Include="Max_Data\Max_Editor\lang\mk.js" />
+    <Content Include="Max_Data\Max_Editor\lang\mn.js" />
+    <Content Include="Max_Data\Max_Editor\lang\ms.js" />
+    <Content Include="Max_Data\Max_Editor\lang\nb.js" />
+    <Content Include="Max_Data\Max_Editor\lang\nl.js" />
+    <Content Include="Max_Data\Max_Editor\lang\no.js" />
+    <Content Include="Max_Data\Max_Editor\lang\pl.js" />
+    <Content Include="Max_Data\Max_Editor\lang\pt-br.js" />
+    <Content Include="Max_Data\Max_Editor\lang\pt.js" />
+    <Content Include="Max_Data\Max_Editor\lang\ro.js" />
+    <Content Include="Max_Data\Max_Editor\lang\ru.js" />
+    <Content Include="Max_Data\Max_Editor\lang\si.js" />
+    <Content Include="Max_Data\Max_Editor\lang\sk.js" />
+    <Content Include="Max_Data\Max_Editor\lang\sl.js" />
+    <Content Include="Max_Data\Max_Editor\lang\sq.js" />
+    <Content Include="Max_Data\Max_Editor\lang\sr-latn.js" />
+    <Content Include="Max_Data\Max_Editor\lang\sr.js" />
+    <Content Include="Max_Data\Max_Editor\lang\sv.js" />
+    <Content Include="Max_Data\Max_Editor\lang\th.js" />
+    <Content Include="Max_Data\Max_Editor\lang\tr.js" />
+    <Content Include="Max_Data\Max_Editor\lang\tt.js" />
+    <Content Include="Max_Data\Max_Editor\lang\ug.js" />
+    <Content Include="Max_Data\Max_Editor\lang\uk.js" />
+    <Content Include="Max_Data\Max_Editor\lang\vi.js" />
+    <Content Include="Max_Data\Max_Editor\lang\zh-cn.js" />
+    <Content Include="Max_Data\Max_Editor\lang\zh.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\af.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\en-gb.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\id.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\si.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\tt.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Max_Data\Max_Editor\plugins\about\dialogs\about.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\about\dialogs\hidpi\logo_ckeditor.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\div\dialogs\div.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\find\dialogs\find.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\flash\dialogs\flash.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\flash\images\placeholder.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\forms\dialogs\button.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\forms\dialogs\form.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\forms\dialogs\radio.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\forms\dialogs\select.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\icons.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\icons_hidpi.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\iframe\images\placeholder.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\image\dialogs\image.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\image\images\noimage.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\link\dialogs\anchor.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\link\dialogs\link.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\link\images\anchor.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\magicline\images\hidpi\icon-rtl.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\magicline\images\icon-rtl.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\magicline\images\icon.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\pastefromword\filter\default.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\preview\preview.html" />
+    <Content Include="Max_Data\Max_Editor\plugins\scayt\dialogs\options.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Max_Data\Max_Editor\plugins\showblocks\images\block_address.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\showblocks\images\block_div.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\showblocks\images\block_p.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\angel_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\angry_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\broken_heart.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\confused_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\cry_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\devil_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\embarrassed_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\embarrassed_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\envelope.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\envelope.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\heart.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\heart.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\kiss.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\kiss.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\lightbulb.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\omg_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\regular_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\sad_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\shades_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\teeth_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\thumbs_down.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\thumbs_up.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\tongue_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\tongue_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\whatchutalkingabout_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\smiley\images\wink_smile.png" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\af.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\da.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\lt.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\tt.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Max_Data\Max_Editor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\table\dialogs\table.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\templates\dialogs\templates.css" />
+    <Content Include="Max_Data\Max_Editor\plugins\templates\dialogs\templates.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\templates\templates\default.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Max_Data\Max_Editor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="Max_Data\Max_Editor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="Max_Data\Max_Editor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="Max_Data\Max_Editor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Max_Data\Max_Editor\plugins\wsc\dialogs\wsc_ie.js" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\dialog.css" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\dialog_ie.css" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\dialog_ie7.css" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\dialog_ie8.css" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\dialog_iequirks.css" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\editor.css" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\editor_gecko.css" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\editor_ie.css" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\editor_ie7.css" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\editor_ie8.css" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\editor_iequirks.css" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\icons.png" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\icons_hidpi.png" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\images\arrow.png" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\images\close.png" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\images\hidpi\close.png" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\images\hidpi\lock-open.png" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\images\hidpi\lock.png" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\images\hidpi\refresh.png" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\images\lock-open.png" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\images\lock.png" />
+    <Content Include="Max_Data\Max_Editor\skins\moono\images\refresh.png" />
+    <Content Include="Max_Data\Max_Editor\styles.js" />
+    <Content Include="Max_Data\Max_Editor\test.html" />
+    <Content Include="Max_Data\Max_Icon\Calendar.png" />
+    <Content Include="Max_Data\Max_Icon\Chart.png" />
+    <Content Include="Max_Data\Max_Icon\ColorPicker.png" />
+    <Content Include="Max_Data\Max_Icon\ComboBox.png" />
+    <Content Include="Max_Data\Max_Icon\Dock.png" />
+    <Content Include="Max_Data\Max_Icon\Editor.png" />
+    <Content Include="Max_Data\Max_Icon\FileExplorer.png" />
+    <Content Include="Max_Data\Max_Icon\FormDecorator.png" />
+    <Content Include="Max_Data\Max_Icon\Grid.png" />
+    <Content Include="Max_Data\Max_Icon\Input.png" />
+    <Content Include="Max_Data\Max_Icon\Rotator.png" />
+    <Content Include="Max_Data\Max_Icon\Spell.png" />
+    <Content Include="Max_Data\Max_Icon\Splitter.png" />
+    <Content Include="Max_Data\Max_Icon\TabStrip.png" />
+    <Content Include="Max_Data\Max_Icon\ToolTip.png" />
+    <Content Include="Max_Data\Max_Icon\TreeView.png" />
+    <Content Include="Max_Data\Max_Icon\Upload.png" />
+    <Content Include="Max_Data\Max_Icon\Window.png" />
+    <Content Include="Max_Data\Max_Images\bg-colour.png" />
+    <Content Include="Max_Data\Max_Images\bgImage.png" />
+    <Content Include="Max_Data\Max_Images\footer-icon.png" />
+    <Content Include="Max_Data\Max_Images\footer-icon2.png" />
+    <Content Include="Max_Data\Max_Images\footer-link-icon.png" />
+    <Content Include="Max_Data\Max_Images\Footer-Social\bd.png" />
+    <Content Include="Max_Data\Max_Images\Footer-Social\bd1.png" />
+    <Content Include="Max_Data\Max_Images\Footer-Social\fb.png" />
+    <Content Include="Max_Data\Max_Images\Footer-Social\fb1.png" />
+    <Content Include="Max_Data\Max_Images\Footer-Social\google.png" />
+    <Content Include="Max_Data\Max_Images\Footer-Social\google1.png" />
+    <Content Include="Max_Data\Max_Images\Footer-Social\in.png" />
+    <Content Include="Max_Data\Max_Images\Footer-Social\in1.png" />
+    <Content Include="Max_Data\Max_Images\Footer-Social\twt.png" />
+    <Content Include="Max_Data\Max_Images\Footer-Social\twt1.png" />
+    <Content Include="Max_Data\Max_Images\Footer-Social\you.png" />
+    <Content Include="Max_Data\Max_Images\Footer-Social\you2.png" />
+    <Content Include="Max_Data\Max_Images\icon.png" />
+    <Content Include="Max_Data\Max_Images\logo.png" />
+    <Content Include="Max_Data\Max_Images\maxford_footer_logo.png" />
+    <Content Include="Max_Data\Max_Images\search.png" />
+    <Content Include="Max_Data\Max_Images\slide-control-icon.png" />
+    <Content Include="Max_Data\Max_Images\social-icon-facebook.png" />
+    <Content Include="Max_Data\Max_Images\social-icon-foursquare.png" />
+    <Content Include="Max_Data\Max_Images\social-icon-gplus.png" />
+    <Content Include="Max_Data\Max_Images\social-icon-instagram.png" />
+    <Content Include="Max_Data\Max_Images\social-icon-itunes.png" />
+    <Content Include="Max_Data\Max_Images\social-icon-linkedin.png" />
+    <Content Include="Max_Data\Max_Images\social-icon-rss.png" />
+    <Content Include="Max_Data\Max_Images\social-icon-stumbleupon.png" />
+    <Content Include="Max_Data\Max_Images\social-icon-twitter.png" />
+    <Content Include="Max_Data\Max_Images\social-icon-youtube.png" />
+    <Content Include="Max_Data\Max_Images\test.png" />
+    <Content Include="Max_Data\Max_Images\timeTable.png" />
+    <Content Include="Max_Data\Max_Images\top-back-icon.png" />
+    <Content Include="Max_Data\Max_Image_Editor\demos\css\bootstrap.min.css" />
+    <Content Include="Max_Data\Max_Image_Editor\demos\css\docs.css" />
+    <Content Include="Max_Data\Max_Image_Editor\demos\css\upload.png" />
+    <Content Include="Max_Data\Max_Image_Editor\demos\img\picture-1.jpg" />
+    <Content Include="Max_Data\Max_Image_Editor\demos\img\picture-2.jpg" />
+    <Content Include="Max_Data\Max_Image_Editor\demos\index.html" />
+    <Content Include="Max_Data\Max_Image_Editor\demos\js\bootstrap.min.js" />
+    <Content Include="Max_Data\Max_Image_Editor\demos\js\docs.js" />
+    <Content Include="Max_Data\Max_Image_Editor\demos\js\jquery.min.js" />
+    <Content Include="Max_Data\Max_Image_Editor\src\cropper.css" />
+    <Content Include="Max_Data\Max_Image_Editor\src\cropper.js" />
+    <Content Include="Max_Data\Max_JavaScript\max_Slide_Script_1.js" />
+    <Content Include="Max_Data\Max_JavaScript\max_Slide_Script_2.js" />
+    <Content Include="Max_Data\Max_JavaScript\max_Slide_Script_3.js" />
+    <Content Include="Max_Data\Max_JavaScript\ScrollBar\ScrollJquery.js" />
+    <Content Include="Max_Data\Max_JavaScript\ScrollBar\ScrollJquery_004.js" />
+    <Content Include="Max_Data\Max_LocalResources\logo.png" />
+    <Content Include="Max_Data\Max_LocalResources\Max_Adver\max.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_Debate\logo.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_Event_TOP\buildding.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_Event_TOP\class_room_debates.JPG" />
+    <Content Include="Max_Data\Max_LocalResources\Max_Event_TOP\opening.JPG" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\maxford_slide_002.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\maxford_slide_003.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\maxford_slide_004.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\maxford_slide_005.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\maxford_slide_006.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\maxford_slide_007.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\maxford_slide_008.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\1.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\2.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\3.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\4.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\5.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\6.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\7.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\maxford_slide_001.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\maxford_slide_002.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\maxford_slide_003.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\maxford_slide_004.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\maxford_slide_005.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\maxford_slide_006.jpg" />
+    <Content Include="Max_Data\Max_LocalResources\Max_SlideShow\New folder\maxford_slide_007.jpg" />
+    <Content Include="Max_Data\Max_MenuSubIcon\FERV.png" />
+    <Content Include="Max_Data\Max_MenuSubIcon\LETEST.png" />
+    <Content Include="Max_Data\Max_MenuSubIcon\POPULAR.png" />
+    <Content Include="Max_Data\Max_MenuSubIcon\RELATED.png" />
+    <Content Include="Max_Data\Max_MenuSubIcon\UPCOMMING.png" />
+    <Content Include="Max_Data\Max_Php\WebForm1.aspx" />
+    <Content Include="Max_Data\Max_Player\Default.jpg" />
+    <Content Include="Max_Data\Max_Player\script.js" />
+    <Content Include="Max_Data\Max_Player\style.css" />
+    <Content Include="Max_Data\Max_Slide\2.jpg" />
+    <Content Include="Max_Data\Max_Slide\IMG_6852.JPG" />
+    <Content Include="Max_Data\Max_Slide\Jellyfish.jpg" />
+    <Content Include="Max_Data\Max_Slide\LinkTwo\2.jpg" />
+    <Content Include="Max_Data\Max_Slide\LinkTwo\IMG_6852.JPG" />
+    <Content Include="Max_Data\Max_Slide\LinkTwo\Windows 7 DarkWood Wallpaper.jpg" />
+    <Content Include="Max_Data\Max_Slide\maxford_slide_002.jpg" />
+    <Content Include="Max_Data\Max_Slide\maxford_slide_003.jpg" />
+    <Content Include="Max_Data\Max_Slide\maxford_slide_004.jpg" />
+    <Content Include="Max_Data\Max_Slide\maxford_slide_005.jpg" />
+    <Content Include="Max_Data\Max_Slide\maxford_slide_006.jpg" />
+    <Content Include="Max_Data\Max_Slide\maxford_slide_007.jpg" />
+    <Content Include="Max_Data\Max_Slide\maxford_slide_008.jpg" />
+    <Content Include="Max_Data\Max_Slide\Windows 7 DarkWood Wallpaper.jpg" />
+    <Content Include="Max_Data\Max_Video\maxford_vidio_2.mp4" />
+    <Content Include="Max_Modules\maxEvents.ascx" />
+    <Content Include="Max_Modules\maxFooter.ascx" />
+    <Content Include="Max_Modules\maxHeader.ascx" />
+    <Content Include="Max_Modules\maxLeftAdver.ascx" />
+    <Content Include="Max_Modules\maxRightAdver.ascx" />
+    <Content Include="Max_Modules\maxSlide.ascx" />
+    <Content Include="Max_Modules\maxTopEvents.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxAboutUs\AboutUs.Master.cs">
+      <DependentUpon>AboutUs.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxAboutUs\AboutUs.Master.designer.cs">
+      <DependentUpon>AboutUs.Master</DependentUpon>
+    </Compile>
+    <Compile Include="maxAboutUs\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxAboutUs\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxAboutUs\maxHistory.aspx.cs">
+      <DependentUpon>maxHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxAboutUs\maxHistory.aspx.designer.cs">
+      <DependentUpon>maxHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxAboutUs\maxLeadership.aspx.cs">
+      <DependentUpon>maxLeadership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxAboutUs\maxLeadership.aspx.designer.cs">
+      <DependentUpon>maxLeadership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxAboutUs\maxLocation.aspx.cs">
+      <DependentUpon>maxLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxAboutUs\maxLocation.aspx.designer.cs">
+      <DependentUpon>maxLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxAboutUs\maxMilestone.aspx.cs">
+      <DependentUpon>maxMilestone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxAboutUs\maxMilestone.aspx.designer.cs">
+      <DependentUpon>maxMilestone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxContactUs\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxContactUs\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxContactUs\maxContactUs.Master.cs">
+      <DependentUpon>maxContactUs.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxContactUs\maxContactUs.Master.designer.cs">
+      <DependentUpon>maxContactUs.Master</DependentUpon>
+    </Compile>
+    <Compile Include="maxContactUs\maxInform.aspx.cs">
+      <DependentUpon>maxInform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxContactUs\maxInform.aspx.designer.cs">
+      <DependentUpon>maxInform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxEvent\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxEvent\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxEvent\Event.aspx.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxEvent\Event.aspx.designer.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxEvent\Event.Master.cs">
+      <DependentUpon>Event.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxEvent\Event.Master.designer.cs">
+      <DependentUpon>Event.Master</DependentUpon>
+    </Compile>
+    <Compile Include="maxEvent\SlideData.aspx.cs">
+      <DependentUpon>SlideData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxEvent\SlideData.aspx.designer.cs">
+      <DependentUpon>SlideData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSchedule\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSchedule\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSchedule\maxAdvancedLevel.aspx.cs">
+      <DependentUpon>maxAdvancedLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSchedule\maxAdvancedLevel.aspx.designer.cs">
+      <DependentUpon>maxAdvancedLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSchedule\maxOrdinaryLevel_10_to_11.aspx.cs">
+      <DependentUpon>maxOrdinaryLevel_10_to_11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSchedule\maxOrdinaryLevel_10_to_11.aspx.designer.cs">
+      <DependentUpon>maxOrdinaryLevel_10_to_11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSchedule\maxOrdinaryLevel_6_to_9.aspx.cs">
+      <DependentUpon>maxOrdinaryLevel_6_to_9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSchedule\maxOrdinaryLevel_6_to_9.aspx.designer.cs">
+      <DependentUpon>maxOrdinaryLevel_6_to_9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSchedule\maxPrimaryClasses.aspx.cs">
+      <DependentUpon>maxPrimaryClasses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSchedule\maxPrimaryClasses.aspx.designer.cs">
+      <DependentUpon>maxPrimaryClasses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSchedule\maxScholarshipExams.aspx.cs">
+      <DependentUpon>maxScholarshipExams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSchedule\maxScholarshipExams.aspx.designer.cs">
+      <DependentUpon>maxScholarshipExams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSchedule\Schedule.Master.cs">
+      <DependentUpon>Schedule.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSchedule\Schedule.Master.designer.cs">
+      <DependentUpon>Schedule.Master</DependentUpon>
+    </Compile>
+    <Compile Include="maxSite.Master.cs">
+      <DependentUpon>maxSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSite.Master.designer.cs">
+      <DependentUpon>maxSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="maxSlide\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSlide\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSlide\Slide.Master.cs">
+      <DependentUpon>Slide.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSlide\Slide.Master.designer.cs">
+      <DependentUpon>Slide.Master</DependentUpon>
+    </Compile>
+    <Compile Include="maxVideo\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxVideo\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxVideo\Video.Master.cs">
+      <DependentUpon>Video.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxVideo\Video.Master.designer.cs">
+      <DependentUpon>Video.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\Account.Master.cs">
+      <DependentUpon>Account.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\Account.Master.designer.cs">
+      <DependentUpon>Account.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\maxSlideAdd.aspx.cs">
+      <DependentUpon>maxSlideAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\maxSlideAdd.aspx.designer.cs">
+      <DependentUpon>maxSlideAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\maxSlideDelete.aspx.cs">
+      <DependentUpon>maxSlideDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\maxSlideDelete.aspx.designer.cs">
+      <DependentUpon>maxSlideDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\maxSlideUpdate.aspx.cs">
+      <DependentUpon>maxSlideUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\maxSlideUpdate.aspx.designer.cs">
+      <DependentUpon>maxSlideUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\TopBar.ascx.cs">
+      <DependentUpon>TopBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\TopBar.ascx.designer.cs">
+      <DependentUpon>TopBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Administrator\maxSLIDE\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\MaxConfig\maxLengthValitate.cs" />
+    <Compile Include="Max_Account\MaxfordUser\MaxConfig\DataConnectionConfig.cs" />
+    <Compile Include="Max_Account\MaxfordUser\MaxConfig\DataUpdateConfig.cs" />
+    <Compile Include="Max_Account\MaxfordUser\MaxConfig\DataDeleteConfig.cs" />
+    <Compile Include="Max_Account\MaxfordUser\MaxConfig\DataViewConfig.cs" />
+    <Compile Include="Max_Account\MaxfordUser\MaxConfig\cookies.cs" />
+    <Compile Include="Max_Account\MaxfordUser\MaxConfig\maxMenuSide.ascx.cs">
+      <DependentUpon>maxMenuSide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\MaxConfig\maxMenuSide.ascx.designer.cs">
+      <DependentUpon>maxMenuSide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\MaxfordUser\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\Recovery.aspx.cs">
+      <DependentUpon>Recovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\Recovery.aspx.designer.cs">
+      <DependentUpon>Recovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\Request.aspx.cs">
+      <DependentUpon>Request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\Request.aspx.designer.cs">
+      <DependentUpon>Request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Account\Unauthorized.aspx.cs">
+      <DependentUpon>Unauthorized.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Account\Unauthorized.aspx.designer.cs">
+      <DependentUpon>Unauthorized.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Data\Max_Php\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Data\Max_Php\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Data\Max_Validation\validate.cs" />
+    <Compile Include="Max_Modules\maxEvents.ascx.cs">
+      <DependentUpon>maxEvents.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Modules\maxEvents.ascx.designer.cs">
+      <DependentUpon>maxEvents.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Modules\maxFooter.ascx.cs">
+      <DependentUpon>maxFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Modules\maxFooter.ascx.designer.cs">
+      <DependentUpon>maxFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Modules\maxHeader.ascx.cs">
+      <DependentUpon>maxHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Modules\maxHeader.ascx.designer.cs">
+      <DependentUpon>maxHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Modules\maxLeftAdver.ascx.cs">
+      <DependentUpon>maxLeftAdver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Modules\maxLeftAdver.ascx.designer.cs">
+      <DependentUpon>maxLeftAdver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Modules\maxRightAdver.ascx.cs">
+      <DependentUpon>maxRightAdver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Modules\maxRightAdver.ascx.designer.cs">
+      <DependentUpon>maxRightAdver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Modules\maxSlide.ascx.cs">
+      <DependentUpon>maxSlide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Modules\maxSlide.ascx.designer.cs">
+      <DependentUpon>maxSlide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Max_Modules\maxTopEvents.ascx.cs">
+      <DependentUpon>maxTopEvents.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Max_Modules\maxTopEvents.ascx.designer.cs">
+      <DependentUpon>maxTopEvents.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="maxAboutUs\AboutUs.Master" />
+    <Content Include="maxContactUs\maxContactUs.Master" />
+    <Content Include="maxEvent\Event.Master" />
+    <Content Include="maxSchedule\Schedule.Master" />
+    <Content Include="maxSite.Master" />
+    <Content Include="Max_Account\Account.Master" />
+    <Content Include="Max_Account\MaxfordUser\User.Master" />
+    <Content Include="Max_Account\Web.config" />
+    <Content Include="Max_Account\MaxfordUser\Web.config" />
+    <Content Include="Max_Account\MaxfordUser\Administrator\Web.config" />
+    <Content Include="maxSlide\Slide.Master" />
+    <Content Include="maxVideo\Video.Master" />
+    <None Include="Max_Data\Max_Editor\plugins\scayt\LICENSE.md" />
+    <None Include="Max_Data\Max_Editor\plugins\scayt\README.md" />
+    <None Include="Max_Data\Max_Editor\plugins\wsc\LICENSE.md" />
+    <None Include="Max_Data\Max_Editor\plugins\wsc\README.md" />
+    <None Include="Max_Data\Max_Editor\skins\moono\readme.md" />
+    <None Include="Max_Data\Max_Images\Maxford.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="maxAboutUs\App_LocalResources\AboutUs.Master.resx" />
+    <Content Include="maxAboutUs\App_LocalResources\Default.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="maxAboutUs\NEW\" />
+    <Folder Include="maxContactUs\NEW\" />
+    <Folder Include="maxEvent\MAX\" />
+    <Folder Include="maxSchedule\jscript\" />
+    <Folder Include="maxSchedule\NEW\" />
+    <Folder Include="Max_Account\MaxfordUser\Administrator\img\" />
+    <Folder Include="Max_Account\MaxfordUser\Administrator\js\" />
+    <Folder Include="Max_Account\MaxfordUser\js\" />
+    <Folder Include="Max_Data\Max_LocalResources\Max_Event_MAIN\" />
+    <Folder Include="Max_Data\Max_LocalResources\Max_Video\" />
+    <Folder Include="Max_Data\Max_Themes\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1307</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

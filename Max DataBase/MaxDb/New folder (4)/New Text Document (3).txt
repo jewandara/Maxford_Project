@@ -1,0 +1,47 @@
+
+
+http://en.wikipedia.org/wiki/Pratt_Street_Power_Plant
+html>
+    <head>
+        <style type="text/css">
+        #scroll{
+            position : absolute;
+            white-space : nowrap;
+            top : 0px;
+            left : 200px;
+        }
+        #oScroll{
+            margin : 0px;
+            padding : 0px;
+            position : relative;
+            width : 200px;
+            height : 20px;
+            overflow : hidden;
+        }
+        </style>
+        <script type="text/javascript">
+        function scroll(oid,iid){
+            this.oCont=document.getElementById(oid)
+            this.ele=document.getElementById(iid)
+            this.width=this.ele.clientWidth;
+            this.n=this.oCont.clientWidth;
+            this.move=function(){
+                this.ele.style.left=this.n+"px"
+                this.n--
+                if(this.n<(-this.width)){this.n=this.oCont.clientWidth}
+            }
+        }
+        var vScroll
+        function setup(){
+            vScroll=new scroll("oScroll","scroll");
+            setInterval("vScroll.move()",20)
+        }
+        onload=function(){setup()}
+        </script>
+    </head>
+    <body>
+        <div id="oScroll">
+            <div id="scroll">This is the scrolling text</div>
+        </div>
+    </body>
+</html>

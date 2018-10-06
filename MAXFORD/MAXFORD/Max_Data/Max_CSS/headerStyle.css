@@ -1,0 +1,203 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD HEADER									----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of Header 					----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+/*----	HIDDEN TOP SHADOW	----*/
+.tophiddin {
+	float: left;
+	display: block;
+	width:100%;
+	background  :#003300; 
+	top:-20px;
+	box-shadow: 0 5px 20px #003737;
+	position:fixed;
+	z-index:1000000;
+	}
+
+
+/*----	TOP MIDDLE HEADER	----*/
+.max_header {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top:0px;
+}
+.max_header:after {
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+	}
+.topbar {
+    font: normal 62.5% Helvetica, Arial, sans-serif;
+	width: 1000px;
+	float: left;
+	display: block;
+	width:inherit;
+	background  :#1A605C;
+	top:-4px;
+	position: relative;
+	font-weight: normal;
+	left: 0px;
+	height:50px;
+	box-shadow: 0 0 20px #003737;
+	border-bottom: 2px solid #9ADCC7;
+	}
+.topbar li {
+	float: left; 
+	list-style: none;
+	font-size: 1.2em;
+	}
+.topbar li a {
+	display: block;
+	background:#1A605C;
+	color:  #DFFADE;
+	text-decoration:none;
+	font-weight: 700;
+	border-top: 20px solid #1A605C;
+	border-bottom: 12px solid #1A605C;
+	border-left: 11px solid #1A605C;
+	border-right: 11px solid #1A605C;
+	transition:all 0.2s ease-in;
+	-webkit-transition:all 0.2s ease-in;
+	-moz-transition:all 0.2s ease-in;
+	}
+.topbar li a:hover, .topbar li a:focus {
+	display: block;
+	background:#9ADCC7;
+	color:#033;
+	border-top: 20px solid #9ADCC7; 
+	border-bottom: 19px solid #9ADCC7;
+	border-left: 11px solid #9ADCC7;
+	border-right: 11px solid #9ADCC7; 
+	}
+
+
+/*----	TOP SEARCH IN HEADER	----*/
+.search_nav_last {
+	position:absolute;
+	float:right;
+	right:0;
+	margin-right:25px;
+	}
+input[name=searchTopMax], textarea {
+	top:14px;
+	left:11px;
+	width:150px;
+	position:relative;
+	background:#79C8BE;
+	padding: 6px 5px;
+	border: 0px solid #000;
+	color:#666;
+	font-family:Tahoma, Geneva, sans-serif;
+	}
+input[name=searchTopMaxBut], textarea { 
+	top:14px;
+	left:11px;
+	position:relative;
+	color:#E3F4F3;
+	background:#099;
+	padding: 5px 8px;
+	border: 0px solid #000;
+	}
+input[name=searchTopMax]:hover, input[name=searchTopMax]:focus, textarea { 
+	background:#E3F4F3;
+	color:#0D1C15;
+	}
+input[name=searchTopMaxBut]:hover, input[name=searchTopMaxBut]:focus, textarea {
+	background:#099;
+	color:#042416;
+	}
+
+
+/*----	TOP LEFT LOGO & VISSION	----*/
+.max_Logo{
+	top:0px;
+	width:1000px;
+	margin: 0 auto;
+	}
+.logo { 
+	text-align:left;
+    display: block;
+	margin-top:10px;
+	width:500px;
+	height:100px;
+    margin-left:0px;
+	}
+.logo .image { 
+	text-align:left;
+    display: block;
+	margin-top:10px;
+	width:500px;
+	height:100px;
+	background:url("../Max_Images/logo.png");
+    background-size: 400px 80px;
+    background-repeat: no-repeat;
+	}
+.vission{
+	position:inherit;
+	right:0px;
+	margin-right:12px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	color:#999;
+	}
+
+
+/*----	TOP RIGHT LOGO MENU	----*/
+.max_Logo_Menu{
+	width:100%;
+	height:100%;
+	}
+.max_Logo_Menu_items li {
+	float: right; 
+	list-style: none;
+	}
+.max_Logo_Menu_items li a {
+	font-size:14px;
+	font-family:Tahoma, Geneva, sans-serif;
+	display: block;
+	color:  #000;
+	text-decoration:none;
+	text-transform: uppercase;
+	border: 10px solid #fff;
+	transition:all 0.1s ease-in;
+	-webkit-transition:all 0.1s ease-in;
+	-moz-transition:all 0.1s ease-in;
+	}
+.max_Logo_Menu_items li a:hover, .max_Logo_Menu_items li a:focus {
+	display: block;
+	background:#E1EAE3;
+	color:#033;
+	border: 10px solid #E1EAE3;
+	}
+
+
+
+
+
+
+

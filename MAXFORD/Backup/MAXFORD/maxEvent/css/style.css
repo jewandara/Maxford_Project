@@ -1,0 +1,661 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD MAIN EVENTS	BODY						----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of main style page 			----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+
+/*---- Maxord General Selectors ----*/
+.move {
+  position: absolute;
+  left: -9999px; }
+.hide {
+  display: none; }
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em; }
+a {
+  color: #407db5;
+  text-decoration: none; }
+p a, .article-body a {
+  color: #99283c; }
+  p a:hover, p a:focus, .article-body a:hover, .article-body a:focus {
+    color: #2b2b2b; }
+
+.maxEventLogoTopImage{
+	background:url(maxBaseLogo.png);
+	background-size:350px;
+	background-repeat:no-repeat;
+	background-position:center;
+	width:350px;
+	height:30px;
+	margin-left:310px;
+	padding:20px;
+	}
+
+/*---- Maxord Event Sub Menu ----*/
+.maxSticky{
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: 34px;
+  z-index: 100;
+}
+.maxMiddleSubNavBar{
+	margin-left:auto;
+	margin-right:auto;
+	top:0px;
+	right:0;
+	width:985px;
+    height:60px;
+	display:block;
+	box-shadow: 0 0 5px #666;
+	z-index:100;
+}
+.maxMiddleSubNavBar ul{
+	text-align: center;
+    width:985px;
+    height:60px;
+	display:block;	
+	background:#e3e3e3;
+	list-style-type: none;
+	overflow:hidden;
+}
+.maxMiddleSubNavBar ul li{
+    text-align:center;
+	list-style-type: none;
+	display:inline-block;
+	transition:color 0.4s ease-in;
+	-webkit-transition:color 0.4s ease-in;
+	-moz-transition:color 0.4s ease-in;
+}
+.maxMiddleSubNavBar ul li a{
+	text-transform: uppercase;
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	display: block;
+	width:auto;
+	padding:20px 20px 22px 20px;
+	color:#666;
+	transition:all 0.4s ease-in;
+	-webkit-transition:all 0.4s ease-in;
+	-moz-transition:all 0.4s ease-in;
+}
+.maxMiddleSubNavBar ul li a:hover{
+	color:#FFF;
+	background:#666;
+}
+.maxMiddleSubNavBar ul li a p{
+	margin-top:3px;
+}
+.maxMiddleSubNavBarImage{
+	margin-top:-11px;
+	width:22px;	
+}
+
+/*---- Maxord Combinations ----*/
+.maxwEventBoadyOne{
+	margin-left:auto;
+	margin-right:auto;
+	width:1300px;
+	display:block;
+	margin-top:40px;
+	padding:2px;
+	}
+.maxwEventBoadyData{
+    float:right;
+    display:block;
+    right:0px;
+    margin-right:0px;
+	width:985px;
+	}
+
+
+
+/*----  Maxord Forms Search Button ----*/
+input[id="search"]{
+	border: 0px solid;
+	margin:5px;
+	padding: 4px;
+	width:170px;
+	background:#B9D9D5;
+	color: #6c6c6c;
+	font-style: italic;
+	font-size: 13px;
+}
+input[id="searchsubmit"]{
+	border: 1px solid #000;
+	padding:3px;
+	width:25px;
+	margin-left:-8px;
+	background:url(search.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	color: white;
+	font-weight:bold;
+	text-transform: uppercase;
+	font-size:13px;
+	text-decoration: none;
+}
+
+
+
+/*----  Maxord Forms Subscribe Button ----*/
+input[id="email-subscribe"]{
+	border: 0px solid;
+	margin-top:15px;
+	padding: 6px;
+	width:200px;
+	background:#F3F3F3;
+	color: #6c6c6c;
+	font-style: italic;
+	font-size: 13px;
+  }
+input[id="email-subscribe-submit"]{
+	font-family: "Arial", sans-serif;
+	width:211px;
+	font-weight: bold;
+	border: none;
+	margin-bottom:15px;
+	cursor: pointer;
+	padding: 8px 15px;
+	color: white;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 11px;
+	text-decoration: none;
+	background: #3a79bc;
+	background: -o-linear-gradient(top, #143F3E, #339999);
+	background: -ms-linear-gradient(top, #143F3E, #339999);
+	background: -moz-linear-gradient(top, #143F3E, #339999);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #143F3E), color-stop(1, #339999));
+	background: -webkit-linear-gradient(#143F3E, #339999);
+	background: linear-gradient(top, #143F3E, #339999);
+	font-weight: normal;
+	}
+input[id="email-subscribe-submit"]:hover, input[id="email-subscribe-submit"]:focus {
+    -webkit-transition: all 0.08s linear;
+    -moz-transition: all 0.08s linear;
+    -ms-transition: all 0.08s linear;
+    -o-transition: all 0.08s linear;
+    transition: all 0.08s linear;
+    background: #3466a1;
+    background: -o-linear-gradient(top, #50C7AC, #37CCCC);
+    background: -ms-linear-gradient(top, #50C7AC, #37CCCC);
+    background: -moz-linear-gradient(top, #50C7AC, #37CCCC);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #50C7AC), color-stop(1, #37CCCC));
+    background: -webkit-linear-gradient(#50C7AC, #37CCCC);
+    background: linear-gradient(top, #50C7AC, #37CCCC); 
+	}
+
+input[type="submit"] {
+	cursor: pointer; 
+	}
+input[type="text"]:focus{
+    -webkit-transition: all 0.04s linear;
+    -moz-transition: all 0.04s linear;
+    -ms-transition: all 0.04s linear;
+    -o-transition: all 0.04s linear;
+    transition: all 0.04s linear;
+    background: #FFF;
+    outline-color: #f6feff; 
+	}
+
+
+/*----  Maxord Forms ----*/
+.error strong {
+  display: block;
+  color: #d55442;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 13px; }
+.error .text-input, .error textarea, .error input[type="text"], .error input[type="password"], .error input[type="email"] {
+  margin-bottom: 10px;
+  background: #fbeeec;
+  border-color: #d55442; }
+label + .instructions {
+  margin-top: -5px;
+  margin-bottom: 15px;
+  display: block; }
+.form-split p {
+  float: left; }
+.form-split .input-small {
+  float: right; }
+.find-events {
+  background: white;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px 16px 25px;
+  border: 1px solid #f3f3f3; }
+  .find-events label {
+    text-align: center; }
+  .find-events #find-events {
+    float: left;
+    width: 178px;
+    margin: 0 auto; }
+  .find-events .search-btn {
+    height: 33px; }
+  .find-events p:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    *height: 1%; }
+
+
+
+/*----  Maxord Side Bar Layouts  ----*/
+.secondary {
+  width: 288px;
+  top: 36px;
+  left: 50%;
+  margin-left: -636px;
+  z-index: 999;
+  height: 92%;
+  background: #f3f3f3;
+  padding: 20px 0;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  position: fixed; }
+
+
+
+/*----  Maxord Header  ----*/
+.TopSticky {
+  background: #1A685C url("icon-sl.png") no-repeat top left;
+  position: fixed;
+  height: 36px;
+  width: 100%;
+  z-index: 9999; }
+
+#topbar {
+  background: #1A685C;
+  height: 36px;
+  position: relative;
+  max-width: 1272px;
+  left: 50%;
+  margin-left: -636px;
+  width: 100%; }
+  #topbar .searchform-wrapper {
+    float: left; }
+  #topbar ul {
+    list-style: none;
+    display: inline-block;
+    float: right;
+    padding-top: 8px;
+    padding-bottom: 8px; }
+    #topbar ul li {
+      float: left;
+      font-family: "Arial", sans-serif;
+      font-weight: bold;
+      font-size: 13px;
+      padding-right: 19px;
+      line-height: 20px; }
+      #topbar ul li a {
+	color: #FFF;}
+        #topbar ul li a:hover, #topbar ul li a:focus {
+	color: #163028;
+	text-decoration: none;}
+  #topbar a.nav-btn {
+    display: block;
+    float: left;
+    border-right: 1px solid #6c6c6c;
+    padding: 0 20px 0 50px;
+    background: #143F3E url("icon-home.png") 30px 6px no-repeat;
+    background-size: 21px;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 36px; }
+    #topbar a.nav-btn#nav-open-btn {
+      display: none; }
+    #topbar a.nav-btn#nav-close-btn {
+      background-color: #B3ECE0;
+      background-image: url("icon-home.png");
+      color: black;
+      display: none; }
+    #topbar a.nav-btn#nav-gz-home {
+      padding-left: 20px;
+      background-image: url("icon-home.png");
+      background-position: 12px 6px;
+      border-right: 0; }
+      
+#logo a {
+  margin: 0 auto;
+  float: none;
+  display: block;
+  width: 369px;
+  max-width: 100%; }
+#logo .date {
+  text-align: center;
+  color: #6c6c6c; }
+#outer-wrap {
+  overflow: hidden;
+  width: 100%; }
+
+
+
+/*----  Maxord Sidebar Menu Items  ----*/
+.secondary {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px; }
+  .secondary ul#menu-main-menu {
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 0; }
+    .secondary ul#menu-main-menu li {
+      border-bottom: 1px solid #dfdfdf;
+      background: #f3f3f3;
+	transition:all 0.5s ease-in;
+	-webkit-transition:all 0.5s ease-in;
+	-moz-transition:all 0.5s ease-in;
+
+      font-size:14px;
+      padding-bottom:1px;
+      padding-top:1px; 
+      font-weight:500 }
+      .secondary ul#menu-main-menu li a {
+        color: #2b2b2b;
+        display: block;
+        line-height: 30px;
+        padding-left: 30px;
+        	transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in; }
+        .secondary ul#menu-main-menu li a.active {
+          background: #99283c;
+          color: white; }
+        .secondary ul#menu-main-menu li a.active.science {
+          background: #e19100;
+          color: white; }
+      .secondary ul#menu-main-menu li ul {
+        list-style: none;
+        margin-left: 0;
+        margin-bottom: 0;
+        display: none; }
+        .secondary ul#menu-main-menu li ul li {
+          border-bottom: 0;
+          border-top: 1px solid #dfdfdf;
+          background: white; }
+          .secondary ul#menu-main-menu li ul li a {
+            text-transform: none; }
+            .secondary ul#menu-main-menu li ul li a.active {
+              background: white;
+              color: black;
+              font-weight: bold; }  
+          .secondary ul#menu-main-menu li ul li:hover {
+            background: #dfdfdf; }
+          .secondary ul#menu-main-menu li ul li.current-menu-item a, .secondary ul#menu-main-menu li ul li.current-post-ancestor a {
+            font-weight: bold; }
+      .secondary ul#menu-main-menu li.current-menu-parent ul, .secondary ul#menu-main-menu li.current-menu-item ul {
+        display: block; 
+        font-size:x-large;}
+		
+    .secondary ul#menu-main-menu > li:hover {
+      background:#0CC;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: none;
+      transition: none; 
+      	transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;}
+    .secondary ul#menu-main-menu li#menu-item-136831:hover {
+      background: #066; }
+	.secondary ul#menu-main-menu li#menu-item-136831 > a:hover {
+      color: white; }
+
+
+
+/*----  Maxord Sidebar Footer  ----*/
+  .secondary .daily-gazette {
+	margin: 30px 0;
+	border-bottom: 1px solid #dfdfdf;
+	background-color: #CAE3D2;}
+    .secondary .daily-gazette h3 {
+      position: relative;
+      background: #143F3E;
+      color: white;
+      font-weight: normal;
+      font-size: 15px;
+      padding: 15px 0 10px 70px; }
+      .secondary .daily-gazette h3 img {
+        position: absolute;
+        top: 20px;
+        left: 32px; }
+    .secondary .daily-gazette form {
+      padding-left: 30px; }
+      .secondary .daily-gazette form input#email-subscribe-submit {
+        margin-top: 10px; }
+  .secondary .utility-menu-wrapper ul {
+    list-style: none;
+    font-size: 13px; }
+  .secondary .harvard-social {
+	color: #0B2221;
+	padding-left: 30px;
+	font-size: 15px;}
+    .secondary .harvard-social p {
+      font-size: 13px;
+      padding-right: 20px; }
+    .secondary .harvard-social a {
+      color: #066; }
+      .secondary .harvard-social a:hover, .secondary .harvard-social a:focus {
+        color: #0f2944; }
+  .secondary #harvard-logo {
+    text-align: center;
+    height: 90px;
+    line-height: 90px; }
+
+#footer {
+  margin: 30px;
+  color: #6c6c6c; }
+  #footer ul {
+    list-style: none;
+    margin: 20px 0; }
+    #footer ul li {
+      display: inline-block; }
+
+
+
+/*----  Search  ----*/
+#searchform {
+  padding-top: 0px; }
+  #searchform input {
+	border: 0!important;
+	height: 16px;
+	float: left;
+	padding: 3px 6px 4px;
+	background: #B6DACB;
+	color: #000;
+	margin: 6px 0 6px 6px;}
+    #searchform input#s {
+      width: 154px; }
+      #searchform input#s:hover, #searchform input#s:focus {
+        background: #DDEEE7;
+        color: black;
+        -webkit-box-shadow: none!important;
+        -moz-box-shadow: none!important;
+        box-shadow: none!important; }
+    #searchform input#searchsubmit {
+      text-indent: -3000px;
+      display: inline-block;
+      width: 24px;
+      height: 23px;
+      background: white url("search.png") no-repeat -4px -3px;
+      border: 0 !important;
+      margin: 6px 0; }
+
+.search .main {
+  font-family: "Open Sans", "Arial", sans-serif; }
+  .search .main .search_count {
+    font-size: 13px;
+    text-align: right; }
+  .search .main .oneitem {
+    margin-bottom: 12px; }
+    .search .main .oneitem p {
+      margin-bottom: 4px; }
+    .search .main .oneitem p.snippet {
+      font-size: 13px;
+      margin-bottom: 0px; }
+      .search .main .oneitem p.snippet .post_date {
+        color: #6c6c6c; }
+    .search .main .oneitem p.url {
+      font-size: 13px;
+      color: #6c6c6c; }
+  .search .main .pagings {
+    margin: 10px 0px 30px;
+    text-align: center; }
+    .search .main .pagings span.number {
+      font-weight: bold; }
+    .search .main .pagings .number {
+      margin-right: 7px; }
+    .search .main .pagings .previous {
+      margin-right: 15px; }
+    .search .main .pagings .next {
+      margin-left: 15px; }
+    .search .main .pagings a {
+      text-decoration: none; }
+      .search .main .pagings a:hover {
+        text-decoration: underline; }
+
+
+/*----  Maxord Scroll bar  ----*/
+#scrollbar1 {
+  width: 288px;
+  height: 100%; }
+
+#scrollbar1 .viewport {
+  width: 270px;
+  margin-left: 8px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-overflow-scrolling: touch; }
+
+#scrollbar1 .overview {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+#scrollbar1 .thumb .end,
+#scrollbar1 .scrollbar {
+  position: relative;
+  float: right;
+  width: 9px; }
+
+#scrollbar1 .track {
+  height: 100%;
+  width: 7px;
+  position: relative;
+  padding: 0 1px; }
+
+#scrollbar1 .thumb {
+  height: 20px;
+  width: 7px;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: rgba(51, 51, 51, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -webkit-transition: opacity 0.2s linear; }
+
+#scrollbar1:hover .thumb {
+  opacity: 1; }
+
+#scrollbar1 .thumb .end {
+  overflow: hidden;
+  height: 5px;
+  width: 7px; }
+
+#scrollbar1 .disable {
+  display: none; }
+
+.noSelect {
+  user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none; }
+
+
+/*---- Maxord Top Pop Box ----*/
+.maxPopEventsBox{
+	width:230px;
+	height:323px;
+	display:block;
+	margin-top:0px;
+	background:#eee;
+	box-shadow: 0 0 1px #999;
+	}
+.maxPopEventsBox table tr th{
+	text-align:left;
+	width:226px;
+	height:60px;
+	display:block;
+	border-bottom:1px solid #555;
+	}
+.maxPopEventsBox table tr th a{
+	padding:3px 3px 3px 3px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	width:222px;
+	height:13px;
+	display:block;
+	overflow: hidden;
+	}
+.maxPopEventsBox table tr th a:hover{
+	text-decoration:underline;
+	}
+.maxPopEventsBox table tr th p{
+	padding:2px 2px 2px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:normal;
+	font-size:11px;
+	width:222px;
+	height:27px;
+	display:block;
+	overflow: hidden;
+	}

@@ -1,0 +1,163 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	TABLE OF ACCESS									----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is Table of dbo.ACT_SYS_Access				----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+*{ margin: 0; padding: 0; line-height: 1; }
+body {
+	background-color: #fff;
+	color: #6c6c6c;
+	font: normal 62.5% Helvetica, Arial, sans-serif;}
+
+/*----	TOP SLIDE DATA	----*/
+.slide-wrap { width: 978px; margin: 0 auto; }
+* html .carousel { height: 348px !important; }
+* html .slide-caption { background-image: none !important; height: 220px; }
+* html .carousel-item { height: 348px; }
+.carousel-controls { 
+	visibility:hidden;
+	position: absolute; 
+	z-index: 100; 
+	left: 50%; 
+	bottom: 43px; 
+	width: 98px; 
+	height: 32px; 
+	margin-left: -449px; 
+	overflow: hidden;}
+* html .carousel-controls { bottom: 20px; }
+.carousel-controls a { float: left; width: 31px; height: 31px; background: url("../Max_Images/slide-control-icon.png");}
+.carousel-controls .next { background-position: -99px -32px; border-left: 1px solid #333; }
+.carousel-controls .next:hover, .carousel-controls .next:focus { background-position: -99px 0; border-color: #ccc; }
+.carousel-controls .previous { background-position: 0 -32px; }
+.carousel-controls .previous:hover, .carousel-controls .previous:focus { background-position: 0 0; }
+.carousel-controls .pause { background-position: -33px -32px; border-left: 1px solid #333; }
+.carousel-controls .pause:hover, .carousel-controls .pause:focus { background-position: -33px 0; border-color: #ccc; }
+.carousel-controls .play {
+	position: relative; 
+	bottom: auto;
+	left: auto;
+	background-position: -66px -32px;
+	border-left: 1px solid #333;}
+.carousel-controls .play:hover, .carousel-controls .play:focus { background-position: -66px 0; border-color: #ccc; }
+.carousel .prev-image { position: absolute; left: -978px; top: 0; opacity: 0.2; }
+.carousel .next-image { position: absolute; top: 0; right: -522px; opacity: 0.2; }
+.slide-caption { min-height: 200px; padding: 68px 40px 80px; }
+* html .slide-caption { padding-bottom: 60px; }
+
+/*----	TOP SLIDE NEXT/PREV/PLAY BUTTON	----*/
+.carousel { 
+	height: 348px; 
+	overflow: hidden;
+	background: #054B3C;
+	box-shadow: 0px 0px 6px #003333;}
+.carousel .slide-wrap { position: relative; }
+.slide-caption { 
+	position: relative; 
+	z-index: 10; 
+	float: left; 
+	width: 376px;
+	min-height: 280px; 
+	padding: 68px 40px 0;
+	background-position: left top;
+	background-repeat: no-repeat; }
+.comp-a { background-color: #; }
+.comp-b { background-color: #005E5E; }
+.comp-c { background-color: #959500; }
+.comp-d { background-color: #BF3F00; }
+.comp-e { background-color: #A3033C; }
+.comp-f { background-color: #A60000; }
+.comp-g { background-color: #716888; }
+.comp-a, .comp-a .slide-callout .more { background-color: #06698A; }
+.comp-b, .comp-b .slide-callout .more { background-color: #005E5E; }
+.comp-c, .comp-c .slide-callout .more { background-color: #959500; }
+.comp-d, .comp-d .slide-callout .more { background-color: #BF3F00; }
+.comp-e, .comp-e .slide-callout .more { background-color: #A3033C; }
+.comp-f, .comp-f .slide-callout .more { background-color: #A60000; }
+.comp-g, .comp-g .slide-callout .more { background-color: #716888; }
+
+.slide-caption h2 {
+	margin-bottom: 32px; color: #fff; font-size: 4.2em; line-height: 1.21; }
+.slide-caption h2 a { color: #fff; text-decoration: none; }
+.slide-caption h2 a:hover, .slide-caption h2 a:focus { color: #e6eae2; text-decoration: none; }
+.slide-callout { width: 900px; }
+.slide-callout p { 
+	float: left; 
+	max-width: 750px; 
+	min-height: 19px; 
+	margin-bottom: 5px; 
+	padding: 9px 20px 6px 14px; 
+	background: #fff; 
+	background: rgba(255,255,255,.9); 
+	text-transform: uppercase; 
+	color: #363636; 
+	font-weight: bold; 
+	font-size: 1.2em; 
+	line-height: 1.5; }
+.slide-callout p:hover { background: #e6eae2; }
+.slide-callout p a { color: #363636; text-decoration: none; }
+.slide-callout p a:hover, .slide-callout p a:focus { color: #363636; text-decoration: none; }
+.slide-callout .more { padding: 0; }
+.comp-a .slide-callout .more { background-color: #06698A; }
+.comp-b .slide-callout .more { background-color: #005E5E; }
+.comp-c .slide-callout .more { background-color: #959500; }
+.comp-d .slide-callout .more { background-color: #BF3F00; }
+.comp-e .slide-callout .more { background-color: #A3033C; }
+.comp-f .slide-callout .more { background-color: #A60000; }
+.comp-g .slide-callout .more { background-color: #716888; }
+.slide-callout .more a { 
+	display: inline-block; 
+	min-height: 19px;
+	padding: 8px 10px 7px 10px; 
+	background: none;
+	color: #fff; 
+	text-transform: none; 
+	font-weight: normal; 
+	font: italic 1.15em Georgia, "Times New Roman", serif; }
+.slide-callout .more a:hover, .slide-callout .more a:focus { background: #000; text-decoration: none; color:#fff; }
+.carousel-image { position: absolute; right: 0; }
+.carousel-item { position: relative; }	
+.carousel-item-secondary { display: none; }
+#hedu_preview .slide-caption h2 { margin-bottom: 32px; color: #fff; font-size: 3.15em; line-height: 1.21; }
+#hedu_preview .slide-callout p { 
+	float: left;
+	max-width: 750px; 
+	min-height: 19px; 
+	margin-bottom: 5px; 
+	padding: 9px 20px 6px 14px; 
+	background: #fff;
+	background: rgba(255,255,255,.9); 
+	text-transform: uppercase; 
+	color: #363636; 
+	font-weight: bold; 
+	font-size: 0.9em; 
+	line-height: 1.5; }
+#hedu_preview .slide-callout p.more { padding: 0; }
+#hedu_preview .comp-a .slide-callout p.more { background-color: #06698A; }
+#hedu_preview .comp-b .slide-callout p.more { background-color: #005E5E; }
+#hedu_preview .comp-c .slide-callout p.more { background-color: #959500; }
+#hedu_preview .comp-d .slide-callout p.more { background-color: #BF3F00; }
+#hedu_preview .comp-e .slide-callout p.more { background-color: #A3033C; }
+#hedu_preview .comp-f .slide-callout p.more { background-color: #A60000; }
+#hedu_preview .comp-g .slide-callout p.more { background-color: #716888; }
+#carousel_slide_headshot { background-image: none; }

@@ -1,0 +1,112 @@
+﻿/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD LOGIN									----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of LOGIN 					    ----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+/*----	MAXFORD LOGIN	----*/
+a{
+	text-decoration:none;
+	}
+.max_login_page{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:220px;
+	text-align:center;
+	width:700px;
+	display:block;
+	background:#BEE4DC;
+	padding:40px 0 10px 0;
+	}
+.max_login_page_aspBox{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	}
+.max_login_logo{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-160px;
+	width:201px;
+	height:201px;
+	background:url(../images/user.png) no-repeat center;
+	background-size: 200px 200px;
+	}
+.max_login_userName{
+    margin-left:20px;
+	padding-left:40px;
+	width: 250px;
+	height: 30px;
+	border: 0px solid ;
+	background:#00D0A7 url(../images/maxLoginUser.png) no-repeat left;
+	background-size: 150px 30px;
+	}
+.max_login_passWord{
+    margin-left:20px;
+	padding-left:40px;	
+	width: 250px;
+	height: 30px;
+	border: 0px solid ;
+	background:#00D0A7 url(../images/maxLoginPass.png) no-repeat left;
+	background-size:150px 30px;
+	}
+.max_login_userName:hover, .max_login_passWord:hover{
+	box-shadow:0 0 1px #039477;
+	background-color:#3FD9A9;
+	}
+.max_login_button{
+	width: 144px;
+	height: 30px;
+	border: 1px solid #008040;
+	cursor:pointer;
+	background:#009191;
+	color:#EEE;
+	border: 0px solid #033;
+	font-size:16px;
+    }
+.max_login_button:hover{
+	background:#02D0A7;
+	color:#333;
+    }
+.max_login_foget{
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size:13px;
+    color:#066;
+    }
+.max_login_foget:hover{
+    color:#000;
+	text-decoration:underline;
+	}
+.max_login_failure_text{
+	display:block;
+	height:auto;
+	background:#FFC;
+	background-image:url(../images/Error2.png);
+	background-repeat:no-repeat;
+	background-position:6px;
+	background-size:14px;
+	font-family:Tahoma, Geneva, sans-serif;
+    font-size:13px;
+    color:#C00;
+	}

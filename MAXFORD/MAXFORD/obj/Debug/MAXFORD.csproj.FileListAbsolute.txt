@@ -1,0 +1,4 @@
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\MAXFORD\MAXFORD\bin\MAXFORD.dll
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\MAXFORD\MAXFORD\bin\MAXFORD.pdb
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\MAXFORD\MAXFORD\obj\Debug\MAXFORD.dll
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\MAXFORD\MAXFORD\obj\Debug\MAXFORD.pdb

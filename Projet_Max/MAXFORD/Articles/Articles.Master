@@ -1,0 +1,315 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Articles.master.cs" Inherits="MAXFORD.Articles.Articles" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Maxford Higher Educational Institution</title>
+<link id="Link1" href="~/css/style.css" rel="stylesheet" runat="server" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link href="http://www.maxford.lk/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<asp:ContentPlaceHolder ID="ContentPlaceHolderHead" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+    <header data-tag-area="header" data-tag-group="header">
+        <div class="maxford-header-content">
+            <div class="maxford-header-web-content">
+                <a href="http://www.maxford.lk/" class="logo"><img width="160" title="Maxford" alt="Maxford" src="data:image/png;base64,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" /></a>
+                <ul class="menu-tools">
+                    <li>
+                        <a href="http://www.maxford.lk/Account/Login.aspx"> <span data-control="geophone">LOGIN</span></a>
+                    </li>
+                    <li>
+                        <a href="http://www.maxford.lk/Account/Default.aspx" id="LoginView1_A3">ACCOUNT</a>
+                    </li>
+                    <li>
+                        <div class="wa-textSearch" data-control="textbox">
+                            <input class="text-input" id="MainSearchBox" name="searchTopMax" type="search" maxlength="30" placeholder="Search" runat="server" />
+                       </div>
+                    </li>
+                    <li>
+                        <div class="wa-textSearch" data-control="textbox">
+                            <input class="text-input" id="Submit1" value=" " type="submit" runat="server" />
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="small-hamburger"><span class="icon-hamburger"></span></a>
+                <ul class="menu">
+                    <li><a href="http://www.maxford.lk/Maxford.aspx">STUDY AT MAXFORD</a></li>
+                    <li><a href="http://www.maxford.lk/About.aspx">ABOUT MAXFORD</a></li>
+                    <li><a href="http://www.maxford.lk/Contact.aspx">MAXFORD CONTACT</a></li>
+                    <li><a href="http://www.maxford.lk/maxClasses/Default.aspx">CLASS TIME TABLE</a></li>
+                    <li><a href="http://www.maxford.lk/maxClasses/Default.aspx">PANEL OF TEACHERS</a></li>
+                    <li><a href="http://www.maxford.lk/maxClasses/Default.aspx">MAXFORD SUBJECTS</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="maxford-top-logo">
+        <div class="content-wrapper">
+            <a href="http://www.maxford.lk/">
+                <img id="Img1" src="img/logo.png" runat="server" />
+            </a>
+            <div class="vission">Good In All, Best In One</div>
+            <div class="maxford-header-menu-items">
+                <ul>
+                    <li class="">
+                        <a href="http://www.maxford.lk/Parents.aspx">parents</a>
+                    </li>      
+                    <li class="">
+                        <a href="http://www.maxford.lk/Student.aspx">students</a>
+                    </li>
+                    <li class="first">
+                        <a href="http://www.maxford.lk/Debate.aspx">debates</a>
+                    </li>                    
+                    <li class="">
+                        <a href="http://www.maxford.lk/Event.aspx">events</a>
+                    </li>
+                    <li class="">
+                        <a href="http://www.maxford.lk/News.aspx">news</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="maxford-header-hide"> </div>
+ 
+
+
+
+
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server"></asp:ContentPlaceHolder>
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="maxford-bottom-content-wrapper">
+        <h2>Our Teachers</h2>
+        <div class="maxford-bottom-content-resourceBlockRow">
+            <a href="http://www.maxford.lk/#" class="wa-resourceBlock">
+                <h4>Teachers Events</h4>
+                <img src="../teacher/img/21068.jpg" />
+                <p>Manage the end-to-end customer lifecycle for Microsoft Cloud services</p>
+            </a>
+            <a href="http://www.maxford.lk/#" class="wa-resourceBlock">
+                <h4>Teachers Events</h4>
+                <img src="../teacher/img/21068.jpg" />
+                <p>Manage the end-to-end customer lifecycle for Microsoftfgj fj fj  Cloud services</p>
+            </a>
+            <a href="http://www.maxford.lk/#" class="wa-resourceBlock">
+                <h4>Teachers Events</h4>
+                <img src="../teacher/img/21068.jpg" />
+                <p>Manage the end-to-end customer lifecycle for Microsf  sfj fjsy jsryj srj yryrj yrj rtsoft Cloud services</p>
+            </a>
+            <a href="http://www.maxford.lk/#" class="wa-resourceBlock">
+                <h4>Teachers Events</h4>
+                <img src="../teacher/img/21068.jpg" />
+                <p>Manage the end-to-end customer lifecycle for Microsf  sfj fjsy jsryj srj yryrj yrj rtsoft Cloud services</p>
+            </a>
+        </div>
+        </div>
+    <br />    <br />    <br /> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+    $(document).ready(function () {
+        $("#maxford-footer-content-middle-social").click(function () {
+            if ($(window).width() < 800) {
+                $("#maxford-footer-content-middle-linkList-social").toggle(500);
+            }
+        });
+    });
+
+
+</script>
+
+
+
+    <footer class="maxford-footer">
+        <div class="maxford-footer-content-top">
+            <div class="maxford-footer-box">
+                <div class="maxford-footer-box-description">
+                    <div class="maxford-footer-box-description-middle">
+                        <div class="maxford-footer-box-description-middle-head">
+		                    <h3>CONNECT &nbsp;WITH &nbsp;MAXFORD</h3>
+                        </div>
+                        <div class="maxford-footer-box-description-middle-links">
+                            <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                            <input name="SUBSCRIBE" type="text" id="SUBSCRIBE" placeholder="Your Email Address . . ." runat="server" />
+                            <input name="ButtonSubscribe" type="submit" value="SUBSCRIBE" id="ButtonSubscribe" runat="server" />
+                        </div> 
+                        <div class="footer-insert"></div>
+                    </div>
+                    <div class="maxford-footer-box-bottom">
+                        <h3>Maxford suggest the following our links</h3>
+                        <br/><hr/><br/>
+                            <div class="maxford-footer-box-bottom-links">
+                                <h4>Getting Started</h4>
+                                <p>A class that teaches students about the English language. During the early years, English is a very useful, important, and most of all fun class.</p>
+                                <p><a href="http://www.maxford.lk/" target="_blank">READ MORE</a></p>
+                                <p>A class that teaches students about the English language. During the early years, English is a very useful, important, and most of all fun class.</p>    
+                                <p><a href="http://www.maxford.lk/" target="_blank">READ MORE</a></p>
+                            </div>
+                        <br/><hr/><br/>
+                        <div class="maxford-footer-box-bottom-footer">
+                            <img id="Img2" src="img/icon.png" runat="server" />
+                            <address><br/>
+                                Maxford Higher Educational Institute,<br/><br/>
+                                207 / E, Galahitiyawa East, Ganemulla,<br/><br/>
+                                Sri Lanka<br/>
+                            </address>
+                            <ul>
+                                <li class="">
+                                    <a href="http://www.maxford.lk/mission/" class="first" onclick="#">Our Mission</a>
+                                </li>
+                                <li class="">
+                                    <a href="http://www.maxford.lk/vission/" class="" onclick="#">Our Vission</a>
+                                </li>
+                                <li class="">
+                                    <a href="http://www.maxford.lk/about/" class="" onclick="#">About Us</a>
+                                </li>
+                                <li class="last">
+                                    <a href="http://www.maxford.lk/contact/" class="last" onclick="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="maxford-footer-content-middle">        
+            <div class="maxford-footer-content-middle-border">
+                <div class="maxford-footer-content-middle-social">
+                    <h5><a style="color:#fff" id="maxford-footer-content-middle-social" >Our Social</a></h5>
+                    <ul class="maxford-footer-social" id="maxford-footer-content-middle-linkList-social" >
+                        <li class="facebook"><a href="https://www.facebook.com/maxfordlk" target="_blank">Facebook</a></li>
+                        <li class="google"><a href="https://plus.google.com/+MaxfordLkmaxford/" target="_blank">Google +</a></li>
+                        <li class="twitter"><a href="https://twitter.com/maxfordlk" target="_blank">Twitter</a></li>                
+                        <li class="youtube"><a href="https://www.youtube.com/channel/UCXFwQRaZYptT1HwFcs2iwTQ/" target="_blank">YouTube</a></li>
+                        <li class="rss"><a href="http://www.maxford.lk/feed/" target="_blank">Rss</a></li>
+                        <li class="newsletter"><a href="http://www.maxford.lk/newsletter/" target="_blank">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="maxford-footer-content-middle-services">
+                    <h5><a style="color:#fff" id="maxford-footer-content-middle-services" >Maxford Services</a></h5>
+                    <ul class="maxford-footer-services" id="maxford-footer-content-middle-linkList-services" >
+                        <li><a href="http://www.maxford.lk/services/" target="_blank">Services</a></li>
+                        <li><a href="http://www.maxford.lk/teachers/" target="_blank">Teachers</a></li>
+                        <li><a href="http://www.maxford.lk/students/" target="_blank">Students</a></li>
+                        <li><a href="http://www.maxford.lk/maxClasses/Default.aspx" target="_blank">Subjects</a></li>
+                        <li><a href="http://www.maxford.lk/maxClasses/Default.aspx" target="_blank">Classes</a></li>
+                        <li><a href="http://www.maxford.lk/class-fee/" target="_blank">Class Fee</a></li>
+                        <li><a href="http://www.maxford.lk/student-offers/" target="_blank">Student Offers</a></li>
+                        <li><a href="http://www.maxford.lk/registration/" target="_blank">Registration</a></li>
+                        <li><a href="http://www.maxford.lk/documentation/" target="_blank">Documentation</a></li>
+                        <li><a href="http://www.maxford.lk/downloads/" target="_blank">Downloads</a></li>
+                        <li><a href="http://www.maxford.lk/events/" target="_blank">Events</a></li>
+                        <li><a href="http://www.maxford.lk/news/" target="_blank">News</a></li>
+                        <li><a href="http://www.maxford.lk/Profile/" target="_blank">Profile</a></li>
+                    </ul>
+                </div>
+                <div class="maxford-footer-content-middle-community-and-support">
+                    <div class="toggler">
+                        <h5><a style="color:#fff" id="maxford-footer-content-middle-community" >Our Community</a></h5>
+                        <ul class="maxford-footer-community" id="maxford-footer-content-middle-linkList-community" >
+                            <li><a href="http://www.maxford.lk/Events/" target="_blank">Events</a></li>
+                            <li><a href="http://www.maxford.lk/updates/" target="_blank">Updates</a></li>
+                            <li><a href="http://www.maxford.lk/Debates/" target="_blank">Debates</a></li>
+                            <li><a href="http://www.maxford.lk/Debates-members/" target="_blank">Debates Members</a></li>
+                        </ul>
+                    </div>
+                    <div class="toggler">
+                        <h5><a style="color:#fff" id="maxford-footer-content-middle-support" >Support From Us</a></h5>
+                        <ul class="maxford-footer-support" id="maxford-footer-content-middle-linkList-support" >
+                            <li><a href="http://www.maxford.lk/Contact/" target="_blank">Contact Us</a></li>
+                            <li><a href="http://www.maxford.lk/About/" target="_blank">About Us</a></li>
+                            <li><a href="http://www.maxford.lk/support/" target="_blank">Support</a></li>
+                            <li><a href="http://www.maxford.lk/help/" target="_blank">Get Help</a></li>
+                            <li><a href="http://www.maxford.lk/careers/" target="_blank">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="maxford-footer-content-middle-location-and-account">
+                    <div class="toggler">
+                        <h5><a style="color:#fff" id="maxford-footer-content-middle-location" >Find Location</a></h5>
+                        <ul class="maxford-footer-location" id="maxford-footer-content-middle-linkList-location" >
+                            <li><a href="https://www.maxford.lk/ganemulla/" target="_blank">Ganemulla</a></li>
+                            <li><a href="https://www.maxford.lk/Google/" target="_blank">Google</a></li>
+                            <li><a href="http://www.maxford.lk/Bing/" target="_blank">Bing</a></li>
+                            <li><a href="https://www.maxford.lk/Halls/" target="_blank">Class Halls</a></li>
+                        </ul>
+                    </div>
+                    <div class="toggler">
+                        <h5><a style="color:#fff" id="maxford-footer-content-middle-account" >Account</a></h5>
+                        <ul class="maxford-footer-account" id="maxford-footer-content-middle-linkList-account" >
+                            <li><a href="http://www.maxford.lk/security/" target="_blank">Security</a></li>
+                            <li><a href="http://www.maxford.lk/privacy/" target="_blank">Privacy</a></li>
+                            <li><a href="http://www.maxford.lk/compliance/" target="_blank">Terms</a></li>
+                            <li><a href="http://www.maxford.lk/Conditions/" target="_blank">Conditions</a></li>
+                            <li><a href="http://www.maxford.lk/Regulations/" target="_blank">Regulations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maxford-footer-content-bottom">
+            <div class="maxford-footer-content-bottom-content">
+                <div class="maxford-footer-content-bottom-link-and-logo">
+                    <p><a href="http://www.eweo.org/" target="_blank"><img id="Img3" src="img/eweo.png" runat="server"/>EWEO.ORG</a></p>
+                </div>
+                <div class="maxford-footer-content-bottom-link">
+                    <p><a href="http://www.maxford.lk/" target="_blank">MAXFORD</a> © 2015 @ <a href="http://www.eweo.org/" target="_blank"> EWEO ORGANIZATION</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</form>
+
+
+
+<asp:ContentPlaceHolder ID="ContentPlaceHolderFooter" runat="server"></asp:ContentPlaceHolder>
+
+
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\GRIDE VIEW\UPLOAD\bin\UPLOAD.dll
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\GRIDE VIEW\UPLOAD\bin\UPLOAD.pdb
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\GRIDE VIEW\UPLOAD\obj\Debug\UPLOAD.dll
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\GRIDE VIEW\UPLOAD\obj\Debug\UPLOAD.pdb

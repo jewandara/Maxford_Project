@@ -1,0 +1,2911 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53182595-3172-405B-8E2B-7F5052FB518A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MAXFORD</RootNamespace>
+    <AssemblyName>MAXFORD</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CKEditor.NET, Version=3.6.6.2, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeCarvings.Piczard, Version=1.2.3.0, Culture=neutral, PublicKeyToken=88d00d4422733d60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CodeCarvings.Piczard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.7.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.0\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="TimePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d25e9f59e49c4d2f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TimePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Access.aspx" />
+    <Content Include="Account\AdminRedirect.aspx" />
+    <Content Include="Account\Admin\assets\bootstrap-carousel-swipe\bootstrap-carousel-swipe.js" />
+    <Content Include="Account\Admin\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Account\Admin\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Account\Admin\assets\css\Close.png" />
+    <Content Include="Account\Admin\assets\css\style.css" />
+    <Content Include="Account\Admin\assets\imagesloaded\imagesloaded.pkgd.min.js" />
+    <Content Include="Account\Admin\assets\images\database400x400-122.png" />
+    <Content Include="Account\Admin\assets\images\debates400x400-163.png" />
+    <Content Include="Account\Admin\assets\images\footer4590x79-183.png" />
+    <Content Include="Account\Admin\assets\images\logo-icon-3100x89-151.png" />
+    <Content Include="Account\Admin\assets\images\pages400x400-161.png" />
+    <Content Include="Account\Admin\assets\images\report400x400-187.png" />
+    <Content Include="Account\Admin\assets\jquery\jquery.min.js" />
+    <Content Include="Account\Admin\assets\masonry\masonry.pkgd.min.js" />
+    <Content Include="Account\Admin\assets\mobirise-gallery\script.js" />
+    <Content Include="Account\Admin\assets\mobirise-gallery\style.css" />
+    <Content Include="Account\Admin\assets\mobirise-slider\style.css" />
+    <Content Include="Account\Admin\assets\mobirise\css\mbr-additional.css" />
+    <Content Include="Account\Admin\assets\mobirise\css\style.css" />
+    <Content Include="Account\Admin\assets\mobirise\js\script.js" />
+    <Content Include="Account\Admin\assets\smooth-scroll\SmoothScroll.js" />
+    <Content Include="Account\Admin\Database\Default.aspx" />
+    <Content Include="Account\Admin\Database\Grade\Default.aspx" />
+    <Content Include="Account\Admin\Database\Grade\Edit.aspx" />
+    <Content Include="Account\Admin\Database\Grade\View.aspx" />
+    <Content Include="Account\Admin\Database\Hall\Default.aspx" />
+    <Content Include="Account\Admin\Database\Hall\Edit.aspx" />
+    <Content Include="Account\Admin\Database\Hall\View.aspx" />
+    <Content Include="Account\Admin\Database\img\Grade.png" />
+    <Content Include="Account\Admin\Database\img\Hall.png" />
+    <Content Include="Account\Admin\Database\img\Subjects.png" />
+    <Content Include="Account\Admin\Database\img\Teacher.png" />
+    <Content Include="Account\Admin\Database\Subject\Default.aspx" />
+    <Content Include="Account\Admin\Database\Subject\Edit.aspx" />
+    <Content Include="Account\Admin\Database\Subject\View.aspx" />
+    <Content Include="Account\Admin\Database\Teacher\Default.aspx" />
+    <Content Include="Account\Admin\Database\Teacher\Delete.aspx" />
+    <Content Include="Account\Admin\Database\Teacher\Edit.aspx" />
+    <Content Include="Account\Admin\Database\Teacher\New.aspx" />
+    <Content Include="Account\Admin\Database\Teacher\NewFolder1\Default.aspx" />
+    <Content Include="Account\Admin\Database\Teacher\NewFolder1\scripts\jquery-1.4.3.min.js" />
+    <Content Include="Account\Admin\Database\Teacher\View.aspx" />
+    <Content Include="Account\Admin\Debates\Comment\Default.aspx" />
+    <Content Include="Account\Admin\Debates\Debate\Default.aspx" />
+    <Content Include="Account\Admin\Debates\Debate\Delete.aspx" />
+    <Content Include="Account\Admin\Debates\Debate\Edit.aspx" />
+    <Content Include="Account\Admin\Debates\Default.aspx" />
+    <Content Include="Account\Admin\Debates\Event\Default.aspx" />
+    <Content Include="Account\Admin\Debates\img\debateName.png" />
+    <Content Include="Account\Admin\Debates\img\debateTopics.png" />
+    <Content Include="Account\Admin\Debates\img\members.png" />
+    <Content Include="Account\Admin\Debates\img\Other.png" />
+    <Content Include="Account\Admin\Debates\Team\Default.aspx" />
+    <Content Include="Account\Admin\Debates\Team\Edit.aspx" />
+    <Content Include="Account\Admin\Debates\Team\View.aspx" />
+    <Content Include="Account\Admin\Email\Default.aspx" />
+    <Content Include="Account\Admin\Help\Default.aspx" />
+    <Content Include="Account\Admin\Manage.aspx" />
+    <Content Include="Account\Admin\Reports\Default.aspx" />
+    <Content Include="Account\Admin\Reports\Downloads\Default.aspx" />
+    <Content Include="Account\Admin\Reports\Downloads\View.aspx" />
+    <Content Include="Account\Admin\Reports\Events\Default.aspx" />
+    <Content Include="Account\Admin\Reports\Events\View.aspx" />
+    <Content Include="Account\Admin\Reports\img\downloadReport.png" />
+    <Content Include="Account\Admin\Reports\img\EventsReport.png" />
+    <Content Include="Account\Admin\Reports\img\newsReport.png" />
+    <Content Include="Account\Admin\Reports\img\studentReport.png" />
+    <Content Include="Account\Admin\Reports\News\Default.aspx" />
+    <Content Include="Account\Admin\Reports\News\View.aspx" />
+    <Content Include="Account\Admin\Reports\Registration\Default.aspx" />
+    <Content Include="Account\Admin\Reports\Registration\View.aspx" />
+    <Content Include="Account\Admin\WebPage\Banner\Default.aspx" />
+    <Content Include="Account\Admin\WebPage\Default.aspx" />
+    <Content Include="Account\Admin\WebPage\img\benner.png" />
+    <Content Include="Account\Admin\WebPage\img\result.png" />
+    <Content Include="Account\Admin\WebPage\img\slide.png" />
+    <Content Include="Account\Admin\WebPage\img\sub.png" />
+    <Content Include="Account\Admin\WebPage\Main\Default.aspx" />
+    <Content Include="Account\Admin\WebPage\Main\Edit.aspx" />
+    <Content Include="Account\Admin\WebPage\Main\EditSlide.aspx" />
+    <Content Include="Account\Admin\WebPage\Main\Event.aspx" />
+    <Content Include="Account\Admin\WebPage\Main\Footer.aspx" />
+    <Content Include="Account\Admin\WebPage\Main\Header.aspx" />
+    <Content Include="Account\Admin\WebPage\Main\Slide.aspx" />
+    <Content Include="Account\Admin\WebPage\Main\View.aspx" />
+    <Content Include="Account\Admin\WebPage\Pages\Default.aspx" />
+    <Content Include="Account\Admin\WebPage\Pages\Edit.aspx" />
+    <Content Include="Account\Admin\WebPage\Progress\Default.aspx" />
+    <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\Default.aspx" />
+    <Content Include="Account\Help.aspx" />
+    <Content Include="Account\Images\maxford_login_icon.png" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Privacy.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\Reset_Password.aspx" />
+    <Content Include="Account\Security.aspx" />
+    <Content Include="Account\Student\Articals\Artical.aspx" />
+    <Content Include="Account\Student\Articals\Default.aspx" />
+    <Content Include="Account\Student\Articals\style.css" />
+    <Content Include="Account\Student\assets\bootstrap-carousel-swipe\bootstrap-carousel-swipe.js" />
+    <Content Include="Account\Student\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Account\Student\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Account\Student\assets\css\Close.png" />
+    <Content Include="Account\Student\assets\css\form.css" />
+    <Content Include="Account\Student\assets\css\style.css" />
+    <Content Include="Account\Student\assets\imagesloaded\imagesloaded.pkgd.min.js" />
+    <Content Include="Account\Student\assets\images\Articals.png" />
+    <Content Include="Account\Student\assets\images\Class.png" />
+    <Content Include="Account\Student\assets\images\Exams.png" />
+    <Content Include="Account\Student\assets\images\footer4590x79-183.png" />
+    <Content Include="Account\Student\assets\images\logo-icon-3100x89-151.png" />
+    <Content Include="Account\Student\assets\images\Profile.png" />
+    <Content Include="Account\Student\assets\images\TimeTable.png" />
+    <Content Include="Account\Student\assets\jquery\jquery.min.js" />
+    <Content Include="Account\Student\assets\masonry\masonry.pkgd.min.js" />
+    <Content Include="Account\Student\assets\mobirise-gallery\script.js" />
+    <Content Include="Account\Student\assets\mobirise-gallery\style.css" />
+    <Content Include="Account\Student\assets\mobirise-slider\style.css" />
+    <Content Include="Account\Student\assets\mobirise\css\mbr-additional.css" />
+    <Content Include="Account\Student\assets\mobirise\css\style.css" />
+    <Content Include="Account\Student\assets\mobirise\js\script.js" />
+    <Content Include="Account\Student\assets\smooth-scroll\SmoothScroll.js" />
+    <Content Include="Account\Student\Class\Default.aspx" />
+    <Content Include="Account\Student\Class\Request.aspx" />
+    <Content Include="Account\Student\Class\style.css" />
+    <Content Include="Account\Student\Class\View.aspx" />
+    <Content Include="Account\Student\Contact.aspx" />
+    <Content Include="Account\Student\Default.aspx" />
+    <Content Include="Account\Student\Exams\Default.aspx" />
+    <Content Include="Account\Student\Exams\style.css" />
+    <Content Include="Account\Student\Help.aspx" />
+    <Content Include="Account\Student\Manage.aspx" />
+    <Content Include="Account\Student\Profile\Default.aspx" />
+    <Content Include="Account\Student\Profile\Profile.aspx" />
+    <Content Include="Account\Student\Profile\style.css" />
+    <Content Include="Account\Student\Settings.aspx" />
+    <Content Include="Account\Style\register.css" />
+    <Content Include="Account\Style\style.css" />
+    <Content Include="Account\Teacher\Article\Default.aspx" />
+    <Content Include="Account\Teacher\Article\Edit.aspx" />
+    <Content Include="Account\Teacher\assets\bootstrap-carousel-swipe\bootstrap-carousel-swipe.js" />
+    <Content Include="Account\Teacher\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Account\Teacher\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Account\Teacher\assets\css\Close.png" />
+    <Content Include="Account\Teacher\assets\css\form.css" />
+    <Content Include="Account\Teacher\assets\css\style.css" />
+    <Content Include="Account\Teacher\assets\imagesloaded\imagesloaded.pkgd.min.js" />
+    <Content Include="Account\Teacher\assets\images\Class.png" />
+    <Content Include="Account\Teacher\assets\images\Downloads.png" />
+    <Content Include="Account\Teacher\assets\images\Email.png" />
+    <Content Include="Account\Teacher\assets\images\Events.png" />
+    <Content Include="Account\Teacher\assets\images\footer4590x79-183.png" />
+    <Content Include="Account\Teacher\assets\images\logo-icon-3100x89-151.png" />
+    <Content Include="Account\Teacher\assets\images\Mypage.png" />
+    <Content Include="Account\Teacher\assets\images\Profile.png" />
+    <Content Include="Account\Teacher\assets\images\News.png" />
+    <Content Include="Account\Teacher\assets\images\Students.png" />
+    <Content Include="Account\Teacher\assets\jquery\jquery.min.js" />
+    <Content Include="Account\Teacher\assets\masonry\masonry.pkgd.min.js" />
+    <Content Include="Account\Teacher\assets\mobirise-gallery\script.js" />
+    <Content Include="Account\Teacher\assets\mobirise-gallery\style.css" />
+    <Content Include="Account\Teacher\assets\mobirise-slider\style.css" />
+    <Content Include="Account\Teacher\assets\mobirise\css\mbr-additional.css" />
+    <Content Include="Account\Teacher\assets\mobirise\css\style.css" />
+    <Content Include="Account\Teacher\assets\mobirise\js\script.js" />
+    <Content Include="Account\Teacher\assets\smooth-scroll\SmoothScroll.js" />
+    <Content Include="Account\Teacher\Class\Classes.aspx" />
+    <Content Include="Account\Teacher\Class\css\Style.css" />
+    <Content Include="Account\Teacher\Class\Default.aspx" />
+    <Content Include="Account\Teacher\Class\Edit.aspx" />
+    <Content Include="Account\Teacher\Class\Friday.aspx" />
+    <Content Include="Account\Teacher\Class\Hall.aspx" />
+    <Content Include="Account\Teacher\Class\img\Class.png" />
+    <Content Include="Account\Teacher\Class\img\Hall.png" />
+    <Content Include="Account\Teacher\Class\img\Subjects.png" />
+    <Content Include="Account\Teacher\Class\img\timeTable2.png" />
+    <Content Include="Account\Teacher\Class\Monday.aspx" />
+    <Content Include="Account\Teacher\Class\Saturday.aspx" />
+    <Content Include="Account\Teacher\Class\Subjects.aspx" />
+    <Content Include="Account\Teacher\Class\Sunday.aspx" />
+    <Content Include="Account\Teacher\Class\Thursday.aspx" />
+    <Content Include="Account\Teacher\Class\TimeTable.aspx" />
+    <Content Include="Account\Teacher\Class\Tuesday.aspx" />
+    <Content Include="Account\Teacher\Class\View.aspx" />
+    <Content Include="Account\Teacher\Class\Wednesday.aspx" />
+    <Content Include="Account\Teacher\Contact.aspx" />
+    <Content Include="Account\Teacher\Default.aspx" />
+    <Content Include="Account\Teacher\Download\Default.aspx" />
+    <Content Include="Account\Teacher\Download\Edit.aspx" />
+    <Content Include="Account\Teacher\Download\underConstruction.png" />
+    <Content Include="Account\Teacher\Download\View.aspx" />
+    <Content Include="Account\Teacher\Email\Default.aspx" />
+    <Content Include="Account\Teacher\Email\images\PCEmail.png" />
+    <Content Include="Account\Teacher\Email\images\PHONEEmail.png" />
+    <Content Include="Account\Teacher\Email\underConstruction.png" />
+    <Content Include="Account\Teacher\Event\Default.aspx" />
+    <Content Include="Account\Teacher\Event\Edit.aspx" />
+    <Content Include="Account\Teacher\Event\View.aspx" />
+    <Content Include="Account\Teacher\Help.aspx" />
+    <Content Include="Account\Teacher\News\Default.aspx" />
+    <Content Include="Account\Teacher\News\Edit.aspx" />
+    <Content Include="Account\Teacher\News\View.aspx" />
+    <Content Include="Account\Teacher\Page\Default.aspx" />
+    <Content Include="Account\Teacher\Page\Edit.aspx" />
+    <Content Include="Account\Teacher\Page\img\addver.png" />
+    <Content Include="Account\Teacher\Page\img\main.png" />
+    <Content Include="Account\Teacher\Page\img\result.png" />
+    <Content Include="Account\Teacher\Page\img\sub.png" />
+    <Content Include="Account\Teacher\Page\View.aspx" />
+    <Content Include="Account\Teacher\Profile\Certificates.aspx" />
+    <Content Include="Account\Teacher\Profile\Contacts.aspx" />
+    <Content Include="Account\Teacher\Profile\Default.aspx" />
+    <Content Include="Account\Teacher\Profile\Details.aspx" />
+    <Content Include="Account\Teacher\Profile\Image.aspx" />
+    <Content Include="Account\Teacher\Profile\img\Contact.png" />
+    <Content Include="Account\Teacher\Profile\img\Details.png" />
+    <Content Include="Account\Teacher\Profile\img\Links.png" />
+    <Content Include="Account\Teacher\Profile\img\Location.png" />
+    <Content Include="Account\Teacher\Profile\img\PassWord.png" />
+    <Content Include="Account\Teacher\Profile\img\Photo.png" />
+    <Content Include="Account\Teacher\Profile\img\Privacy.png" />
+    <Content Include="Account\Teacher\Profile\img\Sertifi.png" />
+    <Content Include="Account\Teacher\Profile\Links.aspx" />
+    <Content Include="Account\Teacher\Profile\Location.aspx" />
+    <Content Include="Account\Teacher\Profile\Password.aspx" />
+    <Content Include="Account\Teacher\Profile\Privacy.aspx" />
+    <Content Include="Account\Teacher\Settings.aspx" />
+    <Content Include="Account\Teacher\Profile\View.aspx" />
+    <Content Include="Account\Teacher\Student\Default.aspx" />
+    <Content Include="Account\Teacher\Student\img\attendance.png" />
+    <Content Include="Account\Teacher\Student\img\exams.png" />
+    <Content Include="Account\Teacher\Student\img\requests.png" />
+    <Content Include="Account\Teacher\Student\img\students.png" />
+    <Content Include="Account\Teacher\Student\Request.aspx" />
+    <Content Include="Account\Teacher\Student\View.aspx" />
+    <Content Include="Account\Terms_And_Conditions.aspx" />
+    <Content Include="App_Data\CodeCarvings.Piczard.en-ZW.resx.xml" />
+    <Content Include="Articles\Articles.aspx" />
+    <Content Include="Articles\css\style.css" />
+    <Content Include="Articles\Default.aspx" />
+    <Content Include="Articles\img\11452070194_fd06f09509_o-small.jpg" />
+    <Content Include="Articles\img\11452469094_9d17db34ba_o-small.jpg" />
+    <Content Include="Articles\img\11452469094_9d17db34ba_o-tiny.jpg" />
+    <Content Include="Articles\img\15191329494_13a0e4519d_m.jpg" />
+    <Content Include="Articles\img\15191398724_4d28af5a00_m.jpg" />
+    <Content Include="Articles\img\15625420609_604608df68_m.jpg" />
+    <Content Include="Articles\img\15625821458_fb65930f5d_m.jpg" />
+    <Content Include="Articles\img\15626071877_0eb094676f_m.jpg" />
+    <Content Include="Articles\img\15626111917_39238e8d8b_m.jpg" />
+    <Content Include="Articles\img\15626346010_b4ae272dc4_m.jpg" />
+    <Content Include="Articles\img\15809426101_0801e58327_m.jpg" />
+    <Content Include="Articles\img\3AhivlZO0us.html" />
+    <Content Include="Articles\img\6930895190_59266748d7_o-small.jpg" />
+    <Content Include="Articles\img\adver.jpg" />
+    <Content Include="Articles\img\adver.png" />
+    <Content Include="Articles\img\Articals.gif" />
+    <Content Include="Articles\img\band-171128-small.jpg" />
+    <Content Include="Articles\img\band-171128-tiny.jpg" />
+    <Content Include="Articles\img\berries-gallery.jpg" />
+    <Content Include="Articles\img\berries-tiny.jpg" />
+    <Content Include="Articles\img\Bird-Profile-Wellington-New-Zealand-gallery.jpg" />
+    <Content Include="Articles\img\Bird-Profile-Wellington-New-Zealand-medium.jpg" />
+    <Content Include="Articles\img\boat-20557-medium.jpg" />
+    <Content Include="Articles\img\branches-238379-medium.jpg" />
+    <Content Include="Articles\img\car-gallery.jpg" />
+    <Content Include="Articles\img\child-109158-small.jpg" />
+    <Content Include="Articles\img\climb-173-small.jpg" />
+    <Content Include="Articles\img\coffee-206142-medium.jpg" />
+    <Content Include="Articles\img\day-of-the-dead-204539-small.jpg" />
+    <Content Include="Articles\img\day-of-the-dead-204539-tiny.jpg" />
+    <Content Include="Articles\img\douglas-x-3-stiletto-11119-tiny.jpg" />
+    <Content Include="Articles\img\dreamcatcher-gallery.jpg" />
+    <Content Include="Articles\img\drugs-21987-small.jpg" />
+    <Content Include="Articles\img\DSC00441-avatar.jpg" />
+    <Content Include="Articles\img\DSC02979-avatar.jpg" />
+    <Content Include="Articles\img\DSC03847-avatar.jpg" />
+    <Content Include="Articles\img\event-banner.png" />
+    <Content Include="Articles\img\events.gif" />
+    <Content Include="Articles\img\eweo.png" />
+    <Content Include="Articles\img\hazy-trees-gallery.jpg" />
+    <Content Include="Articles\img\header-news.png" />
+    <Content Include="Articles\img\hochbunker-gallery.jpg" />
+    <Content Include="Articles\img\icon.png" />
+    <Content Include="Articles\img\insulin-113200-medium.jpg" />
+    <Content Include="Articles\img\insulin-113200-small.jpg" />
+    <Content Include="Articles\img\ljYYdBAH_normal.jpeg" />
+    <Content Include="Articles\img\logo.png" />
+    <Content Include="Articles\img\madebyvadim-small.jpg" />
+    <Content Include="Articles\img\maracaibo-110257-small.jpg" />
+    <Content Include="Articles\img\mason-jars-gallery.jpg" />
+    <Content Include="Articles\img\max-events.gif" />
+    <Content Include="Articles\img\max-events.png" />
+    <Content Include="Articles\img\maxf.png" />
+    <Content Include="Articles\img\morocco-123957-tiny.jpg" />
+    <Content Include="Articles\img\nepal-397-small.jpg" />
+    <Content Include="Articles\img\nepal-397-tiny.jpg" />
+    <Content Include="Articles\img\news.gif" />
+    <Content Include="Articles\img\oulu-183452-small.jpg" />
+    <Content Include="Articles\img\park-place-gallery.jpg" />
+    <Content Include="Articles\img\phone-2319-small.jpg" />
+    <Content Include="Articles\img\pup-209148-medium.jpg" />
+    <Content Include="Articles\img\salt-lake-74570-small.jpg" />
+    <Content Include="Articles\img\shadow.png" />
+    <Content Include="Articles\img\snapshot_20120929_133548-E2-avatar.jpg" />
+    <Content Include="Articles\img\speaker-73187-small.jpg" />
+    <Content Include="Articles\img\stones-hi-res-carousel-medium.jpg" />
+    <Content Include="Articles\img\stones-hi-res-gallery.jpg" />
+    <Content Include="Articles\img\street-66776-small.jpg" />
+    <Content Include="Articles\img\teachers.jpg" />
+    <Content Include="Articles\img\tracks-gallery.jpg" />
+    <Content Include="Articles\img\twitter-icon.png" />
+    <Content Include="Articles\img\ulm-58271-medium.jpg" />
+    <Content Include="Articles\img\unsplash_522b53fb137bb_1-gallery.jpg" />
+    <Content Include="Articles\img\unsplash_524e281add2d1_1-gallery.jpg" />
+    <Content Include="Articles\img\unsplash_524e281add2d1_1-tiny.jpg" />
+    <Content Include="Articles\img\unsplash_525a7e89953d1_1-gallery.jpg" />
+    <Content Include="Articles\img\unsplash_525d7892901ff_1-gallery.jpg" />
+    <Content Include="Articles\img\unsplash_5261cd0183e57_1-tiny.jpg" />
+    <Content Include="Articles\img\unsplash_527bf4b4ae00d_1-medium.jpg" />
+    <Content Include="Articles\img\unsplash_527bf56961712_1-gallery.jpg" />
+    <Content Include="Articles\img\unsplash_527e864de3770_1-small.jpg" />
+    <Content Include="Articles\img\unsplash_528a8fb8a276d_1-gallery.jpg" />
+    <Content Include="Articles\img\unsplash_528a8fb8a276d_1-medium.jpg" />
+    <Content Include="Articles\img\unsplash_528cba6de78e5_1-tiny.jpg" />
+    <Content Include="Articles\img\unsplash_529f51e60b51c_1-carousel-medium.jpg" />
+    <Content Include="Articles\img\unsplash_529f51e60b51c_1-medium.jpg" />
+    <Content Include="Articles\img\unsplash_52b5ec8515a34_1-gallery.jpg" />
+    <Content Include="Articles\img\unsplash_52bf2bb8d2dd0_1-carousel-medium.jpg" />
+    <Content Include="Articles\img\wii-medium.jpg" />
+    <Content Include="Articles\img\wii-small.jpg" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bodyimg.png" />
+    <Content Include="Content\footerStyle.css" />
+    <Content Include="Content\icon.png" />
+    <Content Include="Content\localhome.js" />
+    <Content Include="Content\logo.png" />
+    <Content Include="Content\search-max.png" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\Slide\a\jquery.js" />
+    <Content Include="Content\Slide\a\script.js" />
+    <Content Include="Content\Slide\a\style.css" />
+    <Content Include="Content\Slide\a\style.mod.css" />
+    <Content Include="Content\Slide\a\wowslider.js" />
+    <Content Include="Content\Slide\a\wowslider.mod.js" />
+    <Content Include="Content\Slide\data1\images\1.jpg" />
+    <Content Include="Content\Slide\data1\images\2.jpg" />
+    <Content Include="Content\Slide\data1\images\3.jpg" />
+    <Content Include="Content\Slide\data1\images\img_0230.jpg" />
+    <Content Include="Content\Slide\data1\images\img_0802.jpg" />
+    <Content Include="Content\Slide\engine1\jquery.js" />
+    <Content Include="Content\Slide\engine1\script.js" />
+    <Content Include="Content\Slide\engine1\style.css" />
+    <Content Include="Content\Slide\engine1\style.mod.css" />
+    <Content Include="Content\Slide\engine1\wowslider.js" />
+    <Content Include="Content\Slide\engine1\wowslider.mod.js" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Debates\css\style.css" />
+    <Content Include="Debates\Default.aspx" />
+    <Content Include="Debates\img\11452070194_fd06f09509_o-small.jpg" />
+    <Content Include="Debates\img\11452469094_9d17db34ba_o-small.jpg" />
+    <Content Include="Debates\img\11452469094_9d17db34ba_o-tiny.jpg" />
+    <Content Include="Debates\img\15191329494_13a0e4519d_m.jpg" />
+    <Content Include="Debates\img\15191398724_4d28af5a00_m.jpg" />
+    <Content Include="Debates\img\15625420609_604608df68_m.jpg" />
+    <Content Include="Debates\img\15625821458_fb65930f5d_m.jpg" />
+    <Content Include="Debates\img\15626071877_0eb094676f_m.jpg" />
+    <Content Include="Debates\img\15626111917_39238e8d8b_m.jpg" />
+    <Content Include="Debates\img\15626346010_b4ae272dc4_m.jpg" />
+    <Content Include="Debates\img\15809426101_0801e58327_m.jpg" />
+    <Content Include="Debates\img\3AhivlZO0us.html" />
+    <Content Include="Debates\img\6930895190_59266748d7_o-small.jpg" />
+    <Content Include="Debates\img\adver.png" />
+    <Content Include="Debates\img\band-171128-small.jpg" />
+    <Content Include="Debates\img\band-171128-tiny.jpg" />
+    <Content Include="Debates\img\berries-gallery.jpg" />
+    <Content Include="Debates\img\berries-tiny.jpg" />
+    <Content Include="Debates\img\Bird-Profile-Wellington-New-Zealand-gallery.jpg" />
+    <Content Include="Debates\img\Bird-Profile-Wellington-New-Zealand-medium.jpg" />
+    <Content Include="Debates\img\boat-20557-medium.jpg" />
+    <Content Include="Debates\img\branches-238379-medium.jpg" />
+    <Content Include="Debates\img\car-gallery.jpg" />
+    <Content Include="Debates\img\child-109158-small.jpg" />
+    <Content Include="Debates\img\climb-173-small.jpg" />
+    <Content Include="Debates\img\coffee-206142-medium.jpg" />
+    <Content Include="Debates\img\day-of-the-dead-204539-small.jpg" />
+    <Content Include="Debates\img\day-of-the-dead-204539-tiny.jpg" />
+    <Content Include="Debates\img\Debate.png" />
+    <Content Include="Debates\img\douglas-x-3-stiletto-11119-tiny.jpg" />
+    <Content Include="Debates\img\dreamcatcher-gallery.jpg" />
+    <Content Include="Debates\img\drugs-21987-small.jpg" />
+    <Content Include="Debates\img\DSC00441-avatar.jpg" />
+    <Content Include="Debates\img\DSC02979-avatar.jpg" />
+    <Content Include="Debates\img\DSC03847-avatar.jpg" />
+    <Content Include="Debates\img\event-banner.png" />
+    <Content Include="Debates\img\events.gif" />
+    <Content Include="Debates\img\eweo.png" />
+    <Content Include="Debates\img\hazy-trees-gallery.jpg" />
+    <Content Include="Debates\img\header-news.png" />
+    <Content Include="Debates\img\hochbunker-gallery.jpg" />
+    <Content Include="Debates\img\icon.png" />
+    <Content Include="Debates\img\insulin-113200-medium.jpg" />
+    <Content Include="Debates\img\insulin-113200-small.jpg" />
+    <Content Include="Debates\img\ljYYdBAH_normal.jpeg" />
+    <Content Include="Debates\img\logo.png" />
+    <Content Include="Debates\img\madebyvadim-small.jpg" />
+    <Content Include="Debates\img\maracaibo-110257-small.jpg" />
+    <Content Include="Debates\img\mason-jars-gallery.jpg" />
+    <Content Include="Debates\img\max-events.gif" />
+    <Content Include="Debates\img\max-events.png" />
+    <Content Include="Debates\img\maxf.png" />
+    <Content Include="Debates\img\morocco-123957-tiny.jpg" />
+    <Content Include="Debates\img\nepal-397-small.jpg" />
+    <Content Include="Debates\img\nepal-397-tiny.jpg" />
+    <Content Include="Debates\img\news.gif" />
+    <Content Include="Debates\img\oulu-183452-small.jpg" />
+    <Content Include="Debates\img\park-place-gallery.jpg" />
+    <Content Include="Debates\img\phone-2319-small.jpg" />
+    <Content Include="Debates\img\pup-209148-medium.jpg" />
+    <Content Include="Debates\img\salt-lake-74570-small.jpg" />
+    <Content Include="Debates\img\shadow.png" />
+    <Content Include="Debates\img\snapshot_20120929_133548-E2-avatar.jpg" />
+    <Content Include="Debates\img\speaker-73187-small.jpg" />
+    <Content Include="Debates\img\stones-hi-res-carousel-medium.jpg" />
+    <Content Include="Debates\img\stones-hi-res-gallery.jpg" />
+    <Content Include="Debates\img\street-66776-small.jpg" />
+    <Content Include="Debates\img\tracks-gallery.jpg" />
+    <Content Include="Debates\img\ulm-58271-medium.jpg" />
+    <Content Include="Debates\img\unsplash_522b53fb137bb_1-gallery.jpg" />
+    <Content Include="Debates\img\unsplash_524e281add2d1_1-gallery.jpg" />
+    <Content Include="Debates\img\unsplash_524e281add2d1_1-tiny.jpg" />
+    <Content Include="Debates\img\unsplash_525a7e89953d1_1-gallery.jpg" />
+    <Content Include="Debates\img\unsplash_525d7892901ff_1-gallery.jpg" />
+    <Content Include="Debates\img\unsplash_5261cd0183e57_1-tiny.jpg" />
+    <Content Include="Debates\img\unsplash_527bf4b4ae00d_1-medium.jpg" />
+    <Content Include="Debates\img\unsplash_527bf56961712_1-gallery.jpg" />
+    <Content Include="Debates\img\unsplash_527e864de3770_1-small.jpg" />
+    <Content Include="Debates\img\unsplash_528a8fb8a276d_1-gallery.jpg" />
+    <Content Include="Debates\img\unsplash_528a8fb8a276d_1-medium.jpg" />
+    <Content Include="Debates\img\unsplash_528cba6de78e5_1-tiny.jpg" />
+    <Content Include="Debates\img\unsplash_529f51e60b51c_1-carousel-medium.jpg" />
+    <Content Include="Debates\img\unsplash_529f51e60b51c_1-medium.jpg" />
+    <Content Include="Debates\img\unsplash_52b5ec8515a34_1-gallery.jpg" />
+    <Content Include="Debates\img\unsplash_52bf2bb8d2dd0_1-carousel-medium.jpg" />
+    <Content Include="Debates\img\wii-medium.jpg" />
+    <Content Include="Debates\img\wii-small.jpg" />
+    <Content Include="Default.aspx" />
+    <Content Include="Events\css\style.css" />
+    <Content Include="Events\Default.aspx" />
+    <Content Include="Events\img\11452070194_fd06f09509_o-small.jpg" />
+    <Content Include="Events\img\11452469094_9d17db34ba_o-small.jpg" />
+    <Content Include="Events\img\11452469094_9d17db34ba_o-tiny.jpg" />
+    <Content Include="Events\img\15191329494_13a0e4519d_m.jpg" />
+    <Content Include="Events\img\15191398724_4d28af5a00_m.jpg" />
+    <Content Include="Events\img\15625420609_604608df68_m.jpg" />
+    <Content Include="Events\img\15625821458_fb65930f5d_m.jpg" />
+    <Content Include="Events\img\15626071877_0eb094676f_m.jpg" />
+    <Content Include="Events\img\15626111917_39238e8d8b_m.jpg" />
+    <Content Include="Events\img\15626346010_b4ae272dc4_m.jpg" />
+    <Content Include="Events\img\15809426101_0801e58327_m.jpg" />
+    <Content Include="Events\img\3AhivlZO0us.html" />
+    <Content Include="Events\img\6930895190_59266748d7_o-small.jpg" />
+    <Content Include="Events\img\adver.png" />
+    <Content Include="Events\img\band-171128-small.jpg" />
+    <Content Include="Events\img\band-171128-tiny.jpg" />
+    <Content Include="Events\img\berries-gallery.jpg" />
+    <Content Include="Events\img\berries-tiny.jpg" />
+    <Content Include="Events\img\Bird-Profile-Wellington-New-Zealand-gallery.jpg" />
+    <Content Include="Events\img\Bird-Profile-Wellington-New-Zealand-medium.jpg" />
+    <Content Include="Events\img\boat-20557-medium.jpg" />
+    <Content Include="Events\img\branches-238379-medium.jpg" />
+    <Content Include="Events\img\car-gallery.jpg" />
+    <Content Include="Events\img\child-109158-small.jpg" />
+    <Content Include="Events\img\climb-173-small.jpg" />
+    <Content Include="Events\img\coffee-206142-medium.jpg" />
+    <Content Include="Events\img\day-of-the-dead-204539-small.jpg" />
+    <Content Include="Events\img\day-of-the-dead-204539-tiny.jpg" />
+    <Content Include="Events\img\douglas-x-3-stiletto-11119-tiny.jpg" />
+    <Content Include="Events\img\dreamcatcher-gallery.jpg" />
+    <Content Include="Events\img\drugs-21987-small.jpg" />
+    <Content Include="Events\img\DSC00441-avatar.jpg" />
+    <Content Include="Events\img\DSC02979-avatar.jpg" />
+    <Content Include="Events\img\DSC03847-avatar.jpg" />
+    <Content Include="Events\img\event-banner.png" />
+    <Content Include="Events\img\events.gif" />
+    <Content Include="Events\img\eweo.png" />
+    <Content Include="Events\img\hazy-trees-gallery.jpg" />
+    <Content Include="Events\img\header-news.png" />
+    <Content Include="Events\img\hochbunker-gallery.jpg" />
+    <Content Include="Events\img\icon.png" />
+    <Content Include="Events\img\insulin-113200-medium.jpg" />
+    <Content Include="Events\img\insulin-113200-small.jpg" />
+    <Content Include="Events\img\ljYYdBAH_normal.jpeg" />
+    <Content Include="Events\img\logo.png" />
+    <Content Include="Events\img\madebyvadim-small.jpg" />
+    <Content Include="Events\img\maracaibo-110257-small.jpg" />
+    <Content Include="Events\img\mason-jars-gallery.jpg" />
+    <Content Include="Events\img\max-events.gif" />
+    <Content Include="Events\img\max-events.png" />
+    <Content Include="Events\img\maxf.png" />
+    <Content Include="Events\img\morocco-123957-tiny.jpg" />
+    <Content Include="Events\img\nepal-397-small.jpg" />
+    <Content Include="Events\img\nepal-397-tiny.jpg" />
+    <Content Include="Events\img\news.gif" />
+    <Content Include="Events\img\oulu-183452-small.jpg" />
+    <Content Include="Events\img\park-place-gallery.jpg" />
+    <Content Include="Events\img\phone-2319-small.jpg" />
+    <Content Include="Events\img\pup-209148-medium.jpg" />
+    <Content Include="Events\img\salt-lake-74570-small.jpg" />
+    <Content Include="Events\img\shadow.png" />
+    <Content Include="Events\img\snapshot_20120929_133548-E2-avatar.jpg" />
+    <Content Include="Events\img\speaker-73187-small.jpg" />
+    <Content Include="Events\img\stones-hi-res-carousel-medium.jpg" />
+    <Content Include="Events\img\stones-hi-res-gallery.jpg" />
+    <Content Include="Events\img\street-66776-small.jpg" />
+    <Content Include="Events\img\tracks-gallery.jpg" />
+    <Content Include="Events\img\ulm-58271-medium.jpg" />
+    <Content Include="Events\img\unsplash_522b53fb137bb_1-gallery.jpg" />
+    <Content Include="Events\img\unsplash_524e281add2d1_1-gallery.jpg" />
+    <Content Include="Events\img\unsplash_524e281add2d1_1-tiny.jpg" />
+    <Content Include="Events\img\unsplash_525a7e89953d1_1-gallery.jpg" />
+    <Content Include="Events\img\unsplash_525d7892901ff_1-gallery.jpg" />
+    <Content Include="Events\img\unsplash_5261cd0183e57_1-tiny.jpg" />
+    <Content Include="Events\img\unsplash_527bf4b4ae00d_1-medium.jpg" />
+    <Content Include="Events\img\unsplash_527bf56961712_1-gallery.jpg" />
+    <Content Include="Events\img\unsplash_527e864de3770_1-small.jpg" />
+    <Content Include="Events\img\unsplash_528a8fb8a276d_1-gallery.jpg" />
+    <Content Include="Events\img\unsplash_528a8fb8a276d_1-medium.jpg" />
+    <Content Include="Events\img\unsplash_528cba6de78e5_1-tiny.jpg" />
+    <Content Include="Events\img\unsplash_529f51e60b51c_1-carousel-medium.jpg" />
+    <Content Include="Events\img\unsplash_529f51e60b51c_1-medium.jpg" />
+    <Content Include="Events\img\unsplash_52b5ec8515a34_1-gallery.jpg" />
+    <Content Include="Events\img\unsplash_52bf2bb8d2dd0_1-carousel-medium.jpg" />
+    <Content Include="Events\img\wii-medium.jpg" />
+    <Content Include="Events\img\wii-small.jpg" />
+    <Content Include="Account\Forget_Password.aspx" />
+    <Content Include="favicon2.ico" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="maxClasses\Advanced.aspx" />
+    <Content Include="maxClasses\css\style.css" />
+    <Content Include="maxClasses\Default.aspx" />
+    <Content Include="maxClasses\images\advance.jpg" />
+    <Content Include="maxClasses\images\headerBg.jpg" />
+    <Content Include="maxClasses\images\headerBg.png" />
+    <Content Include="maxClasses\images\jobotic_bubble.png" />
+    <Content Include="maxClasses\images\loago.png" />
+    <Content Include="maxClasses\images\logo.png" />
+    <Content Include="maxClasses\images\logo2.png" />
+    <Content Include="maxClasses\images\more.gif" />
+    <Content Include="maxClasses\images\ordinary.jpg" />
+    <Content Include="maxClasses\images\ordlevel.jpg" />
+    <Content Include="maxClasses\images\point.png" />
+    <Content Include="maxClasses\images\primary.jpg" />
+    <Content Include="maxClasses\images\pro.jpg" />
+    <Content Include="maxClasses\images\register.png" />
+    <Content Include="maxClasses\images\scholarship.jpg" />
+    <Content Include="maxClasses\images\subjects.jpg" />
+    <Content Include="maxClasses\Ordinary.aspx" />
+    <Content Include="maxClasses\Primary.aspx" />
+    <Content Include="maxClasses\Secondary.aspx" />
+    <Content Include="maxSubject\AdvancedLevel.aspx" />
+    <Content Include="maxSubject\css\style.css" />
+    <Content Include="maxSubject\Default.aspx" />
+    <Content Include="maxSubject\images\advance.jpg" />
+    <Content Include="maxSubject\images\headerBg.jpg" />
+    <Content Include="maxSubject\images\headerBg.png" />
+    <Content Include="maxSubject\images\jobotic_bubble.png" />
+    <Content Include="maxSubject\images\loago.png" />
+    <Content Include="maxSubject\images\logo.png" />
+    <Content Include="maxSubject\images\logo2.png" />
+    <Content Include="maxSubject\images\more.gif" />
+    <Content Include="maxSubject\images\ordinary.jpg" />
+    <Content Include="maxSubject\images\ordlevel.jpg" />
+    <Content Include="maxSubject\images\point.png" />
+    <Content Include="maxSubject\images\primary.jpg" />
+    <Content Include="maxSubject\images\pro.jpg" />
+    <Content Include="maxSubject\images\register.png" />
+    <Content Include="maxSubject\images\scholarship.jpg" />
+    <Content Include="maxSubject\images\subjects.jpg" />
+    <Content Include="maxSubject\OrdinaryLevel.aspx" />
+    <Content Include="maxSubject\PrimaryClasses.aspx" />
+    <Content Include="maxSubject\SecondaryLevel.aspx" />
+    <Content Include="maxTimeTable\css\style.css" />
+    <Content Include="maxTimeTable\Default.aspx" />
+    <Content Include="maxTimeTable\images\advance.jpg" />
+    <Content Include="maxTimeTable\images\headerBg.jpg" />
+    <Content Include="maxTimeTable\images\headerBg.png" />
+    <Content Include="maxTimeTable\images\jobotic_bubble.png" />
+    <Content Include="maxTimeTable\images\loago.png" />
+    <Content Include="maxTimeTable\images\logo.png" />
+    <Content Include="maxTimeTable\images\logo2.png" />
+    <Content Include="maxTimeTable\images\more.gif" />
+    <Content Include="maxTimeTable\images\ordinary.jpg" />
+    <Content Include="maxTimeTable\images\ordlevel.jpg" />
+    <Content Include="maxTimeTable\images\point.png" />
+    <Content Include="maxTimeTable\images\primary.jpg" />
+    <Content Include="maxTimeTable\images\pro.jpg" />
+    <Content Include="maxTimeTable\images\register.png" />
+    <Content Include="maxTimeTable\images\scholarship.jpg" />
+    <Content Include="maxTimeTable\images\subjects.jpg" />
+    <Content Include="maxTimeTable\Ordinary.aspx" />
+    <Content Include="News\css\style.css" />
+    <Content Include="News\Default.aspx" />
+    <Content Include="News\img\11452070194_fd06f09509_o-small.jpg" />
+    <Content Include="News\img\11452469094_9d17db34ba_o-small.jpg" />
+    <Content Include="News\img\11452469094_9d17db34ba_o-tiny.jpg" />
+    <Content Include="News\img\15191329494_13a0e4519d_m.jpg" />
+    <Content Include="News\img\15191398724_4d28af5a00_m.jpg" />
+    <Content Include="News\img\15625420609_604608df68_m.jpg" />
+    <Content Include="News\img\15625821458_fb65930f5d_m.jpg" />
+    <Content Include="News\img\15626071877_0eb094676f_m.jpg" />
+    <Content Include="News\img\15626111917_39238e8d8b_m.jpg" />
+    <Content Include="News\img\15626346010_b4ae272dc4_m.jpg" />
+    <Content Include="News\img\15809426101_0801e58327_m.jpg" />
+    <Content Include="News\img\3AhivlZO0us.html" />
+    <Content Include="News\img\6930895190_59266748d7_o-small.jpg" />
+    <Content Include="News\img\adver.png" />
+    <Content Include="News\img\band-171128-small.jpg" />
+    <Content Include="News\img\band-171128-tiny.jpg" />
+    <Content Include="News\img\berries-gallery.jpg" />
+    <Content Include="News\img\berries-tiny.jpg" />
+    <Content Include="News\img\Bird-Profile-Wellington-New-Zealand-gallery.jpg" />
+    <Content Include="News\img\Bird-Profile-Wellington-New-Zealand-medium.jpg" />
+    <Content Include="News\img\boat-20557-medium.jpg" />
+    <Content Include="News\img\branches-238379-medium.jpg" />
+    <Content Include="News\img\car-gallery.jpg" />
+    <Content Include="News\img\child-109158-small.jpg" />
+    <Content Include="News\img\climb-173-small.jpg" />
+    <Content Include="News\img\coffee-206142-medium.jpg" />
+    <Content Include="News\img\day-of-the-dead-204539-small.jpg" />
+    <Content Include="News\img\day-of-the-dead-204539-tiny.jpg" />
+    <Content Include="News\img\douglas-x-3-stiletto-11119-tiny.jpg" />
+    <Content Include="News\img\dreamcatcher-gallery.jpg" />
+    <Content Include="News\img\drugs-21987-small.jpg" />
+    <Content Include="News\img\DSC00441-avatar.jpg" />
+    <Content Include="News\img\DSC02979-avatar.jpg" />
+    <Content Include="News\img\DSC03847-avatar.jpg" />
+    <Content Include="News\img\event-banner.png" />
+    <Content Include="News\img\events.gif" />
+    <Content Include="News\img\eweo.png" />
+    <Content Include="News\img\hazy-trees-gallery.jpg" />
+    <Content Include="News\img\header-news.png" />
+    <Content Include="News\img\hochbunker-gallery.jpg" />
+    <Content Include="News\img\icon.png" />
+    <Content Include="News\img\insulin-113200-medium.jpg" />
+    <Content Include="News\img\insulin-113200-small.jpg" />
+    <Content Include="News\img\ljYYdBAH_normal.jpeg" />
+    <Content Include="News\img\logo.png" />
+    <Content Include="News\img\madebyvadim-small.jpg" />
+    <Content Include="News\img\maracaibo-110257-small.jpg" />
+    <Content Include="News\img\mason-jars-gallery.jpg" />
+    <Content Include="News\img\max-events.gif" />
+    <Content Include="News\img\max-events.png" />
+    <Content Include="News\img\maxf.png" />
+    <Content Include="News\img\morocco-123957-tiny.jpg" />
+    <Content Include="News\img\nepal-397-small.jpg" />
+    <Content Include="News\img\nepal-397-tiny.jpg" />
+    <Content Include="News\img\news.gif" />
+    <Content Include="News\img\oulu-183452-small.jpg" />
+    <Content Include="News\img\park-place-gallery.jpg" />
+    <Content Include="News\img\phone-2319-small.jpg" />
+    <Content Include="News\img\pup-209148-medium.jpg" />
+    <Content Include="News\img\salt-lake-74570-small.jpg" />
+    <Content Include="News\img\shadow.png" />
+    <Content Include="News\img\snapshot_20120929_133548-E2-avatar.jpg" />
+    <Content Include="News\img\speaker-73187-small.jpg" />
+    <Content Include="News\img\stones-hi-res-carousel-medium.jpg" />
+    <Content Include="News\img\stones-hi-res-gallery.jpg" />
+    <Content Include="News\img\street-66776-small.jpg" />
+    <Content Include="News\img\tracks-gallery.jpg" />
+    <Content Include="News\img\ulm-58271-medium.jpg" />
+    <Content Include="News\img\unsplash_522b53fb137bb_1-gallery.jpg" />
+    <Content Include="News\img\unsplash_524e281add2d1_1-gallery.jpg" />
+    <Content Include="News\img\unsplash_524e281add2d1_1-tiny.jpg" />
+    <Content Include="News\img\unsplash_525a7e89953d1_1-gallery.jpg" />
+    <Content Include="News\img\unsplash_525d7892901ff_1-gallery.jpg" />
+    <Content Include="News\img\unsplash_5261cd0183e57_1-tiny.jpg" />
+    <Content Include="News\img\unsplash_527bf4b4ae00d_1-medium.jpg" />
+    <Content Include="News\img\unsplash_527bf56961712_1-gallery.jpg" />
+    <Content Include="News\img\unsplash_527e864de3770_1-small.jpg" />
+    <Content Include="News\img\unsplash_528a8fb8a276d_1-gallery.jpg" />
+    <Content Include="News\img\unsplash_528a8fb8a276d_1-medium.jpg" />
+    <Content Include="News\img\unsplash_528cba6de78e5_1-tiny.jpg" />
+    <Content Include="News\img\unsplash_529f51e60b51c_1-carousel-medium.jpg" />
+    <Content Include="News\img\unsplash_529f51e60b51c_1-medium.jpg" />
+    <Content Include="News\img\unsplash_52b5ec8515a34_1-gallery.jpg" />
+    <Content Include="News\img\unsplash_52bf2bb8d2dd0_1-carousel-medium.jpg" />
+    <Content Include="News\img\wii-medium.jpg" />
+    <Content Include="News\img\wii-small.jpg" />
+    <Content Include="News\News.aspx" />
+    <Content Include="Store\Advertisement\adver.jpg" />
+    <Content Include="Store\Advertisement\adver2.jpg" />
+    <Content Include="Store\Advertisement\adver3.jpg" />
+    <Content Include="Store\Advertisement\adver4.jpg" />
+    <Content Include="Store\Advertisement\adver5.jpg" />
+    <Content Include="Store\pages\1.jpg" />
+    <Content Include="Store\pages\2.jpg" />
+    <Content Include="Store\pages\3.jpg" />
+    <Content Include="Store\pages\4.jpg" />
+    <Content Include="Store\pages\5.jpg" />
+    <Content Include="Store\pages\6.jpg" />
+    <Content Include="Store\pages\7.jpg" />
+    <Content Include="Store\pages\8.jpg" />
+    <Content Include="Store\pages\9.jpg" />
+    <Content Include="Teachers\About.aspx" />
+    <Content Include="Teachers\Contact.aspx" />
+    <Content Include="Teachers\css\style.css" />
+    <Content Include="Teachers\Default.aspx" />
+    <Content Include="Teachers\img\21068.jpg" />
+    <Content Include="Teachers\img\adver.png" />
+    <Content Include="Teachers\img\events.gif" />
+    <Content Include="Teachers\img\eweo.png" />
+    <Content Include="Teachers\img\icon.png" />
+    <Content Include="Teachers\img\logo.png" />
+    <Content Include="Teachers\img\maxf.png" />
+    <Content Include="Teachers\img\news.gif" />
+    <Content Include="Teachers\img\shadow.png" />
+    <Content Include="Teachers\Resume.aspx" />
+    <Content Include="TimeTable\css\style.css" />
+    <Content Include="TimeTable\Default.aspx" />
+    <Content Include="TimeTable\Friday.aspx" />
+    <Content Include="TimeTable\images\bg.png" />
+    <Content Include="TimeTable\Monday.aspx" />
+    <Content Include="TimeTable\Saturday.aspx" />
+    <Content Include="TimeTable\Sunday.aspx" />
+    <Content Include="TimeTable\Thursday.aspx" />
+    <Content Include="TimeTable\Tuesday.aspx" />
+    <Content Include="TimeTable\Wednesday.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Account\Account.Master" />
+    <Content Include="Account\Admin\Admin.Master" />
+    <Content Include="Account\Admin\assets\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Admin\assets\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Account\Admin\assets\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Account\Admin\assets\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Account\Admin\assets\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Bundle.config" />
+    <Content Include="Content\Slide\a\ws-ctrl-convex.eot" />
+    <Content Include="Content\Slide\a\ws-ctrl-convex.svg" />
+    <Content Include="Content\Slide\a\ws-ctrl-convex.ttf" />
+    <Content Include="Content\Slide\a\ws-ctrl-convex.woff" />
+    <Content Include="Content\Slide\engine1\fullscreen.eot" />
+    <Content Include="Content\Slide\engine1\fullscreen.svg" />
+    <Content Include="Content\Slide\engine1\fullscreen.ttf" />
+    <Content Include="Content\Slide\engine1\fullscreen.woff" />
+    <Content Include="Content\Slide\engine1\ws-ctrl-convex.eot" />
+    <Content Include="Content\Slide\engine1\ws-ctrl-convex.svg" />
+    <Content Include="Content\Slide\engine1\ws-ctrl-convex.ttf" />
+    <Content Include="Content\Slide\engine1\ws-ctrl-convex.woff" />
+    <Content Include="Account\Student\Student.Master" />
+    <Content Include="Account\Teacher\Teacher.Master" />
+    <Content Include="Account\Teacher\assets\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Teacher\assets\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Account\Teacher\assets\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Account\Teacher\assets\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Account\Teacher\assets\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="maxSubject\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="maxSubject\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="maxSubject\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="maxSubject\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="maxSubject\images\.DS_Store" />
+    <Content Include="maxSubject\Subject.Master" />
+    <Content Include="TimeTable\TimeTable.Master" />
+    <Content Include="maxClasses\Classes.Master" />
+    <Content Include="maxClasses\images\.DS_Store" />
+    <Content Include="maxClasses\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="maxClasses\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="maxClasses\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="maxClasses\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Account\Student\assets\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Student\assets\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Account\Student\assets\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Account\Student\assets\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Account\Student\assets\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="maxTimeTable\TimeTable.Master" />
+    <Content Include="maxTimeTable\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="maxTimeTable\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="maxTimeTable\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="maxTimeTable\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="maxTimeTable\images\.DS_Store" />
+    <Content Include="News\News.Master" />
+    <Content Include="News\img\f0f0f9" />
+    <Content Include="News\img\f0f0f9%281%29" />
+    <Content Include="Articles\Articles.Master" />
+    <Content Include="Articles\img\f0f0f9" />
+    <Content Include="Articles\img\f0f0f9%281%29" />
+    <Content Include="Debates\img\f0f0f9" />
+    <Content Include="Debates\img\f0f0f9%281%29" />
+    <Content Include="Debates\Debate.Master" />
+    <Content Include="Events\img\f0f0f9" />
+    <Content Include="Events\img\f0f0f9%281%29" />
+    <Content Include="Events\Events.Master" />
+    <None Include="Properties\PublishProfiles\Maxford.pubxml" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="SLIDE\Css\CssImage\loding.gif" />
+    <Content Include="SLIDE\Css\CssImage\slide-control-icon.png" />
+    <Content Include="SLIDE\Css\screen.css" />
+    <Content Include="SLIDE\Images\slideShow\maxford_slide_001.jpg" />
+    <Content Include="SLIDE\Images\slideShow\maxford_slide_002.jpg" />
+    <Content Include="SLIDE\Images\slideShow\maxford_slide_003.jpg" />
+    <Content Include="SLIDE\Images\slideShow\maxford_slide_004.jpg" />
+    <Content Include="SLIDE\Images\slideShow\maxford_slide_005.jpg" />
+    <Content Include="SLIDE\Images\slideShow\maxford_slide_006.jpg" />
+    <Content Include="SLIDE\Images\slideShow\maxford_slide_007.jpg" />
+    <Content Include="SLIDE\Jscript\anywhere.js" />
+    <Content Include="SLIDE\Jscript\checkuseragent.js" />
+    <Content Include="SLIDE\Jscript\functions.js" />
+    <Content Include="SLIDE\Jscript\ga.js" />
+    <Content Include="SLIDE\Jscript\jquery.js" />
+    <Content Include="SLIDE\Jscript\jquery_002.js" />
+    <Content Include="SLIDE\topSlide.htm" />
+    <Content Include="Store\ckeditor\adapters\jquery.js" />
+    <Content Include="Store\ckeditor\build-config.js" />
+    <Content Include="Store\ckeditor\ckeditor.js" />
+    <Content Include="Store\ckeditor\config.js" />
+    <Content Include="Store\ckeditor\contents.css" />
+    <Content Include="Store\ckeditor\lang\af.js" />
+    <Content Include="Store\ckeditor\lang\ar.js" />
+    <Content Include="Store\ckeditor\lang\bg.js" />
+    <Content Include="Store\ckeditor\lang\bn.js" />
+    <Content Include="Store\ckeditor\lang\bs.js" />
+    <Content Include="Store\ckeditor\lang\ca.js" />
+    <Content Include="Store\ckeditor\lang\cs.js" />
+    <Content Include="Store\ckeditor\lang\cy.js" />
+    <Content Include="Store\ckeditor\lang\da.js" />
+    <Content Include="Store\ckeditor\lang\de.js" />
+    <Content Include="Store\ckeditor\lang\el.js" />
+    <Content Include="Store\ckeditor\lang\en-au.js" />
+    <Content Include="Store\ckeditor\lang\en-ca.js" />
+    <Content Include="Store\ckeditor\lang\en-gb.js" />
+    <Content Include="Store\ckeditor\lang\en.js" />
+    <Content Include="Store\ckeditor\lang\eo.js" />
+    <Content Include="Store\ckeditor\lang\es.js" />
+    <Content Include="Store\ckeditor\lang\et.js" />
+    <Content Include="Store\ckeditor\lang\eu.js" />
+    <Content Include="Store\ckeditor\lang\fa.js" />
+    <Content Include="Store\ckeditor\lang\fi.js" />
+    <Content Include="Store\ckeditor\lang\fo.js" />
+    <Content Include="Store\ckeditor\lang\fr-ca.js" />
+    <Content Include="Store\ckeditor\lang\fr.js" />
+    <Content Include="Store\ckeditor\lang\gl.js" />
+    <Content Include="Store\ckeditor\lang\gu.js" />
+    <Content Include="Store\ckeditor\lang\he.js" />
+    <Content Include="Store\ckeditor\lang\hi.js" />
+    <Content Include="Store\ckeditor\lang\hr.js" />
+    <Content Include="Store\ckeditor\lang\hu.js" />
+    <Content Include="Store\ckeditor\lang\id.js" />
+    <Content Include="Store\ckeditor\lang\is.js" />
+    <Content Include="Store\ckeditor\lang\it.js" />
+    <Content Include="Store\ckeditor\lang\ja.js" />
+    <Content Include="Store\ckeditor\lang\ka.js" />
+    <Content Include="Store\ckeditor\lang\km.js" />
+    <Content Include="Store\ckeditor\lang\ko.js" />
+    <Content Include="Store\ckeditor\lang\ku.js" />
+    <Content Include="Store\ckeditor\lang\lt.js" />
+    <Content Include="Store\ckeditor\lang\lv.js" />
+    <Content Include="Store\ckeditor\lang\mk.js" />
+    <Content Include="Store\ckeditor\lang\mn.js" />
+    <Content Include="Store\ckeditor\lang\ms.js" />
+    <Content Include="Store\ckeditor\lang\nb.js" />
+    <Content Include="Store\ckeditor\lang\nl.js" />
+    <Content Include="Store\ckeditor\lang\no.js" />
+    <Content Include="Store\ckeditor\lang\pl.js" />
+    <Content Include="Store\ckeditor\lang\pt-br.js" />
+    <Content Include="Store\ckeditor\lang\pt.js" />
+    <Content Include="Store\ckeditor\lang\ro.js" />
+    <Content Include="Store\ckeditor\lang\ru.js" />
+    <Content Include="Store\ckeditor\lang\si.js" />
+    <Content Include="Store\ckeditor\lang\sk.js" />
+    <Content Include="Store\ckeditor\lang\sl.js" />
+    <Content Include="Store\ckeditor\lang\sq.js" />
+    <Content Include="Store\ckeditor\lang\sr-latn.js" />
+    <Content Include="Store\ckeditor\lang\sr.js" />
+    <Content Include="Store\ckeditor\lang\sv.js" />
+    <Content Include="Store\ckeditor\lang\th.js" />
+    <Content Include="Store\ckeditor\lang\tr.js" />
+    <Content Include="Store\ckeditor\lang\tt.js" />
+    <Content Include="Store\ckeditor\lang\ug.js" />
+    <Content Include="Store\ckeditor\lang\uk.js" />
+    <Content Include="Store\ckeditor\lang\vi.js" />
+    <Content Include="Store\ckeditor\lang\zh-cn.js" />
+    <Content Include="Store\ckeditor\lang\zh.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\fo.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <Content Include="Store\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Store\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="Store\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" />
+    <Content Include="Store\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="Store\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="Store\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Store\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Store\ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="Store\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="Store\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="Store\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="Store\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="Store\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Store\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="Store\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Store\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="Store\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="Store\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Store\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Store\ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="Store\ckeditor\plugins\icons.png" />
+    <Content Include="Store\ckeditor\plugins\icons_hidpi.png" />
+    <Content Include="Store\ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="Store\ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="Store\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="Store\ckeditor\plugins\image\images\noimage.png" />
+    <Content Include="Store\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="Store\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="Store\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="Store\ckeditor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="Store\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Store\ckeditor\plugins\magicline\images\hidpi\icon-rtl.png" />
+    <Content Include="Store\ckeditor\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="Store\ckeditor\plugins\magicline\images\icon-rtl.png" />
+    <Content Include="Store\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="Store\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Store\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="Store\ckeditor\plugins\preview\preview.html" />
+    <Content Include="Store\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="Store\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Store\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="Store\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Store\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="Store\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Store\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Store\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Store\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Store\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Store\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Store\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="Store\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\angel_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\angry_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\broken_heart.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\confused_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\cry_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\devil_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\embarrassed_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\embarrassed_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\envelope.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\heart.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\kiss.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\lightbulb.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\omg_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\regular_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\sad_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\shades_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\teeth_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\thumbs_down.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\thumbs_up.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\tongue_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\tongue_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.png" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Store\ckeditor\plugins\smiley\images\wink_smile.png" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\af.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\da.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\ko.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\lt.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\tt.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Store\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Store\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Store\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="Store\ckeditor\plugins\templates\dialogs\templates.css" />
+    <Content Include="Store\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="Store\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="Store\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Store\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Store\ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Store\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="Store\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="Store\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="Store\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Store\ckeditor\plugins\wsc\dialogs\wsc_ie.js" />
+    <Content Include="Store\ckeditor\samples\css\samples.css" />
+    <Content Include="Store\ckeditor\samples\img\github-top.png" />
+    <Content Include="Store\ckeditor\samples\img\header-bg.png" />
+    <Content Include="Store\ckeditor\samples\img\header-separator.png" />
+    <Content Include="Store\ckeditor\samples\img\logo.png" />
+    <Content Include="Store\ckeditor\samples\img\navigation-tip.png" />
+    <Content Include="Store\ckeditor\samples\index.html" />
+    <Content Include="Store\ckeditor\samples\js\sample.js" />
+    <Content Include="Store\ckeditor\samples\js\sf.js" />
+    <Content Include="Store\ckeditor\samples\old\ajax.html" />
+    <Content Include="Store\ckeditor\samples\old\api.html" />
+    <Content Include="Store\ckeditor\samples\old\appendto.html" />
+    <Content Include="Store\ckeditor\samples\old\assets\inlineall\logo.png" />
+    <Content Include="Store\ckeditor\samples\old\assets\outputxhtml\outputxhtml.css" />
+    <Content Include="Store\ckeditor\samples\old\assets\sample.jpg" />
+    <Content Include="Store\ckeditor\samples\old\assets\uilanguages\languages.js" />
+    <Content Include="Store\ckeditor\samples\old\datafiltering.html" />
+    <Content Include="Store\ckeditor\samples\old\dialog\assets\my_dialog.js" />
+    <Content Include="Store\ckeditor\samples\old\dialog\dialog.html" />
+    <Content Include="Store\ckeditor\samples\old\divreplace.html" />
+    <Content Include="Store\ckeditor\samples\old\enterkey\enterkey.html" />
+    <Content Include="Store\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.swf" />
+    <Content Include="Store\ckeditor\samples\old\htmlwriter\assets\outputforflash\swfobject.js" />
+    <Content Include="Store\ckeditor\samples\old\htmlwriter\outputforflash.html" />
+    <Content Include="Store\ckeditor\samples\old\htmlwriter\outputhtml.html" />
+    <Content Include="Store\ckeditor\samples\old\index.html" />
+    <Content Include="Store\ckeditor\samples\old\inlineall.html" />
+    <Content Include="Store\ckeditor\samples\old\inlinebycode.html" />
+    <Content Include="Store\ckeditor\samples\old\inlinetextarea.html" />
+    <Content Include="Store\ckeditor\samples\old\jquery.html" />
+    <Content Include="Store\ckeditor\samples\old\magicline\magicline.html" />
+    <Content Include="Store\ckeditor\samples\old\readonly.html" />
+    <Content Include="Store\ckeditor\samples\old\replacebyclass.html" />
+    <Content Include="Store\ckeditor\samples\old\replacebycode.html" />
+    <Content Include="Store\ckeditor\samples\old\sample.css" />
+    <Content Include="Store\ckeditor\samples\old\sample.js" />
+    <Content Include="Store\ckeditor\samples\old\tabindex.html" />
+    <Content Include="Store\ckeditor\samples\old\toolbar\toolbar.html" />
+    <Content Include="Store\ckeditor\samples\old\uicolor.html" />
+    <Content Include="Store\ckeditor\samples\old\uilanguages.html" />
+    <Content Include="Store\ckeditor\samples\old\wysiwygarea\fullpage.html" />
+    <Content Include="Store\ckeditor\samples\old\xhtmlstyle.html" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\css\fontello.css" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\font\LICENSE.txt" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\index.html" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\js\abstracttoolbarmodifier.js" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\js\fulltoolbareditor.js" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\js\toolbarmodifier.js" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\js\toolbartextmodifier.js" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.css" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.js" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\lib\codemirror\javascript.js" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\lib\codemirror\neo.css" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.css" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.js" />
+    <Content Include="Store\ckeditor\skins\moono\dialog.css" />
+    <Content Include="Store\ckeditor\skins\moono\dialog_ie.css" />
+    <Content Include="Store\ckeditor\skins\moono\dialog_ie7.css" />
+    <Content Include="Store\ckeditor\skins\moono\dialog_ie8.css" />
+    <Content Include="Store\ckeditor\skins\moono\dialog_iequirks.css" />
+    <Content Include="Store\ckeditor\skins\moono\editor.css" />
+    <Content Include="Store\ckeditor\skins\moono\editor_gecko.css" />
+    <Content Include="Store\ckeditor\skins\moono\editor_ie.css" />
+    <Content Include="Store\ckeditor\skins\moono\editor_ie7.css" />
+    <Content Include="Store\ckeditor\skins\moono\editor_ie8.css" />
+    <Content Include="Store\ckeditor\skins\moono\editor_iequirks.css" />
+    <Content Include="Store\ckeditor\skins\moono\icons.png" />
+    <Content Include="Store\ckeditor\skins\moono\icons_hidpi.png" />
+    <Content Include="Store\ckeditor\skins\moono\images\arrow.png" />
+    <Content Include="Store\ckeditor\skins\moono\images\close.png" />
+    <Content Include="Store\ckeditor\skins\moono\images\hidpi\close.png" />
+    <Content Include="Store\ckeditor\skins\moono\images\hidpi\lock-open.png" />
+    <Content Include="Store\ckeditor\skins\moono\images\hidpi\lock.png" />
+    <Content Include="Store\ckeditor\skins\moono\images\hidpi\refresh.png" />
+    <Content Include="Store\ckeditor\skins\moono\images\lock-open.png" />
+    <Content Include="Store\ckeditor\skins\moono\images\lock.png" />
+    <Content Include="Store\ckeditor\skins\moono\images\refresh.png" />
+    <Content Include="Store\ckeditor\skins\moono\images\spinner.gif" />
+    <Content Include="Store\ckeditor\styles.js" />
+    <Content Include="Store\design\controls\MyUpdateProgress1.ascx" />
+    <Content Include="Store\design\css\default.css" />
+    <Content Include="Store\design\gfx\ajax-loader.gif" />
+    <Content Include="Store\design\gfx\check.gif" />
+    <Content Include="Store\design\gfx\loding.gif" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\galleria.js" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\LICENSE.txt" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\plugins\galleria.flickr.js" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\plugins\galleria.history.js" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\plugins\galleria.ssp.js" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\classic\classic-loader.gif" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\classic\classic-map.png" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\classic\galleria.classic.css" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\classic\galleria.classic.js" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\dots\dot.png" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\dots\galleria.dots.css" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\dots\galleria.dots.js" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\dots\l.png" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\dots\loader.gif" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\dots\nav.png" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\dots\r.png" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\fullscreen\b.png" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\fullscreen\down.gif" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\fullscreen\fix.gif" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\fullscreen\galleria.fullscreen.css" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\fullscreen\galleria.fullscreen.js" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\fullscreen\i.png" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\fullscreen\l.gif" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\fullscreen\loader.gif" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\fullscreen\n.gif" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\fullscreen\p.gif" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\fullscreen\r.gif" />
+    <Content Include="Store\design\libraries\jquery\aino-galleria\themes\fullscreen\up.gif" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\css\colorpicker.css" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\css\layout.css" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\blank.gif" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\colorpicker_background.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\colorpicker_hex.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\colorpicker_hsb_b.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\colorpicker_hsb_h.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\colorpicker_hsb_s.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\colorpicker_indic.gif" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\colorpicker_overlay.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\colorpicker_rgb_b.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\colorpicker_rgb_g.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\colorpicker_rgb_r.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\colorpicker_select.gif" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\colorpicker_submit.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\custom_background.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\custom_hex.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\custom_hsb_b.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\custom_hsb_h.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\custom_hsb_s.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\custom_indic.gif" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\custom_rgb_b.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\custom_rgb_g.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\custom_rgb_r.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\custom_submit.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\select.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\select2.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\images\slider.png" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\js\colorpicker.js" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\js\eye.js" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\js\jquery.js" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\js\layout.js" />
+    <Content Include="Store\design\libraries\jquery\colorpicker\js\utils.js" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-bg_glass_100_d5e94f_1x400.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-bg_glass_65_588629_1x400.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-bg_glass_65_a8d03f_1x400.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-bg_gloss-wave_35_8bac34_500x100.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-icons_3d5300_256x240.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-icons_4c6800_256x240.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Store\design\libraries\jquery\css\custom-theme\jquery-ui-1.8.10.custom.css" />
+    <Content Include="Store\design\libraries\jquery\fancybox\blank.gif" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancybox-x.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancybox-y.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancybox.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_close.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_loading.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_nav_left.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_nav_right.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_shadow_e.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_shadow_n.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_shadow_ne.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_shadow_nw.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_shadow_s.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_shadow_se.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_shadow_sw.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_shadow_w.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_title_left.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_title_main.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_title_over.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\fancy_title_right.png" />
+    <Content Include="Store\design\libraries\jquery\fancybox\jquery.easing-1.3.pack.js" />
+    <Content Include="Store\design\libraries\jquery\fancybox\jquery.fancybox-1.3.1.css" />
+    <Content Include="Store\design\libraries\jquery\fancybox\jquery.fancybox-1.3.1.js" />
+    <Content Include="Store\design\libraries\jquery\fancybox\jquery.fancybox-1.3.1.pack.js" />
+    <Content Include="Store\design\libraries\jquery\fancybox\jquery.mousewheel-3.0.2.pack.js" />
+    <Content Include="Store\design\libraries\jquery\js\jquery-1.5.1.min.js" />
+    <Content Include="Store\design\libraries\jquery\js\jquery-ui-1.8.10.custom.min.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shAutoloader.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushAppleScript.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushAS3.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushBash.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushColdFusion.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushCpp.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushCSharp.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushCss.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushDelphi.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushDiff.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushErlang.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushGroovy.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushJava.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushJavaFX.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushJScript.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushPerl.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushPhp.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushPlain.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushPowerShell.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushPython.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushRuby.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushSass.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushScala.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushSql.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushVb.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shBrushXml.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shCore.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\scripts\shLegacy.js" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shCore.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shCoreDefault.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shCoreDjango.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shCoreEclipse.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shCoreEmacs.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shCoreFadeToGrey.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shCoreMDUltra.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shCoreMidnight.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shCoreRDark.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shThemeDefault.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shThemeDjango.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shThemeEclipse.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shThemeEmacs.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shThemeMDUltra.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shThemeMidnight.css" />
+    <Content Include="Store\design\libraries\syntaxHighlighter\styles\shThemeRDark.css" />
+    <Content Include="Store\imgControl\blank.gif" />
+    <Content Include="Store\imgControl\loding.gif" />
+    <Content Include="Store\imgControl\SimpleImageUpload.ascx" />
+    <Content Include="Store\imgControl\simpleImageUpload.js" />
+    <Content Include="Store\imgControl\upload.aspx" />
+    <Content Include="Store\imgControl\wait.gif" />
+    <Content Include="Store\Teacher\data\female.png" />
+    <Content Include="Store\Teacher\data\female32.png" />
+    <Content Include="Store\Teacher\data\female64.png" />
+    <Content Include="Store\Teacher\data\male.png" />
+    <Content Include="Store\Teacher\data\male32.png" />
+    <Content Include="Store\Teacher\data\male64.png" />
+    <Content Include="Store\Teacher\main\female.png" />
+    <Content Include="Store\Teacher\main\female32.png" />
+    <Content Include="Store\Teacher\main\female64.png" />
+    <Content Include="Store\Teacher\main\male.png" />
+    <Content Include="Store\Teacher\main\male32.png" />
+    <Content Include="Store\Teacher\main\male64.png" />
+    <Content Include="Store\Videos\v1\DebateTeam.html" />
+    <Content Include="Store\Videos\v1\DebateTeam.mp4" />
+    <Content Include="Store\Videos\v1\DebateTeam_controller.swf" />
+    <Content Include="Store\Videos\v1\expressInstall.swf" />
+    <Content Include="Store\Videos\v1\FirstFrame.png" />
+    <Content Include="Store\Videos\v1\swfobject.js" />
+    <Content Include="Store\Videos\pct0.png" />
+    <Content Include="Store\Videos\pct1.png" />
+    <Content Include="Store\Videos\v2\expressInstall.swf" />
+    <Content Include="Store\Videos\v2\FirstFrame.png" />
+    <Content Include="Store\Videos\v2\Intro.html" />
+    <Content Include="Store\Videos\v2\Intro.mp4" />
+    <Content Include="Store\Videos\v2\Intro_controller.swf" />
+    <Content Include="Store\Videos\v2\swfobject.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Site.Master" />
+    <Content Include="Store\ckeditor\CHANGES.md" />
+    <Content Include="Store\ckeditor\LICENSE.md" />
+    <Content Include="Store\ckeditor\plugins\scayt\LICENSE.md" />
+    <Content Include="Store\ckeditor\plugins\scayt\README.md" />
+    <Content Include="Store\ckeditor\plugins\wsc\LICENSE.md" />
+    <Content Include="Store\ckeditor\plugins\wsc\README.md" />
+    <Content Include="Store\ckeditor\README.md" />
+    <Content Include="Store\ckeditor\samples\old\assets\posteddata.php" />
+    <Content Include="Store\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.fla" />
+    <Content Include="Store\ckeditor\samples\old\sample_posteddata.php" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\font\config.json" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\font\fontello.eot" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\font\fontello.svg" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\font\fontello.ttf" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
+    <Content Include="Store\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
+    <Content Include="Store\ckeditor\skins\moono\readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Access.aspx.cs">
+      <DependentUpon>Access.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Access.aspx.designer.cs">
+      <DependentUpon>Access.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Account.Master.cs">
+      <DependentUpon>Account.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Account.Master.designer.cs">
+      <DependentUpon>Account.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AdminRedirect.aspx.cs">
+      <DependentUpon>AdminRedirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AdminRedirect.aspx.designer.cs">
+      <DependentUpon>AdminRedirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Grade\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Grade\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Grade\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Grade\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Grade\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Grade\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Hall\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Hall\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Hall\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Hall\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Hall\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Hall\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Subject\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Subject\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Subject\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Subject\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Subject\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Subject\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Teacher\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Teacher\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Teacher\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Teacher\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Teacher\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Teacher\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Teacher\New.aspx.cs">
+      <DependentUpon>New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Teacher\New.aspx.designer.cs">
+      <DependentUpon>New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Teacher\NewFolder1\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Teacher\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Database\Teacher\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Comment\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Comment\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Debate\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Debate\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Debate\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Debate\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Debate\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Debate\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Event\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Event\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Team\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Team\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Team\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Team\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Team\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Debates\Team\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Email\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Email\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Help\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Help\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Downloads\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Downloads\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Downloads\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Downloads\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Events\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Events\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Events\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Events\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\News\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\News\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\News\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\News\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Registration\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Registration\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Registration\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\Reports\Registration\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Banner\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Banner\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\EditSlide.aspx.cs">
+      <DependentUpon>EditSlide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\EditSlide.aspx.designer.cs">
+      <DependentUpon>EditSlide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\Event.aspx.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\Event.aspx.designer.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\Footer.aspx.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\Footer.aspx.designer.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\Header.aspx.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\Header.aspx.designer.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\Slide.aspx.cs">
+      <DependentUpon>Slide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\Slide.aspx.designer.cs">
+      <DependentUpon>Slide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Main\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Pages\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Pages\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Pages\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Pages\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Progress\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin\WebPage\Progress\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Config\DataConnection.cs" />
+    <Compile Include="Account\Confirm.aspx.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.designer.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Privacy.aspx.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Privacy.aspx.designer.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Reset_Password.aspx.cs">
+      <DependentUpon>Reset_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Reset_Password.aspx.designer.cs">
+      <DependentUpon>Reset_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Security.aspx.cs">
+      <DependentUpon>Security.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Security.aspx.designer.cs">
+      <DependentUpon>Security.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Articals\Artical.aspx.cs">
+      <DependentUpon>Artical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Articals\Artical.aspx.designer.cs">
+      <DependentUpon>Artical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Articals\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Articals\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Class\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Class\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Class\Request.aspx.cs">
+      <DependentUpon>Request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Class\Request.aspx.designer.cs">
+      <DependentUpon>Request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Class\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Class\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Exams\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Exams\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Profile\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Profile\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Profile\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Profile\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Student\Student.Master.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Student\Student.Master.designer.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Article\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Article\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Article\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Article\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Classes.aspx.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Classes.aspx.designer.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Friday.aspx.cs">
+      <DependentUpon>Friday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Friday.aspx.designer.cs">
+      <DependentUpon>Friday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Hall.aspx.cs">
+      <DependentUpon>Hall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Hall.aspx.designer.cs">
+      <DependentUpon>Hall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Monday.aspx.cs">
+      <DependentUpon>Monday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Monday.aspx.designer.cs">
+      <DependentUpon>Monday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Saturday.aspx.cs">
+      <DependentUpon>Saturday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Saturday.aspx.designer.cs">
+      <DependentUpon>Saturday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Subjects.aspx.cs">
+      <DependentUpon>Subjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Subjects.aspx.designer.cs">
+      <DependentUpon>Subjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Sunday.aspx.cs">
+      <DependentUpon>Sunday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Sunday.aspx.designer.cs">
+      <DependentUpon>Sunday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Thursday.aspx.cs">
+      <DependentUpon>Thursday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Thursday.aspx.designer.cs">
+      <DependentUpon>Thursday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\TimeTable.aspx.cs">
+      <DependentUpon>TimeTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\TimeTable.aspx.designer.cs">
+      <DependentUpon>TimeTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Tuesday.aspx.cs">
+      <DependentUpon>Tuesday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Tuesday.aspx.designer.cs">
+      <DependentUpon>Tuesday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Wednesday.aspx.cs">
+      <DependentUpon>Wednesday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Class\Wednesday.aspx.designer.cs">
+      <DependentUpon>Wednesday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Download\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Download\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Download\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Download\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Download\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Download\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Email\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Email\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Event\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Event\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Event\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Event\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Event\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Event\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\News\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\News\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\News\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\News\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\News\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\News\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Page\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Page\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Page\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Page\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Page\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Page\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Certificates.aspx.cs">
+      <DependentUpon>Certificates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Certificates.aspx.designer.cs">
+      <DependentUpon>Certificates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Contacts.aspx.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Contacts.aspx.designer.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Image.aspx.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Image.aspx.designer.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Links.aspx.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Links.aspx.designer.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Location.aspx.cs">
+      <DependentUpon>Location.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Location.aspx.designer.cs">
+      <DependentUpon>Location.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Password.aspx.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Password.aspx.designer.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Privacy.aspx.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\Privacy.aspx.designer.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Profile\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Student\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Student\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Student\Request.aspx.cs">
+      <DependentUpon>Request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Student\Request.aspx.designer.cs">
+      <DependentUpon>Request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Student\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Student\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Teacher\Teacher.Master.cs">
+      <DependentUpon>Teacher.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Teacher\Teacher.Master.designer.cs">
+      <DependentUpon>Teacher.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Terms_And_Conditions.aspx.cs">
+      <DependentUpon>Terms_And_Conditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Terms_And_Conditions.aspx.designer.cs">
+      <DependentUpon>Terms_And_Conditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\MyAggretatedFilters.cs" />
+    <Compile Include="App_Code\MyCustomFilter1.cs" />
+    <Compile Include="App_Code\MyDynamicLocalizationPlugin.cs" />
+    <Compile Include="App_Code\MyInheritedFilter.cs" />
+    <Compile Include="App_Code\MyRotationFilter.cs" />
+    <Compile Include="App_Code\MyStaticLocalizationPlugin.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="Articles\Articles.aspx.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\Articles.aspx.designer.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\Articles.Master.cs">
+      <DependentUpon>Articles.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\Articles.Master.designer.cs">
+      <DependentUpon>Articles.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Debates\Debate.Master.cs">
+      <DependentUpon>Debate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Debates\Debate.Master.designer.cs">
+      <DependentUpon>Debate.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Debates\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Debates\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\Events.Master.cs">
+      <DependentUpon>Events.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events\Events.Master.designer.cs">
+      <DependentUpon>Events.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forget_Password.aspx.cs">
+      <DependentUpon>Forget_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forget_Password.aspx.designer.cs">
+      <DependentUpon>Forget_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="maxClasses\Advanced.aspx.cs">
+      <DependentUpon>Advanced.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxClasses\Advanced.aspx.designer.cs">
+      <DependentUpon>Advanced.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxClasses\Classes.Master.cs">
+      <DependentUpon>Classes.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxClasses\Classes.Master.designer.cs">
+      <DependentUpon>Classes.Master</DependentUpon>
+    </Compile>
+    <Compile Include="maxClasses\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxClasses\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxClasses\Ordinary.aspx.cs">
+      <DependentUpon>Ordinary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxClasses\Ordinary.aspx.designer.cs">
+      <DependentUpon>Ordinary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxClasses\Primary.aspx.cs">
+      <DependentUpon>Primary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxClasses\Primary.aspx.designer.cs">
+      <DependentUpon>Primary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxClasses\Secondary.aspx.cs">
+      <DependentUpon>Secondary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxClasses\Secondary.aspx.designer.cs">
+      <DependentUpon>Secondary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSubject\AdvancedLevel.aspx.cs">
+      <DependentUpon>AdvancedLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSubject\AdvancedLevel.aspx.designer.cs">
+      <DependentUpon>AdvancedLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSubject\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSubject\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSubject\OrdinaryLevel.aspx.cs">
+      <DependentUpon>OrdinaryLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSubject\OrdinaryLevel.aspx.designer.cs">
+      <DependentUpon>OrdinaryLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSubject\PrimaryClasses.aspx.cs">
+      <DependentUpon>PrimaryClasses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSubject\PrimaryClasses.aspx.designer.cs">
+      <DependentUpon>PrimaryClasses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSubject\SecondaryLevel.aspx.cs">
+      <DependentUpon>SecondaryLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSubject\SecondaryLevel.aspx.designer.cs">
+      <DependentUpon>SecondaryLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxSubject\Subject.Master.cs">
+      <DependentUpon>Subject.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxSubject\Subject.Master.designer.cs">
+      <DependentUpon>Subject.Master</DependentUpon>
+    </Compile>
+    <Compile Include="maxTimeTable\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxTimeTable\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxTimeTable\Ordinary.aspx.cs">
+      <DependentUpon>Ordinary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxTimeTable\Ordinary.aspx.designer.cs">
+      <DependentUpon>Ordinary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maxTimeTable\TimeTable.Master.cs">
+      <DependentUpon>TimeTable.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maxTimeTable\TimeTable.Master.designer.cs">
+      <DependentUpon>TimeTable.Master</DependentUpon>
+    </Compile>
+    <Compile Include="News\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\News.Master.cs">
+      <DependentUpon>News.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\News.Master.designer.cs">
+      <DependentUpon>News.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Teachers\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teachers\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teachers\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teachers\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teachers\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teachers\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teachers\Resume.aspx.cs">
+      <DependentUpon>Resume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teachers\Resume.aspx.designer.cs">
+      <DependentUpon>Resume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teachers\Teacher.Master.cs">
+      <DependentUpon>Teacher.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teachers\Teacher.Master.designer.cs">
+      <DependentUpon>Teacher.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTable\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTable\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTable\Friday.aspx.cs">
+      <DependentUpon>Friday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTable\Friday.aspx.designer.cs">
+      <DependentUpon>Friday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTable\Monday.aspx.cs">
+      <DependentUpon>Monday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTable\Monday.aspx.designer.cs">
+      <DependentUpon>Monday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTable\Saturday.aspx.cs">
+      <DependentUpon>Saturday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTable\Saturday.aspx.designer.cs">
+      <DependentUpon>Saturday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTable\Sunday.aspx.cs">
+      <DependentUpon>Sunday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTable\Sunday.aspx.designer.cs">
+      <DependentUpon>Sunday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTable\Thursday.aspx.cs">
+      <DependentUpon>Thursday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTable\Thursday.aspx.designer.cs">
+      <DependentUpon>Thursday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTable\TimeTable.Master.cs">
+      <DependentUpon>TimeTable.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTable\TimeTable.Master.designer.cs">
+      <DependentUpon>TimeTable.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTable\Tuesday.aspx.cs">
+      <DependentUpon>Tuesday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTable\Tuesday.aspx.designer.cs">
+      <DependentUpon>Tuesday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTable\Wednesday.aspx.cs">
+      <DependentUpon>Wednesday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTable\Wednesday.aspx.designer.cs">
+      <DependentUpon>Wednesday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Store\design\controls\MyUpdateProgress1.ascx.cs">
+      <DependentUpon>MyUpdateProgress1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Store\design\controls\MyUpdateProgress1.ascx.designer.cs">
+      <DependentUpon>MyUpdateProgress1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Store\imgControl\SimpleImageUpload.ascx.cs">
+      <DependentUpon>SimpleImageUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Store\imgControl\SimpleImageUpload.ascx.designer.cs">
+      <DependentUpon>SimpleImageUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Store\imgControl\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Store\imgControl\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Account\Admin\Database\Teacher\NewFolder1\App_Data\" />
+    <Folder Include="App_Data\TempFiles\" />
+    <Folder Include="maxGrade\" />
+    <Folder Include="maxHall\" />
+    <Folder Include="Store\Admin\" />
+    <Folder Include="Store\Article\main\" />
+    <Folder Include="Store\Article\thumbnail\" />
+    <Folder Include="Store\Article\upload\" />
+    <Folder Include="Store\Class\main\" />
+    <Folder Include="Store\Class\thumbnail\" />
+    <Folder Include="Store\Class\upload\" />
+    <Folder Include="Store\Debates\main\" />
+    <Folder Include="Store\Debates\thumbnail\" />
+    <Folder Include="Store\Debates\upload\" />
+    <Folder Include="Store\Downloads\" />
+    <Folder Include="Store\Events\" />
+    <Folder Include="Store\Grade\main\" />
+    <Folder Include="Store\Grade\thumbnail\" />
+    <Folder Include="Store\Grade\upload\" />
+    <Folder Include="Store\Hall\main\" />
+    <Folder Include="Store\Hall\thumbnail\" />
+    <Folder Include="Store\Hall\upload\" />
+    <Folder Include="Store\MaxUser\" />
+    <Folder Include="Store\News\main\" />
+    <Folder Include="Store\News\thumbnail\" />
+    <Folder Include="Store\News\upload\" />
+    <Folder Include="Store\Slide\main\" />
+    <Folder Include="Store\Slide\thumbnail\" />
+    <Folder Include="Store\Slide\upload\" />
+    <Folder Include="Store\Student\" />
+    <Folder Include="Store\Subject\main\" />
+    <Folder Include="Store\Subject\thumbnail\" />
+    <Folder Include="Store\Subject\upload\" />
+    <Folder Include="Store\Teacher\thumbnail\" />
+    <Folder Include="Store\Teacher\upload\" />
+    <Folder Include="Teachers\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Store\design\libraries\jquery\aino-galleria\README.rst" />
+    <Content Include="Store\imgControl\preview.ashx" />
+    <Content Include="Store\imgControl\uploadMonitor.ashx" />
+    <Content Include="Teachers\Teacher.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49842/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

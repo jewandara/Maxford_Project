@@ -1,0 +1,8 @@
+
+.streamer-social .controls a, .emergency .close, .carousel-controls a { display: block; text-indent: -9999px; background-color: transparent; background-position: 0 0; background-repeat: no-repeat; overflow: hidden; }
+
+.emergency .close { display: block; position: absolute; top: -4px; right: 0; height: 16px; width: 16px; background: url(../../a/widgets/btn-emergency-close.png) no-repeat 0 0; cursor: pointer; }
+.emergency .close:hover, .emergency .close:focus { background-position: 0 -16px; }
+
+
+.adjoin-options, .main .adjoin-options { width: 262px; height: 220px; overflow-y: scroll; padding: 5px 0 0;  }

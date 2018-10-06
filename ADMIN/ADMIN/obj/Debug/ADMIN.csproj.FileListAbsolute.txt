@@ -1,0 +1,8 @@
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\ADMIN\ADMIN\bin\ADMIN.dll
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\ADMIN\ADMIN\bin\ADMIN.pdb
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\ADMIN\ADMIN\obj\Debug\ADMIN.dll
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\ADMIN\ADMIN\obj\Debug\ADMIN.pdb
+E:\Projects\ADMIN\ADMIN\bin\ADMIN.dll
+E:\Projects\ADMIN\ADMIN\bin\ADMIN.pdb
+E:\Projects\ADMIN\ADMIN\obj\Debug\ADMIN.dll
+E:\Projects\ADMIN\ADMIN\obj\Debug\ADMIN.pdb

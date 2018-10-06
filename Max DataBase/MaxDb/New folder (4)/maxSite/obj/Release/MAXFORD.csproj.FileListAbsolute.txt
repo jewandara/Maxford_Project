@@ -1,0 +1,4 @@
+D:\New folder (3)\MAXFORD\MAXFORD\bin\MAXFORD.dll
+D:\New folder (3)\MAXFORD\MAXFORD\bin\MAXFORD.pdb
+D:\New folder (3)\MAXFORD\MAXFORD\obj\Release\MAXFORD.dll
+D:\New folder (3)\MAXFORD\MAXFORD\obj\Release\MAXFORD.pdb

@@ -1,0 +1,60 @@
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\MAXFORD.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\MAXFORD.pdb
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\Antlr3.Runtime.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\DotNetOpenAuth.Core.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\EntityFramework.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\System.Web.Optimization.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\System.Web.Providers.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\WebGrease.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\EntityFramework.xml
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\DotNetOpenAuth.Core.xml
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\obj\Debug\MAXFORD.dll
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\obj\Debug\MAXFORD.pdb
+C:\Users\ZIONX\Desktop\Project Maxford\MAXFORD\MAXFORD\obj\Debug\MAXFORD.csprojResolveAssemblyReference.cache
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\MAXFORD.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\MAXFORD.pdb
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\Antlr3.Runtime.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\DotNetOpenAuth.Core.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\EntityFramework.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\System.Web.Optimization.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\System.Web.Providers.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\WebGrease.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\EntityFramework.xml
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\DotNetOpenAuth.Core.xml
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\obj\Debug\MAXFORD.dll
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\obj\Debug\MAXFORD.pdb
+C:\Users\ZIONX\Desktop\MAXFORD\MAXFORD\obj\Debug\MAXFORD.csprojResolveAssemblyReference.cache

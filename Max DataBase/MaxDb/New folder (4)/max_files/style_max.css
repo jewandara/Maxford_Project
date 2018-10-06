@@ -1,0 +1,226 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD											----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of sehdule					----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+/*----	BODY	----*/
+* { margin: 0; padding: 0; line-height: 1; }
+body { background-color: #EFFAF7; font: normal 62.5% Helvetica, Arial, sans-serif; }
+
+h1 { margin: 0 0 20px; color: #333; font: normal 3.6em/1.44 Georgia, "Times New Roman", serif; }
+.intro-wrap h1 { color: #fff; margin-bottom: .2em; letter-spacing: 1px; }
+h2 { margin: 0 0 20px; color: #363636; font: normal 2.2em/1.36 Georgia, "Times New Roman", serif; }
+.sub h2 { margin: 0 0 8px 0; font-size: 1.8em; color: #293352; }
+h3 { margin: 0 0 20px; font: 1.8em/1.36 Georgia, "Times New Roman", serif; }
+h4 { color: #363636; font: bold 1.0em/1.8 Helvetica,Arial,sans-serif; margin-bottom: 11px; text-transform: uppercase; }
+h5 { color: #A61D31; font: bold 1.0em/1.8 Helvetica,Arial,sans-serif; margin-bottom: 11px; text-transform: uppercase; }
+h6 { color: #8c8179; font: bold 1.0em/1.8 Helvetica,Arial,sans-serif; margin-bottom: 11px; text-transform: uppercase; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{text-decoration: none; color:inherit;}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{text-decoration: underline;}
+p, ul, dl, ol, blockquote, table { margin: 0 0 1.5em; }
+li { font-size: 1.2em; }
+
+
+
+
+/*----	TOP BACKGROUND STYLE	----*/
+.primary .wrap:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; font-size: 0; }
+.intro-wrap { padding: 0 0 87px; background:#1E6454 url("bg.png") no-repeat center 0; }
+.intro-wrap + .wrap { margin-top: -87px; }
+.intro h1 { margin-bottom: 3px; }
+.intro p { width: 727px; color: #6c6c7a; font-size: 1.4em; line-height: 1.7; }
+.intro-wrap p { margin-bottom: 34px; color: #f3f3f1; }
+.wrap { width: 978px; margin: 0 auto; }
+
+/*----	MIDDLE TAB PAGES	----*/
+#twocol_wrap { width: 755px; float: right; }
+.layout-d .secondary { float: left; width: 223px; margin-bottom: 20px; }
+.layout-d .main { float: left; width: 755px; margin-left: 29px; margin-bottom: 20px; }
+
+
+/*----	*	----*/
+.main .section { background: #fff; border-top: 4px solid  #001B35; }
+.main .col .section { border-top: none; }
+.sub .section { background: #fefefe; }
+.header-mobile { display: none; }
+.content-pad-left { padding: 0 15px; }
+  
+
+/*----	SIDE NAVIGATION		----*/
+.nav { padding-bottom: 7px; border-top: 4px solid #001B35; }
+.nav li { list-style: none; }
+.nav a  
+{
+    display: block; 
+    padding: 13px 14px 9px; 
+    border-bottom: 1px solid  #001B35;
+    background: #fff; 
+    text-decoration: none; 
+    color: #6c6c6c; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    line-height: 1.33; }
+.nav a:hover, .nav a:focus  
+{
+    text-decoration:none;
+    background:#099;
+    color:#fff;
+}
+.nav .active a:hover, .nav .active-trail a:hover, .nav .active a:focus { text-decoration: none; }
+	.nav li ul { background: #a51c30; padding-bottom: 5px; margin-bottom: 0;}
+	.nav li ul li a { text-transform: none; font-size: 0.9em; font-weight: normal; padding: 8px 14px 4px 24px; }
+	.nav li ul li ul li a { font-size: 12px; padding: 4px 10px 2px 40px; }
+	.nav .active ul li a, .nav .active-trail ul li a { background: #a51c30; }
+	.nav .active ul li a:hover, .nav .active-trail ul li a:hover { text-decoration: underline; }
+	.nav li ul li.active>a, .nav li ul li ul li.active>a { text-decoration: underline; }
+
+
+/*----	TOP BACKGROUND STYLE	----*/
+.section { margin: 0 0 24px; padding: 20px 23px; 
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+
+.layout-c .section {
+	padding: 20px 23px; 
+	background: #eae9e5;
+	border: 0px solid #dadada;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+
+
+/*----	General Content Style -----*/
+.pager { list-style: none; }
+.pager li { list-style: none; padding: 3px; font-size: 1.4em; font-weight: bold; float: left; display: inline-block; margin-right: 4px; }
+
+.main .region-content { font-size: 1.3em; line-height: 1.6em; color: #6c6c6c; }
+.main .region-content .section { color: #6c6c6c; }  /* section has white bg, so can use lighter text color */
+.main .region-content h1 { font: normal 2.2em/1.3 Georgia, "Times New Roman", serif; }
+.main .region-content h2 { margin: 0 0 20px; color: #363636; font: normal 1.7em/1.36 Georgia, "Times New Roman", serif; }
+.main .region-content h3 { margin: 0 0 12px; font: 1.4em/1.36 Georgia, "Times New Roman", serif; color: #363636; }
+	.main .view-faq-list h3 { color: #6C6C6C; font: bold 1.2em/1.8 Helvetica,Arial,sans-serif; margin-bottom: 0px; text-transform: uppercase; }
+
+	
+.main .region-content h4 { font-size: 0.9em; }
+.main .region-content h5 { font-size: 0.9em; }
+.main .region-content h6 { font-size: 0.9em; }
+
+.main .region-content p { font-size: 1em; line-height: 1.8em; color: #6c6c6c;}
+.main .region-content p.subhead { font: normal 1.6em/1.3 Helvetica, Arial, sans-serif; color: #8c8179; }
+.main .region-content p.intro { font: normal 1.4em/1.3 Georgia, "Times New Roman", serif; color: #8c8179; }
+.main .region-content ul, .main .region-content ol { padding-left: 20px; }
+.main .region-content li { font-size: 1.0em; line-height: 1.5em; }
+.main .region-content blockquote { border-left: 3px solid; color: #A61D31; padding: 0 10px; }
+.main .region-content p.pullquote { margin: 0.3em 1em 0.5em 0; padding: 10px 15px; border: 1px solid #ddd; background: #fff; width: 350px; float:left; font-family: Georgia, "Times New Roman", Times, serif; font-size: 18px; color: #616161; line-height:1.4em; }
+.main .region-content p.pullquote .name { display: block; font-size: 11px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color: #b5b5b5; text-transform: uppercase; margin: 10px 0 2px;} 
+.main .region-content cite { text-align: right; }
+.main .region-content dd, .main .region-content dl { font-size: 1.0em; }
+.main .region-content address { font-style: italic; font-size: 0.9em }
+.main .region-content .compact { margin-bottom: 0px; }
+.main .region-content h4 .col { float:none; }
+
+.main .region-content img.float-right { float: right; padding: 0 0 10px 10px; }
+.main .region-content img.float-left { float: left; padding: 0 10px 10px 0; }
+
+.main .region-content hr { margin: 20px 0; clear: both; border: 0px; color: #e2e2e2; background-color: #e2e2e2; height: 1px; }
+
+
+.main .region-content .ltd ul { margin-bottom: 24px; padding-left: 0; }
+	.main .region-content .ltd li { float: none; margin-bottom: 5px; font-size: 1.0em; list-style: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main .section .view-content ul, .main .section .view-content ol { padding-left: 20px; }
+.main .section .view-content li { line-height: 1.8em; }
+
+.editor_msg { font-style: italic; color: #A61D31; }
+
+table {
+    border: 0px solid #BEBFB9;
+    font-size: 0.923em;
+    margin: 0 0 10px;
+    width: 100%;
+}
+table caption {}
+
+table td, table th {
+    border: 0 none;
+    padding: 8px 10px;
+    vertical-align: middle;
+    line-height: 1.4em;
+}
+table tr{background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #BEBFB9;
+    border-style: solid;
+    border-width: 0 0px;
+}
+tr.even, tr.odd {
+    background: none repeat scroll 0 0 #F3F3F1;
+    border-color: #BEBFB9;
+    border-style: solid;
+    border-width: 0 0px;
+}
+tr.odd {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+tr.drag {
+    background: none repeat scroll 0 0 #FFEE77;
+}
+tr.drag-previous {
+    background: none repeat scroll 0 0 #FFFFBB;
+}
+table th {
+    background: none repeat scroll 0 0 #fff;
+    border-color: #BEBFB9;
+    border-style: solid;
+    border-width: 0px 0 1px 0;
+    font-weight: normal;
+    padding: 3px 10px;
+    text-transform: uppercase;
+}
+
+
+
+.sidebar-site-banner img { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); margin: 0 0 24px; }
+.layout-c .sidebar-site-banner img { box-shadow: none; border: 1px solid #dadada; margin: 0 0 24px; }

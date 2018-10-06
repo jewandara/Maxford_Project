@@ -1,0 +1,244 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD											----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of sehdule					----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+/*----	BODY	----*/
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    }
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    padding-bottom:5px;
+}
+h1 {
+	font-size: 40px;
+}
+h3 {
+	color: #95a5a6;
+	font-weight: 400;
+}
+h4 {
+	color: #FFF;
+	font-weight: 400;
+	font-size: 30px;
+}
+p {
+    line-height: 28px;
+	margin-top:-10px;
+    font-size: 16px;
+	color:#222;
+}
+i {
+	margin: 8px;
+	color: #3498db; 
+}
+a {
+    color: #3498db;
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 70px 0 70px;
+    padding: 0;
+}
+
+
+
+
+
+.logo{
+	font-family: 'Mrs Sheppards', cursive;
+	font-size: 31px;
+	line-height: 31px;
+	margin: 0px 0 7px;
+	color: #333;
+	
+}
+
+
+
+
+
+
+
+
+
+.maxTeacherHeaderWrap {
+	background-color: #52B1E7;
+	margin-top:0px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 420px;
+	width:100%;
+	display:block;
+	margin-right:auto;
+    margin-left:auto;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-image:url(../images/headerBg.jpg);
+	background-attachment:fixed;
+}
+
+.maxTeacherHeaderWrapTable{
+	display:block;
+	padding-top:30px;
+    margin-right:auto;
+    margin-left:auto;
+	width:1000px;
+	height:auto;
+	}
+
+.maxTeacherHeaderWrapTable tr td{
+	width:100%;
+	}
+.maxTeacherProfileImage{
+	width:160px;
+	border:2px solid #111;
+	opacity:0.9;
+	float:left;
+	}
+
+
+
+
+
+
+.maxTeacherTableBody{
+	margin-top:0px;
+	width:1000px;
+	display:block;
+	margin-right:auto;
+    margin-left:auto;
+	}	
+.maxTeacherProfileBody{
+	margin-top:-145px;
+	background-color: #fff;
+	box-shadow: 0 0 5px #333333;
+	width:1000px;
+	display:block;
+	margin-right:auto;
+    margin-left:auto;
+	
+}
+.maxTeacherProfileBodyTable{
+	margin-top:-0px;
+	padding:10px;
+	}
+.maxTeacherProfileBodyArticals{
+	background-color: #E9F3F0;
+	box-shadow: 0 0 1px #333333;
+	width:95%;
+	display:block;
+	padding:10px;
+	}
+	
+
+
+.SideNavMenuBar {
+    position:relative;
+	top:0px;
+	margin-right:0px;
+	width:100%;
+	background:#fff;
+	
+	box-shadow: 0 2px 2px #4A594D;
+	margin-bottom:20px;
+	}
+.SideNavMenuItems {
+	list-style-type: none;
+	text-align: center;
+    margin: 0;
+    padding: 0;
+	}
+.SideNavMenuItems li {
+    text-align: center;
+	display:inline-block;
+	}
+.SideNavMenuItems li a  {
+    display:inline-block;
+    padding: 8px 15px 12px; 
+    border-top: 5px solid #022;
+    border-right: 1px solid #022;
+    border-left: 1px solid #022;
+    background: #fff; 
+    text-decoration: none; 
+    color:#004040;
+    text-transform: uppercase; 
+    }
+.SideNavMenuItems li a:hover, #SideNavMenuItems li a:focus  {
+    text-decoration:none;
+    background:#1BB;
+    color:#fff;
+    }
+.SideNavMenuItems li a:active{
+    text-decoration:none;
+    background:#088;
+    color:#ddd;
+}

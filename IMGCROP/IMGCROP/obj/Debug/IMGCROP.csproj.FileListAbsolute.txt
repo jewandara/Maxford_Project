@@ -1,0 +1,4 @@
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\IMGCROP\IMGCROP\bin\IMGCROP.dll
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\IMGCROP\IMGCROP\bin\IMGCROP.pdb
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\IMGCROP\IMGCROP\obj\Debug\IMGCROP.dll
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\IMGCROP\IMGCROP\obj\Debug\IMGCROP.pdb

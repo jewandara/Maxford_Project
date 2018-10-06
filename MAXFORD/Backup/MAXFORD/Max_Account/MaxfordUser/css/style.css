@@ -1,0 +1,500 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD ACCOUNT MAIN							----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of ACCOUNT MAIN 			    ----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+body {
+    scrollbar-face-color: #b46868;
+}
+/*----	MAXFORD ACCOUNT MAIN	----*/
+.max_top_boder{
+	margin-left:auto;
+	margin-right:auto;
+	position:fixed;
+	top:0px;
+	right:0;
+	width:100%;
+	height:60px;
+	display:block;	
+	background:#009191;
+	cursor:default;
+	z-index:100;
+	}
+.top_logo{
+	right:0;
+	width:60px;
+	height:60px;
+	background:url(../images/icon-sl.png) no-repeat center;
+	}
+.max_login_header{
+	margin-left:65px;
+	margin-top:-72px;
+	font-size:16px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-transform:none;
+	text-decoration: none;
+	color:#FFF;
+	}
+.max_login_header p{
+    left:-122px;
+	margin-top:-72px;
+	font-size:16px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-transform:none;
+	text-decoration: none;
+	color:#FFF;
+	}
+.max_top_boder_left{
+	position:inherit;
+	left:20px;
+	margin-top:-60px;
+	height:60px;
+	display:block;
+	cursor:pointer;
+	}
+.max_top_boder_right{
+	position:absolute;
+	right:0px;
+	margin-top:-97px;
+	height:60px;
+	display:block;
+	cursor:pointer; 
+	}
+.max_top_boder ul li{
+	font-size:20px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	display:inline-block;	
+	cursor:pointer; 
+	text-transform:none;
+	text-decoration: none;
+	list-style:none;
+	}
+.max_top_menu_bar{
+	margin-top:0px;
+	display:block;
+	cursor:pointer; 
+	}	
+.max_top_menu_bar a{
+	margin-top:0px;
+	display:block;
+	cursor:pointer; 
+	text-decoration: none;
+	padding:18px 18px 19px 20px;
+	color:#DFF;
+	transition:background-color 0.4s ease-in-out;
+	-webkit-transition: background-color 0.4s ease-in-out;
+	-moz-transition: background-color 0.4s ease-in-out;
+	}
+.max_top_menu_bar a:hover {	
+	background-color:#02B591;
+	color:#FFF;
+	}	
+.max_login_pro_name{
+	text-transform:uppercase;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----	MAXFORD ACCOUNT SIDE BAR	----*/
+.max_side_boder{
+	top:57px;
+	left:0px;
+	width:21%;
+	position:fixed;
+	height:100%;
+	display:block;	
+	background:#BEE4DC;
+	cursor:default;
+	z-index:80;
+	}
+.max_side_boder ul {
+	margin-top:0px;
+	margin-left:-30px;
+	width:265px;
+	border-top:1px solid #006633;
+	}
+.max_side_boder ul li{
+	font-size:16px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-transform:none;
+	text-decoration: none;
+	list-style:none;
+	transition:background-color 0.4s ease-in;
+	-webkit-transition: background-color 0.4s ease-in;
+	-moz-transition: background-color 0.4s ease-in;
+	height:30px;
+	display:block;
+	margin-top:0px;
+	border-bottom:1px solid #006633;
+	}
+.max_side_boder ul li:hover {	
+	background-color:#02B591;
+	}	
+.max_side_menu_bar a{
+	margin-top:0px;
+	display:block;
+	cursor:pointer; 
+	text-decoration: none;
+	padding:5px 5px 5px 60px;
+	color:#330;
+	transition:color 0.4s ease-in;
+	-webkit-transition:color 0.4s ease-in;
+	-moz-transition:color 0.4s ease-in;
+	}		
+.max_side_menu_bar a:hover {
+	color:#FFF;
+	}	
+.max_side_menu_bar{
+	margin-left:5px;}
+
+.maxIconDashboard{background:url(../images/dashboard.png) no-repeat left; background-size:45px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----	MAXFORD ACCOUNT MAIN	----*/
+.max_main_account_body{
+	margin-left:22%;
+	margin-top:65px;}
+
+.max_main_body_top_header{
+	display:block;
+	background:#ECFFF7;
+	width:100%;
+	border-top:1px solid #033;
+	}
+.max_main_body_top_header H2{
+	font-size:16px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-transform:none;
+	text-decoration: none;
+	padding:0 0 0 30px;}
+
+
+.max_main_page_body{
+	margin:auto;
+	width:100%;
+	height:100%;
+    transition:background-color 0.4s;
+    transition-timing-function:ease-in-out;
+}
+
+
+/*----	MAXFORD ACCOUNT MAIN TOOL TIP DISPLAY	----*/
+/* Base styles for the element that has a tooltip */
+[data-tooltip],
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+/* Base styles for the entire tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: 
+	  opacity .4s ease-in-out,
+		visibility 2s ease-in-out,
+		-webkit-transform .4s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+	-moz-transition:    
+		opacity .4s ease-in-out,
+		visibility 2s ease-iout,
+		-moz-transform .4s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+	transition:         
+		opacity .4s ease-in-out,
+		visibility 10s ease-in-out,
+		transform .4s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform:    translate3d(0, 0, 0);
+  transform:         translate3d(0, 0, 0);
+  pointer-events: none;
+}
+/* Show the entire tooltip on hover and focus */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* Base styles for the tooltip's directional arrow */
+.tooltip:before,
+[data-tooltip]:before {
+  z-index: 1001;
+  border: 6px solid transparent;
+  background: transparent;
+  content: "";
+}
+/* Base styles for the tooltip's content area */
+.tooltip:after,
+[data-tooltip]:after {
+  z-index: 1000;
+  padding: 8px;
+  width: 160px;
+  background-color: #000;
+  background-color: #066;
+  color: #fff;
+  content: attr(data-tooltip);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+
+/* Top (default) */
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after,
+.tooltip-top:before,
+.tooltip-top:after {
+  bottom: 100%;
+  left: 50%;
+}
+[data-tooltip]:before,
+.tooltip:before,
+.tooltip-top:before {
+  margin-left: -6px;
+  margin-bottom: -12px;
+  border-top-color: #000;
+  border-top-color: #066;
+}
+/* Horizontally align top/bottom tooltips */
+[data-tooltip]:after,
+.tooltip:after,
+.tooltip-top:after {
+  margin-left: -80px;
+}
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after,
+.tooltip-top:hover:before,
+.tooltip-top:hover:after,
+.tooltip-top:focus:before,
+.tooltip-top:focus:after {
+  -webkit-transform: translateY(-12px);
+  -moz-transform:    translateY(-12px);
+  transform:         translateY(-12px); 
+}
+
+
+/* Left */
+.tooltip-left:before,.tooltip-left:after {
+  right: 100%;
+  bottom: 50%;
+  left: auto;
+}
+.tooltip-left:before {
+  margin-left: 0;
+  margin-right: -12px;
+  margin-bottom: 0;
+  border-top-color: transparent;
+  border-left-color: #000;
+  border-left-color:  #066;
+}
+.tooltip-left:hover:before,.tooltip-left:hover:after,.tooltip-left:focus:before,.tooltip-left:focus:after {
+  -webkit-transform: translateX(-12px);
+  -moz-transform:    translateX(-12px);
+  transform:         translateX(-12px); 
+}
+
+
+/* Bottom */
+.tooltip-bottom:before,.tooltip-bottom:after {
+  top: 100%;
+  bottom: auto;
+  left: 50%;
+}
+.tooltip-bottom:before {
+  margin-top: -12px;
+  margin-bottom: 0;
+  border-top-color: transparent;
+  border-bottom-color: #000;
+  border-bottom-color:  #066;
+}
+.tooltip-bottom:hover:before,.tooltip-bottom:hover:after,.tooltip-bottom:focus:before,.tooltip-bottom:focus:after {
+  -webkit-transform: translateY(12px);
+  -moz-transform:    translateY(12px);
+  transform:         translateY(12px); 
+
+}
+
+
+/* Right */
+.tooltip-right:before,.tooltip-right:after {
+  bottom: 50%;
+  left: 100%;
+}
+.tooltip-right:before {
+  margin-bottom: 0;
+  margin-left: -12px;
+  border-top-color: transparent;
+  border-right-color: #000;
+  border-right-color:  #066;
+}
+.tooltip-right:hover:before,.tooltip-right:hover:after,.tooltip-right:focus:before,.tooltip-right:focus:after {
+  -webkit-transform: translateX(12px);
+  -moz-transform:    translateX(12px);
+  transform:         translateX(12px); 
+}
+
+
+/* Move directional arrows down a bit for left/right tooltips */
+.tooltip-left:before,
+.tooltip-right:before {
+  top: 3px;
+}
+/* Vertically center tooltip content for left/right tooltips */
+.tooltip-left:after,
+.tooltip-right:after {
+  margin-left: 0;
+  margin-bottom: -16px;
+}
+
+
+
+/*--	MAXFORD	ACCOUNT MIDDLE NAV BAR		--*/
+.sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top:52px;
+  z-index: 10;
+}
+.max_middle_nav_bar{
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:1px;
+	top:0px;
+	display:block;	
+	background:#FFF;
+	cursor:default;
+	z-index:100;
+}
+.max_middle_nav_bar ul{
+	list-style-type: none;
+	margin-left:auto;
+	margin-right:auto;
+	height:40px;
+	display:block;	
+	background:#B6CDC4;
+	border-bottom:1px solid #033;
+	border-top:1px solid #033;
+	cursor:default;
+	z-index:100;
+}
+.max_middle_nav_bar ul li{
+	list-style-type: none;
+	display:inline-block;
+}
+.max_middle_nav_bar ul li a{
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:13px;
+	display: block;
+	width:auto;
+	padding:12px 10px 12px 10px;
+	color:#222;
+}
+.max_middle_nav_bar ul li a:hover{
+	text-decoration:underline;
+	color:#FFF;
+	background:#71B096;
+}
+
+
+
+
+
+/*--	MAXFORD	ACCOUNT FOOTER  --*/
+.maxAccountFooter_logo{
+	background-image:url(maxford_footer_logo.png);
+	width:190px;
+	height:120px;
+	background-repeat:no-repeat;
+	}
+
+.maxAccountFooter
+{
+    display:block;
+    margin-left:45px;
+    margin-bottom:20px;
+	}
+.maxAccountFooter a
+{
+	font-size:12px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color:#222;
+	text-decoration:none;
+	}
+.maxAccountFooter a:hover{
+	text-decoration:underline;
+	color:#000;
+	}
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,93 @@
+﻿/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD SUB EVENTS	BODY						----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of Substyle page 				----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+.max-Event-MenuNav{
+	margin-left:auto;
+	margin-right:auto;
+	width:982px;
+	display:block;
+}
+.max-Event-MenuNav ul{
+	display:block;	
+	list-style-type: none;
+}
+.max-Event-MenuNav ul li{
+	height:230px;
+    text-align:left;
+	list-style-type: none;
+	transition:color 0.4s ease-in;
+	-webkit-transition:color 0.4s ease-in;
+	-moz-transition:color 0.4s ease-in;
+}
+.max-Event-MenuNav-li{
+	display:block;
+	height:211px;
+	border-bottom:1px solid #333;
+}
+
+.max-Event-MenuNav-li:hover{
+	background:#E8EEEB;
+}
+.max-Event-MenuNav-img{
+	top:0px;
+	left:0px;
+	margin-left:0px;
+	height:200px;
+	width:200px;
+	padding:5px 5px 5px 5px;
+	border:1px solid #000;
+}
+.max-Event-MenuNav-img:hover{
+	background:#D2DFD8;
+}
+
+.max-Event-MenuNav-link-img{
+	width:200px;
+	text-align:center;
+}
+
+.max-Event-MenuNav-text{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight:normal;
+	font-size:14px;
+	letter-spacing:0.001em;
+	line-height:23px;
+	margin-top:-212px;
+	position:absolute;
+	margin-left:220px;
+	display:block;
+	width:765px;
+	height:210px;
+	overflow:hidden;
+	}
+
+
+
+
+
+
+
+

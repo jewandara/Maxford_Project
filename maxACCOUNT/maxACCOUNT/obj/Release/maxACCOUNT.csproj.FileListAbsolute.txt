@@ -1,0 +1,9 @@
+E:\maxACCOUNT\maxACCOUNT\bin\maxACCOUNT.dll
+E:\maxACCOUNT\maxACCOUNT\bin\maxACCOUNT.pdb
+E:\maxACCOUNT\maxACCOUNT\obj\Release\maxACCOUNT.dll
+E:\maxACCOUNT\maxACCOUNT\obj\Release\maxACCOUNT.pdb
+E:\Rachith\maxACCOUNT\maxACCOUNT\bin\maxACCOUNT.dll
+E:\Rachith\maxACCOUNT\maxACCOUNT\bin\maxACCOUNT.pdb
+E:\Rachith\maxACCOUNT\maxACCOUNT\obj\Release\maxACCOUNT.csprojResolveAssemblyReference.cache
+E:\Rachith\maxACCOUNT\maxACCOUNT\obj\Release\maxACCOUNT.dll
+E:\Rachith\maxACCOUNT\maxACCOUNT\obj\Release\maxACCOUNT.pdb

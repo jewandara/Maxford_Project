@@ -1,0 +1,170 @@
+﻿/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD REQUEST									----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of REQUEST 				    ----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+/*----	MAXFORD REGISTER	----*/
+a{
+	text-decoration:none;
+	}
+.max_request_header_text{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	text-align:center;
+	width:1000px;
+	display:block;
+	color:#033;
+	font-size:x-large;
+	font-family:"Times New Roman", Times, serif;
+	padding:2px 2px 2px 2px;
+	}
+.max_request_page{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1px;
+	text-align:center;
+	width:1000px;
+	display:block;
+	background:#BEE4DC;
+	padding:10px 10px 20px 10px;
+	}
+.max_request_textBox{
+	margin-top:20px;
+	margin-left:20px;
+	font-size:16px;
+	background:#FFF;
+	padding-left:15px;
+	width: 425px;
+	height: 28px;
+	border: 0px solid;
+	background-position:left;
+	}
+
+.max_RTB_LoginID{
+	background:#00D0A7 url(../images/LoginID.png) no-repeat left;
+	background-size:auto 25px;
+	background-position:15px;
+	}
+.max_RTB_Password{
+	background:#00D0A7 url(../images/Password.png) no-repeat left;
+	background-size:auto 25px;
+	background-position:15px;
+	}
+.max_RTB_ConfimPassword{
+	background:#00D0A7 url(../images/ConPassword.png) no-repeat left;
+	background-size:auto 25px;
+	background-position:15px;
+	}
+.max_RTB_Email{
+	background:#00D0A7 url(../images/Email.png) no-repeat left;
+	background-size:auto 25px;
+	background-position:15px;
+	}
+.max_RTB_FullName{
+	background:#00D0A7 url(../images/FullName.png) no-repeat left;
+	background-size:auto 25px;
+	background-position:15px;
+	}
+.max_RTB_Contact{
+	background:#00D0A7 url(../images/ContactNumber.png) no-repeat left;
+	background-size:auto 25px;
+	background-position:15px;
+	}
+
+.max_request_textBox:hover, .max_RTB_LoginID:hover, .max_RTB_Password:hover, .max_RTB_ConfimPassword:hover, .max_RTB_Email:hover, .max_RTB_Question:hover, .max_RTB_Answer:hover{
+	box-shadow:0 0 4px #039477;
+	background-color:#3FD9A9;
+	}
+	
+.max_request_error_image{
+	margin-top:22px;
+	margin-left:3px;
+	width: 16px;
+
+	}
+	
+.max_request_error_message{
+	margin-top:100px;
+	width: 16px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+	color:#F00;
+	background:#FC9 url(../images/Error2.png) no-repeat left;
+	background-position:4px;
+	}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+.max_request_button{
+	margin-top:20px;
+	margin-right:20px;
+	width: 144px;
+	height: 30px;
+	border: 1px solid #008040;
+	cursor:pointer;
+	background:#009191;
+	color:#EEE;
+	border: 0px solid #033;
+	font-size:16px;
+    }
+.max_request_complete{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	text-align:center;
+	width:1000px;
+	display:block;
+	color:#069;
+	font-size:large;
+	font-family:"Times New Roman", Times, serif;
+	padding:5px 5px 5px 5px;
+    }
+.max_request_complete_button{
+	margin-top:20px;
+	margin-right:40px;
+	width: 144px;
+	height: 30px;
+	border: 1px solid #008040;
+	cursor:pointer;
+	background:#009191;
+	color:#EEE;
+	border: 0px solid #033;
+	font-size:16px;
+    }
+.max_request_button:hover, .max_request_complete_button:hover{
+	background:#88B7A3;
+	color:#333;
+    }
+	

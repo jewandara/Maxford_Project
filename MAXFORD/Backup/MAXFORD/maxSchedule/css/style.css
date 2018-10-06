@@ -1,0 +1,266 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD											----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of sehdule					----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+/*----	BODY	----*/
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    }
+body {
+    background:#EFF1F0;
+    }
+
+
+/*-- Top Discription Green Picture --*/
+#TopDiscriptionGreenPct {
+    position:relative;
+	margin-right:auto;
+    margin-left:auto;
+	display:block;
+	width:100%;
+	height:225px;
+	background:#1E6454 url("../images/bg.png") no-repeat center 0;
+	background-position:600px 0px;
+	border: 1px solid #033;
+	box-shadow: 0 2px 2px #4A594D;
+	z-index:-1;
+	}
+#TopDiscriptionText
+{
+    color: #fff;
+    padding: 20px 0 0 0;
+    margin-right:auto;
+    margin-left:auto;
+    width:1000px;
+    height:120px;
+    overflow:hidden;
+    }
+#TopDiscriptionText h1  
+{
+    margin-bottom: .2em; 
+    letter-spacing: 1px; 
+    right:100px;
+    }
+#TopDiscriptionText p
+{
+    font-size:18px;
+    }
+
+
+	
+/*-- Max Main Body --*/
+#MaxMainBody {
+	position:relative;
+	margin-right:auto;
+    margin-left:auto;
+	margin-top:-70px;
+	display:block;
+	width:1000px;
+	}
+	
+	
+/*-- Top Body --*/
+#TopBody {
+	position:relative;
+	background-position:left;
+	top:0px;
+	left:0px;
+	width:1000px;
+    z-index:100;
+	}
+/*-- Top Body Discription --*/
+#TopBodyDiscription {
+    position:relative;
+	display:block;
+	padding:5px 5px 5px 5px;
+	width:990px;
+	min-width:990px;
+	height:auto;
+	background:#fff;
+	box-shadow: 0 2px 2px #4A594D;
+	border-top:4px solid #001B35;
+	margin-bottom:20px;
+	}
+
+
+/*-- Middle Body --*/
+#MiddleBody {
+	position:relative;
+	margin-right:auto;
+    margin-left:auto;
+	width:1000px;
+	z-index:90;
+	}
+/*-- Left Side Body --*/
+#LeftSideBody {
+    position:relative;
+	top:0px;
+	margin-right:0px;
+	width:225px;
+	height:auto;
+	bottom:auto;
+    z-index:80;
+    }
+#SideNavMenuBar {
+	position:relative;
+	top:0px;
+	margin-right:0px;
+	display:block;
+	width:225px;
+	height:auto;
+	background:#fff;
+	border-top: 4px solid #001B35;
+	box-shadow: 0 2px 2px #4A594D;
+	margin-bottom:20px;
+	}
+#SideNavMenuItems li {
+	list-style: none;
+	cursor:url(images\hand.png);
+	}
+#SideNavMenuItems li a  {
+    display: block; 
+    padding: 5px 12px 5px ; 
+    border-bottom: 1px solid  #001B35;
+    background: #fff; 
+    text-decoration: none; 
+    color:#004040;
+    text-transform: uppercase; 
+    cursor:url(images\hand.png);
+    }
+#SideNavMenuItems li a:hover, #SideNavMenuItems li a:focus  {
+    text-decoration:none;
+    background:#099;
+    color:#fff;
+    }
+
+
+/*-- Side Advertiesment Pictures --*/
+#SideAdvPictures { 
+    position:relative;
+    margin-top:0px;
+	margin-left:0px;
+    display: block;
+	width:225px;
+	min-width:225px;
+    background: #fff; 
+    text-decoration: none; 
+    color: #6c6c6c; 
+    text-transform: uppercase; 
+    box-shadow: 0 2px 2px #4A594D;
+    margin-bottom:2px;
+    overflow:hidden;
+	}
+#SideAdvPictures img { 
+	width:225px;
+	}
+
+
+/*-- Right Side Body --*/
+#RightSideBody {
+	background-position:left;
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:750px;
+	height:auto;
+    z-index:70;
+	}
+/*-- Right Side Body Discription --*/
+#RightSideBodyDiscription {
+	background-position:left;
+	position:relative;
+	top:0px;
+	right:0px;
+	display:block;
+	padding:5px 5px 5px 5px;
+	width:740px;
+	min-width:740px;
+	height:auto;
+	background:#fff;
+	border-top: 4px solid #001B35;
+	box-shadow: 0 2px 2px #4A594D;
+    margin-bottom:20px;
+    overflow:hidden;
+    }
+
+
+/*-- Bottom Body --*/
+#BottomBody {
+    background-position:left;
+	position:relative;
+	top:0px;
+	right:0px;
+	width:750px;
+	height:auto;
+	z-index:200;
+	}
+/*-- Middle News Event Body --*/
+#MiddleEventNewsBody{
+    background-position:left;
+	position:relative;
+	left:0px;
+	display:block;
+    padding:5px 5px 5px 5px;
+	width:515px;
+	min-width:515px;
+	height:auto;
+	background:#fff;
+	border-top: 4px solid #001B35;
+	box-shadow: 0 2px 2px #4A594D;
+    margin-bottom:20px;
+    overflow:hidden;
+    }
+/*-- Other Side Event Bar --*/
+#OtherSideEventBar{
+    background-position:right;
+	position:absolute;
+	top:0px;
+	right:0px;
+	display:block;
+	padding:5px 5px 5px 5px;
+	width:190px;
+	min-width:190px;
+	height:auto;
+	background:#fff;
+	border-top: 4px solid #001B35;
+	box-shadow: 0 2px 2px #4A594D;
+	margin-bottom:20px;
+	max-height: 400px;
+	overflow:hidden;
+	}
+/*-- Other Side Event Bar Picture --*/
+#OtherSideEventBarPct {
+    display:block;
+    position:relative;
+    width:190px;
+    background:#343553;
+    box-shadow: 0 2px 2px #4A594D;
+    top:0px;
+    max-height: 400px;
+}
+

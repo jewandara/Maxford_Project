@@ -1,0 +1,218 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD											----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of sehdule					----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+/*----	BODY	----*/
+
+
+.maxTeacherHeaderWrap {
+	background-color: #52B1E7;
+	margin-top:-20px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 420px;
+	width:100%;
+	display:block;
+	margin-right:auto;
+    margin-left:auto;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-image:url(../images/headerBg.jpg);
+	background-attachment:fixed;
+}
+
+.maxTeacherHeaderWrapTable{
+	display:block;
+	padding-top:30px;
+    margin-right:auto;
+    margin-left:auto;
+	width:1000px;
+	height:auto;
+	}
+
+.maxTeacherHeaderWrapTable tr td{
+	width:100%;
+	}
+.maxTeacherProfileImage{
+	width:160px;
+	border:2px solid #111;
+	opacity:0.9;
+	float:left;
+	}
+
+
+
+
+
+
+.maxTeacherTableBody{
+	margin-top:10px;
+	width:1000px;
+	display:block;
+	margin-right:auto;
+    margin-left:auto;
+	}	
+.maxTeacherProfileBody{
+	margin-top:-260px;
+	background-color: #fff;
+	width:1000px;
+	display:block;
+	margin-right:auto;
+    margin-left:auto;
+}
+.maxSubjectBodyTable{
+	margin-top:-0px;
+	padding:10px;
+	}
+.maxTeacherProfileBodyArticals{
+	background-color: #E9F3F0;
+	width:95%;
+	display:block;
+	padding:10px;
+	}
+	
+
+
+.SideNavMenuBar {
+    position:relative;
+	top:0px;
+	margin-right:0px;
+	width:100%;
+	background:#E9F3F0;
+	margin-bottom:20px; 
+    border-bottom: 1px solid #111;
+	}
+.SideNavMenuItems {
+	list-style-type: none;
+	text-align: center;
+    margin: 0;
+    padding: 0;
+	}
+.SideNavMenuItems li {
+    text-align: center;
+	display:inline-block;
+	}
+.SideNavMenuItems li a  {
+    display:inline-block;
+    width:160px;
+    padding: 8px 15px 12px; 
+    border-top: 5px solid #022;
+    border-right: 1px solid #022;
+    border-left: 1px solid #022;
+    background: #fff; 
+    text-decoration: none; 
+    color:#004040;
+    text-transform: uppercase; 
+    }
+.SideNavMenuItems li a:hover, #SideNavMenuItems li a:focus  {
+    text-decoration:none;
+    background:#1BB;
+    color:#fff;
+    }
+.SideNavMenuItems li a:active{
+    text-decoration:none;
+    background:#088;
+    color:#ddd;
+}
+
+
+
+.GradeMenuItems {
+	list-style-type:none;
+	margin-top:5px;
+	left:0px;
+	width:240px;
+    padding: 0;
+    height:100%;
+	}
+.GradeMenuItems li {
+    text-align: center;
+	display:block;
+	}
+.GradeMenuItems li a  {
+    text-align: center;
+    display:block;
+    padding: 15px 0 15px 0;
+    background: #fff; 
+    text-decoration: none; 
+    color:#002000;
+    text-transform: uppercase; 
+    font-weight:bold;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+    }
+.GradeMenuItems li a:hover, #GradeMenuItems li a:focus  {
+    text-decoration:none;
+    background:#809c9c;
+    color:#fff;
+    }
+
+
+
+
+.default-GradeMenuItems {
+	list-style-type:none;
+	margin-top:5px;
+	left:0px;
+	width:229px;
+    padding: 0;
+    height:100%;
+	}
+.default-GradeMenuItems li {
+    text-align: center;
+	display:block;
+	}
+.default-GradeMenuItems li a  {
+    text-align: center;
+    display:block;
+    padding: 15px 0 15px 0;
+    background: #fff; 
+    text-decoration: none; 
+    color:#002000;
+    text-transform: uppercase; 
+    font-weight:bold;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+    }
+.default-GradeMenuItems li a:hover, #default-GradeMenuItems li a:focus  {
+    text-decoration:none;
+    background:#809c9c;
+    color:#fff;
+    }

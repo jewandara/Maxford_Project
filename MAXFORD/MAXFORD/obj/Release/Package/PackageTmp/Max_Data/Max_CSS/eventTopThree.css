@@ -1,0 +1,125 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD EVENT THREE BOX							----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of EVENT THREE TAB 			----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+/*----	MAXFORD TOP EVENT THREE BOX	----*/
+.max_top_three {
+	margin-right:auto;
+    margin-left:auto;
+	margin-top:0px;
+	display:block;
+	width:1038px;
+	height:auto;
+	}
+.max_top_three table{
+	margin-right:auto;
+    margin-left:auto;
+	text-align:center;
+	width:1030px;
+	}
+.max_top_three table tr td{
+	padding:1px 1px 1px 1px;
+	}
+.max_top_three_event {
+    margin-left:auto;
+	margin-right:auto;
+	width:314px;
+	height:380px;
+	display:block;
+	overflow:hidden;
+	border:1px solid;
+	}
+.max_top_three_inner_event_box strong a{
+	border-top:4px solid;
+	display:block;
+	padding:4px 4px 4px 4px;
+	text-align:left;
+	text-decoration: none;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:13px;
+	color:#FFF;
+	overflow:hidden;
+	background:#777;
+	opacity:0.8;
+	}
+.max_top_three_item_image{
+	height:auto;
+	overflow:hidden;}
+.max_top_three_inner_event_box img{
+	width:314px;
+	}
+.max_top_three_event_body{
+	text-align:left;
+	padding: 5px 10px 5px 10px;
+	display:block;
+	height:130px;
+	overflow:hidden;
+	font-size:12px;
+	font-family:Verdana, Geneva, sans-serif;
+	line-height:13px;
+	}
+.max_top_three_read_more{
+	margin-top:-20px;
+    margin-left:auto;
+	margin-right:auto;
+	display:block;
+	width:314px;
+	height:20px;
+	border-bottom:1px solid #000;
+	background:#AAA;
+	opacity:0.8;
+	}
+.max_top_three_read_more a{
+	padding:5px 6px 5px 8px;
+	display:block;
+	width:100px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:10px;
+	color:#000;
+	background:#777;
+	text-decoration:none;
+	}
+.max_top_three_read_more a:hover{
+	color:#FFF;
+	text-decoration:underline;
+	background:#444;
+	}
+.max_top_three_read_more p{
+	cursor:default;
+	position:relative;
+	right:-200px;
+	top:-20px;
+	padding:5px 6px 5px 8px;
+	display:block;
+	width:100px;
+	background:#777;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:10px;
+	color:#FFF;
+	opacity:0.8;
+	}
+	
+	

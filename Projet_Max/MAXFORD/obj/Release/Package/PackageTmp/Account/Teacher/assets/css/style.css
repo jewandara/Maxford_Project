@@ -1,0 +1,41 @@
+﻿/*--	MAXFORD	ACCOUNT MIDDLE NAV BAR		--*/
+
+.max_middle_nav_bar{
+	margin-left:auto;
+	margin-right:auto;
+	top:1px;
+	display:block;	
+	background:#FFF;
+	cursor:default;
+	z-index:100;
+}
+.max_middle_nav_bar ul{
+	list-style-type: none;
+	margin-left:auto;
+	margin-right:auto;
+	height:44px;
+	display:block;	
+	background:#B6CDC4;
+	border-bottom:1px solid #033;
+	border-top:1px solid #033;
+	cursor:default;
+	z-index:100;
+}
+.max_middle_nav_bar ul li{
+	list-style-type: none;
+	display:inline-block;
+}
+.max_middle_nav_bar ul li a{
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:13px;
+	display: block;
+	width:auto;
+	padding:12px 20px 12px 20px;
+	color:#222;
+}
+.max_middle_nav_bar ul li a:hover{
+	text-decoration:underline;
+	color:#FFF;
+	background:#71B096;
+}

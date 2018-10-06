@@ -1,0 +1,4 @@
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\maxSLIDE\maxSLIDE\bin\maxSLIDE.dll
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\maxSLIDE\maxSLIDE\bin\maxSLIDE.pdb
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\maxSLIDE\maxSLIDE\obj\Debug\maxSLIDE.dll
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\maxSLIDE\maxSLIDE\obj\Debug\maxSLIDE.pdb

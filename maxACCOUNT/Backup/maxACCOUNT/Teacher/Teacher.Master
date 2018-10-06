@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Teacher.master.cs" Inherits="maxACCOUNT.Teacher.Teacher" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>Maxford Teacher Account Page</title>
+
+	<link href="css/form.style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="icon/icon.png" />
+    <asp:ContentPlaceHolder ID="TeacherHead" runat="server"></asp:ContentPlaceHolder>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#<%=MaxScrollID.ClientID%>').niceScroll();
+            });
+    </script>
+
+    <link href="thm/style-journal.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <form id="maxTeacherAccountForm" runat="server">
+    <div>
+
+
+            <!-- MAXFORD ACCOUNT TOP BAR -->
+            <div class="max_top_boder">
+                <div class="top_logo"></div>
+
+	            <ul class="max_top_boder_left">
+    	            <li><div class="max_top_menu_bar"><a href="Default.aspx">MAXFORD</a></div></li>
+    	            <li><div class="max_top_menu_bar"><a href="#"><asp:LoginName ID="LoginName1" runat="server" CssClass="max_login_pro_name"/></a></div></li>
+                </ul>
+    
+	            <ul class="max_top_boder_right">
+    	            <li><div class="max_top_menu_bar"><a href="#" class="tooltip-bottom" data-tooltip="Maxford Login History and Report Details">HISTORY</a></div></li>
+                    <li><div class="max_top_menu_bar"><a href="#" class="tooltip-bottom" data-tooltip="Get Help To Use This Account.">HELP</a></div></li>
+    	            <li><div class="max_top_menu_bar"><a href="#" class="tooltip-bottom" data-tooltip="Maxford Change Settings">SETINGS</a></div></li>
+                    <li><div class="max_top_menu_bar"><a href="#" class="tooltip-bottom" data-tooltip="Logout From Maxford"><asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="RedirectToLoginPage" LogoutText="LOGOUT" /></a></div></li>
+                </ul>
+            </div>
+
+
+
+            <!-- MAXFORD ACCOUNT SIDE MENU -->
+            <div class="max_side_boder" style="overflow: hidden;" id="MaxScrollID" runat="server">
+
+                <asp:ContentPlaceHolder ID="maxTeacherMenuContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+                <br /><div class="maxAccountFooter_logo" style=" margin-left:50px;"></div><br />
+                <address style=" margin-left:15px;">
+                    Maxford Higher Educational Institute,<br/>
+                    207 / E, Galahitiyawa East, Ganemulla,<br/>
+                    Sri Lanka<br />
+                    <a href="#">Feedback</a>
+                </address>
+                <br />
+                <hr />
+                <br />
+                <div class="maxAccountFooter">
+                    <a href="#" class="first" >Trademark Notice</a><br />
+                    <a href="#" class="" >Report Copyright Infringement</a><br />
+                    <a href="#" class="" >Report Security Issue</a><br />
+                    <a href="#" class="" >Privacy Statement</a><br />
+                    <a href="#" class="" >Accessibility</a><br />
+                    <a href="#" class="" >Sitemap</a><br />
+                    <a href="#" class="last" >Contact Maxford</a><br />
+                    <p>This site is managed by  <a href="http://www.zionx.net16.net" >ZIONX</a><br />© 2015 Zionx. All rights reserved.</p>
+                    <br />
+                </div>
+                <br /><br />
+            </div>
+
+
+
+            <!-- MAXFORD ACCOUNT BODY -->
+            <div class="max_main_account_body">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderTeacherBody" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+
+
+
+            <!-- MAXFORD SCRIPT FOOTER -->
+            <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderMaxfordTeacherScriptFooter" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+
+
+
+
+    </div>
+    </form>
+</body>
+</html>

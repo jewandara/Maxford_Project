@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MAXFORD.maxAbout.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+          <ul class="nav">
+		<li class="first" id="primaryClass" runat="server"><a href="#" class="first">Primary Classes</a></li>
+		<li class=""><a href="#" class="">Scholarship Exams</a></li>
+		<li class=""><a href="#" class="">Ordinary Level [ 6 TO 9 ] </a></li>
+		<li class=""><a href="#" class="">Ordinary Level [ 10 TO 11 ]</a></li>
+		<li class=""><a href="#" class="">Advanced Level</a></li>
+  </ul>
+
+
+
+
+    </div>
+    
+    <asp:MultiView ID="MultiView1" runat="server" Visible="False">
+        ghjgfjg<br />
+        <br />
+        ijgholhgolhloh
+    </asp:MultiView>
+    </form>
+    
+</body>
+</html>

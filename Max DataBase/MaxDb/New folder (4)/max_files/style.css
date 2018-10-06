@@ -1,0 +1,153 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD											----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of top bar					----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+/*----	BODY	----*/
+*{ margin: 0; padding: 0; line-height: 1; }
+body {
+	font: normal 62.5% Helvetica, Arial, sans-serif;
+	background: url("../../Max_Data/Max_Images/top-back-icon.png") repeat; 
+}
+
+/*----	HIDDEN TOP SHADOW	----*/
+.tophiddin {
+	float: left;
+	display: block;
+	width:100%;
+	background  :#003300; 
+	top:-12px;
+	box-shadow: 0 5px 10px #003737;
+	position:fixed;
+	z-index:1000000;
+	}
+
+/*----	TOP MIDDLE HEADER	----*/
+.header:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; font-size: 0; }
+.header { width: 978px; margin: 0 auto; }
+
+/*----	TOP MIDDLE GREEN BAR	----*/
+.topbar {
+	width: 978px;
+	float: left;
+	display: block;
+	width:inherit;
+	background  :#003300; 
+	top:0;
+	position: relative;
+	font-weight: normal;
+	left: 0px;
+	height:36px;
+	box-shadow: 0 0 10px #003737;
+	border-bottom: 2px solid #9ADCC7;
+	}
+.topbar li {
+	float: left; 
+	list-style: none;
+	font-size: 1.2em; 
+	}
+.search_nav_last {
+	float:right;
+	}
+.topbar li a {
+	display: block;
+	background: #003300; 
+	color:  #DFFADE;
+	border-top: 12px solid #003300; 
+	border-bottom: 12px solid #003300; 
+	border-left: 12px solid #003300; 
+	border-right: 12px solid #003300;
+	}
+.topbar li a:hover, .topbar li a:focus {
+	display: block;
+	background:#9ADCC7;
+	color:#033;
+	border-top: 13px solid #9ADCC7; 
+	border-bottom: 13px solid #9ADCC7;
+	border-left: 12px solid #9ADCC7;
+	border-right: 12px solid #9ADCC7; 
+	}
+ 
+/*----	TOP LEFT LOGO	----*/    
+.logo { 
+	text-align:center;
+    display: block;
+	margin-top:10px;
+	width:500px;
+	height:100px;
+    margin-left:auto;
+    margin-right:auto;
+	}
+.logo .image { 
+	text-align:center;
+    display: block;
+	margin-top:10px;
+	width:500px;
+	height:100px;
+    margin-left:-240px;
+	background:url("../Max_Images/logo.png");
+    background-size: 400px 80px;
+    background-repeat: no-repeat;
+	}
+	
+/*----	SEARCH BAR FORM	----*/
+form {
+	position:absolute;
+	margin-left:40px;
+	margin-top:5px;
+    top: 305px;
+    left: 307px;
+    height: 38px;
+    width: 523px;
+}
+input[name=searchTopMax], textarea {
+	position:relative;
+	background:#79C8BE;
+	padding: 4px 10px;
+	border: 1px solid #000;
+	}
+input[name=searchTopMaxBut], textarea { 
+	position:relative;
+	color:#E3F4F3;
+	background:#063;
+	padding: 4px 12px;
+	border: 1px solid #000;
+	}
+input[name=searchTopMax]:hover, input[name=searchTopMax]:focus, textarea { 
+	background:#E3F4F3;
+	color:#0D1C15;
+	border: 1px solid #fff;
+	box-shadow: inset 0 1px 1px rgb(0, 0, 0);
+	}
+input[name=searchTopMaxBut]:hover, input[name=searchTopMaxBut]:focus, textarea {
+	background:#099;
+	color:#042416;
+	border: 1px solid #fff;
+	box-shadow: inset 0 1px 1px rgb(0, 0, 0);
+	}
+
+  
+  
+ 

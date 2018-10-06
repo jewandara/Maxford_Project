@@ -1,0 +1,240 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Event.master.cs" Inherits="MAXFORD.maxEvent.Event" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+    <title>Maxford Higher Educational Institute</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="shortcut icon" type="image/png" href="~/Max_Data/Max_Images/icon.png"/>
+    <link rel="apple-touch-icon" href="~/Max_Data/Max_Images/icon.png""/>
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"/>  
+    <meta name="maxford" content="index,follow"/>
+    <meta name="description" content="Maxford Higher Educational Institute adheres to the purposes of providing reliable learning opportunities at the highest level of excellence for the students to explore their capabilities and interests in order to develop their full intellectual and human potential in a highly disciplined environment."/>
+    <meta name="keywords" content="Maxford, Higher Educational Institute, Education, Innovation, Teaching, Learning, Ganemulla, Debates, English, Sinhala, සිංහල භාෂාව හා සාහිත්‍යය, Development Studies, සංවර්ධන අධ්‍යයනය, History, ඉතිහාසය, Mathematics, ගණිතය, Citizan Education, Science and Technology, විද්‍යාව හා තාක්ෂණවේදය, Physical Education, Buddhism, Information Technology, Geography, Art, Music, Dancing, English Litriture, Communication and Media, Bussiness and Accounting Studies "/>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-2923555-1']);
+        _gaq.push(['_trackPageview']);
+        _gaq.push(['_trackPageLoadTime']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <!--  EVENT BODY TO / SIDE BAR  -->
+        <div id="outer-wrap">
+
+            <!--  TOP NAV BAR  -->
+            <div class="TopSticky">
+                <div id="topbar">
+
+                    
+                <!--  TOP HOME BUTTON  -->
+	            <a class="nav-btn" id="nav-gz-home" href="http://www.maxford.lk/" onclick="#;">Home</a>
+
+
+                <!--  TOP SEAECH BUTTON  -->
+                    <div class="searchform-wrapper">
+                    <form role="search" method="get" id="searchform" action="">
+                        <input id="search" type="text" name="search" value="Type Search Text . . ." onfocus="if (this.value=='Type Search Text . . .') this.value='';" onblur="if (this.value=='') this.value='Type Search Text . . .'"/>
+                        <input id="searchsubmit" type="submit" value=""/>
+                    </form>
+
+
+                <!--  TOP TAB BUTTON  -->
+                    </div>
+                    <div class="menu-wrapper">
+                        <div class="menu-utility-menu-container">
+                            <ul id="menu-utility-menu" class="utility-menu">
+                            <li><a href="#" onclick="#"> Parents </a></li>
+                            <li><a href="#" onclick="#"> Students </a></li>
+                            <li><a href="#" onclick="#"> Up Comings </a></li>
+                            <li><a href="#" onclick="#"> Debates </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  SIDE SCROLLBAR  -->
+            <div class="secondary" id="nav">
+                <!--  Top Scrollbar  -->
+                <div id="scrollbar1">
+                <div style="height: 584px;" class="scrollbar">
+                    <div style="height: 584px;" class="track">
+                        <div style="top: 0px; height: 338.685px;" class="thumb">
+                            <div class="end"></div>
+                        </div>
+                    </div>
+                </div>
+
+                    <!--  Event Menu  -->
+                <div class="viewport">
+                    <div style="top: 0px;" class="overview">
+                    <div class="menu-main-menu-container">
+                        <ul id="menu-main-menu" class="menu">
+                            <asp:Repeater ID="maxEventMenuRepeater" runat="server" DataSourceID="EventMenuSqlDataSource">
+                                <ItemTemplate>
+                                    <li id="menu-item-136831" class="menu-item-136831">
+                                    <img src="<%# Eval("MenuIcon")%>"  style=" width:22px; height:22px; position:absolute; margin-left:30px; margin-top:5px;"/>
+                                    <a href="<%# Eval("MenuID", "./Default.aspx?MenuID={0}") %>"style="margin-left: 35px;"><%# Eval("MenuName")%></a>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                            <asp:SqlDataSource 
+                                ID="EventMenuSqlDataSource"
+                                runat="server"
+                                ConnectionString="<%$ ConnectionStrings:ZionxMaxDatabaseNet16ConnectionString %>"
+                                SelectCommand="EXECUTE dbo.SP_MAX_SYS_PAGE_CLICK_Menu @max_AppID = 1, @max_BaseID = 3">
+                            </asp:SqlDataSource>
+                        </ul>
+                    </div>
+
+
+
+                    <!--  Daily Gazette  -->
+                    <div class="daily-gazette">
+                        <h3><img src="css/mail_white_retina.png" alt="subscribe" width="28">Subscribe For<br>Daily Maxford</h3>
+                        <form action="#" method="get">
+                            <input id="email-subscribe" name="email-subscribe" type="text" value="Your email address" onfocus="if (this.value=='Your email address') this.value='';" onblur="if (this.value=='') this.value='Your email address'" />
+                            <input id="email-subscribe-submit" value="Subscribe" title="Subscribe to Maxford Email" type="submit">
+                        </form>
+                    </div>
+
+
+
+                    <!-- Sub Links-->
+                    <div class="utility-menu-wrapper">
+                        <div class="menu-utility-menu-container">
+                        <ul id="menu-utility-menu-1" class="utility-menu">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136820"><a href="#" onclick="#">Sitr One</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-149311"><a href="#" onclick="#">Sitr Two</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-149312"><a href="#" onclick="#">Sitr Three</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-149313"><a href="#" onclick="#">Sitr Foure</a></li>
+                        </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- Social Links-->
+                    <div class="harvard-social"> Find Maxfod on:
+                        <p> <a href="http://facebook.com/" title="Facebook" onclick="_gaq.push(['_trackEvent','social_find_harvard','left_side','facebook']);">Facebook</a> | <a href="http://twitter.com/" title="Twitter" onclick="_gaq.push(['_trackEvent','social_find_harvard','left_side','twitter']);">Twitter</a> | <a href="#" title="LinkedIn" onclick="_gaq.push(['_trackEvent','social_find_harvard','left_side','linkedin']);">LinkedIn</a> <br>
+                        <a href="http://instagram.com/" title="Instagram" onclick="_gaq.push(['_trackEvent','social_find_harvard','left_side','instagram']);">Instagram</a> | <a href="http://www.youtube.com/" title="YouTube" onclick="_gaq.push(['_trackEvent','social_find_harvard','left_side','youtube']);">YouTube</a> | <a href="#" title="iTunes U" onclick="_gaq.push(['_trackEvent','social_find_harvard','left_side','itune_U']);">iTunes U</a> </p>
+                    </div>
+
+
+
+                    <!-- Event Footer-->
+                    <div id="footer">
+                        <div class="menu-footer-menu-container">
+                        <ul id="menu-footer-menu" class="footer-menu">
+                            <li id="menu-item-147182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147182"><a href="#" onclick="#">About</a> | </li>
+                            <li id="menu-item-145476" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-145476"><a href="#" onclick="#">Privacy</a> | </li>
+                            <li id="menu-item-136913" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-136913"><a href="#" onclick="#">RSS</a> | </li>
+                            <li id="menu-item-136916" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136916"><a href="#" onclick="#">Trademark</a> | </li>
+                            <li id="menu-item-136914" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-136914"><a href="#" onclick="#">Maxford Archives</a></li>
+                        </ul>
+                        </div>
+                        <div class="copyright"> © 2014 Maxford At Ganeemulla </div>
+                    </div>
+
+
+
+
+                    <!-- Logo-->
+                    <div id="harvard-logo"> 
+		                <a href="http://www.maxford.lk/">
+			                <img src="css/MaxFord_logo_Below_T.png" width="228">
+		                </a> 
+                        <br /><br />
+                    </div>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--  EVENT BODY DATA -->
+        <div class="maxwEventBoadyOne">
+            <div class="maxwEventBoadyIn">
+                <div class="maxwEventBoadyData">
+
+                        <!--  Events Sub Pages Image -->
+                        <a href="../Default.aspx">
+                            <div class="maxEventLogoTopImage"></div>
+                        </a>
+                        <br />
+
+                        <!--  Events Sub Pages Data -->
+                        <asp:ContentPlaceHolder ID="SubEventContentPlaceHolder" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                        <br />
+
+                        <!--  Events Sub Nav Menu -->
+                        <div class="maxSticky">
+                            <div class="maxMiddleSubNavBar">
+                                <ul>
+
+                                    
+                                    <asp:Repeater ID="maxMenuSubRepeater" runat="server" 
+                                        DataSourceID="SqlDataSource1">
+                                        <ItemTemplate>
+                                                 <li><a href="/maxEvent/Default.aspx?MenuID=<%# Eval("MenuID")%>&SubMenuID=<%# Eval("SubMenuID")%>"><img src="<%# Eval("SubMenuIcon")%>" class="maxMiddleSubNavBarImage"/><p>&nbsp;<%# Eval("SubMenuName")%></p></a></li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+
+
+                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                                        ConnectionString="<%$ ConnectionStrings:ZionxMaxDatabaseNet16ConnectionString %>" 
+                                        SelectCommand="EXECUTE dbo.SP_MAX_SYS_PAGE_CLICK_MenuSub @max_AppID = 1, @max_BaseID = 3 , @max_MenuID = @MenuID">
+
+                                            <SelectParameters>
+                                                <asp:QueryStringParameter Name="MenuID" QueryStringField="MenuID" Type="Int32" />
+                                            </SelectParameters>
+                                    </asp:SqlDataSource>
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <br />
+                        <!--  Events Sub Nav Menu Data-->
+                        <div>
+                                <asp:ContentPlaceHolder ID="maxEventBodyContentPlaceHolder" runat="server">
+                                </asp:ContentPlaceHolder>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/jquery_003.js" type="text/javascript"></script>
+        <script src="js/jquery_002.js" type="text/javascript"></script>
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/functions.js" type="text/javascript"></script>
+    </div>
+    </form>
+</body>
+</html>

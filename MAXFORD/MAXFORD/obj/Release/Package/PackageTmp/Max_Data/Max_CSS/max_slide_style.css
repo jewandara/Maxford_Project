@@ -1,0 +1,206 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD SLIDE									----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of SLIDE 					    ----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+/*----	MAXFORD WOWSLIDER	----*/
+#wowslider-container1{ 
+	width:1000px;
+	zoom: 1; 
+	position: relative; 
+	max-width:1000px;
+	margin:0 auto;
+	z-index:100;
+	border:none;
+	text-align:left;  
+	}
+#wowslider-container1 ul{
+	position:relative;
+	width: 10000%; 
+	height:auto;
+	left:0;
+	list-style:none;
+	margin:0;
+	padding:0;
+	border-spacing:0;
+	overflow: visible;
+	}
+#wowslider-container1 .ws_images ul li{
+	width:100%;
+	line-height:0;
+	float:left;
+	font-size:0;
+	padding:0 0 0 0 !important;
+	margin:0 0 0 0 !important;
+	}
+#wowslider-container1 .ws_images{
+	position: relative;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	}
+#wowslider-container1 .ws_images a{
+	width:100%;
+	display:block;
+	color:transparent;
+	}
+#wowslider-container1 img{
+	max-width: none !important;
+	}
+#wowslider-container1 .ws_images img{
+	width:100%;
+	border:none 0;
+	max-width: none;
+	}
+#wowslider-container1 a{ 
+	text-decoration: none; 
+	outline: none; 
+	border: none; 
+	}
+#wowslider-container1 a.ws_next, #wowslider-container1 a.ws_prev {
+	position:absolute;
+	display:none;
+	top:50%;
+	margin-top:-28px;
+	z-index:60;
+	height: 50px;
+	width: 51px;
+	background-image: url(./arrows.png);
+	}
+#wowslider-container1 a.ws_next{
+	background-position: 100% 0;
+	right:10px;
+	}
+#wowslider-container1 a.ws_prev {
+	left:10px;
+	background-position: 0 0; 
+	}
+#wowslider-container1 a.ws_next:hover{
+	background-position: 100% 100%;
+	}
+#wowslider-container1 a.ws_prev:hover {
+	background-position: 0 100%; 
+	}
+* html #wowslider-container1 a.ws_next,* html #wowslider-container1 a.ws_prev{display:block}
+#wowslider-container1:hover a.ws_next, #wowslider-container1:hover a.ws_prev {display:block}
+#wowslider-container1 ItemTemplate{
+	animation: wsBasic 2666.4s infinite;
+	-moz-animation: wsBasic 2666.4s infinite;
+	-webkit-animation: wsBasic 2666.4s infinite;
+	}
+@keyframes wsBasic{0%{left:-0%} 0.12%{left:-0%} 0.25%{left:-100%} 0.37%{left:-100%} 0.5%{left:-200%} 0.62%{left:-200%} 0.74%{left:-300%} 0.87%{left:-300%} 0.99%{left:-400%} 1.11%{left:-400%} 1.24%{left:-500%} 1.36%{left:-500%} 1.49%{left:-600%} 1.61%{left:-600%} 1.73%{left:-700%} 1.86%{left:-700%} }
+@-moz-keyframes wsBasic{0%{left:-0%} 0.12%{left:-0%} 0.25%{left:-100%} 0.37%{left:-100%} 0.5%{left:-200%} 0.62%{left:-200%} 0.74%{left:-300%} 0.87%{left:-300%} 0.99%{left:-400%} 1.11%{left:-400%} 1.24%{left:-500%} 1.36%{left:-500%} 1.49%{left:-600%} 1.61%{left:-600%} 1.73%{left:-700%} 1.86%{left:-700%} }
+@-webkit-keyframes wsBasic{0%{left:-0%} 0.12%{left:-0%} 0.25%{left:-100%} 0.37%{left:-100%} 0.5%{left:-200%} 0.62%{left:-200%} 0.74%{left:-300%} 0.87%{left:-300%} 0.99%{left:-400%} 1.11%{left:-400%} 1.24%{left:-500%} 1.36%{left:-500%} 1.49%{left:-600%} 1.61%{left:-600%} 1.73%{left:-700%} 1.86%{left:-700%} }
+
+
+/*----	MAXFORD WOWSLIDER DISCRIPTION BOX	----*/
+.max_slideBox {
+	position: relative;
+	display:block;
+	width:350px;
+	height:430px;
+    font-family: Franklin Gothic Medium,sans-serif;
+	color:#FFFFFF;
+	position: absolute;
+	left: 0;
+	margin-right:10px;
+	margin-top:-430px;
+	z-index: 50;
+	filter:alpha(opacity=80);
+    opacity:.8;
+    animation: maxBox 3s;
+}
+/* Standard syntax */
+@keyframes maxBox {
+    from { opacity:0;}
+    to { opacity:0.8;}
+}
+.max_slideBox:hover {
+	filter:alpha(opacity=95);
+    opacity:.95;
+	}
+.max_slideBox h1{
+	display:block;
+	margin-top:20px;
+	margin-left:20px;
+	width:310px;
+	font-size: 40px;
+	text-transform:uppercase;
+	}
+.max_slideBoxTitle{
+	display:block;
+	margin-top:200px;
+	margin-left:25px;
+	width:950px;
+	filter:alpha(opacity=100);
+    opacity:1;
+	animation: maxTitle 3.8s;
+	}
+/* Standard syntax */
+@keyframes maxTitle {
+    from { width:0px;}
+    to { width:950px;}
+	}
+.max_slideBoxTable tr td p{
+	margin-right:-4px;
+	float:left;
+	width:auto;
+	height:16px;
+	font-size: 14px;
+	text-transform:uppercase;
+	border: 5px solid;
+	overflow:hidden;
+	filter:alpha(opacity=100);
+    opacity:1;
+	}
+.max_slideBoxTable tr td label{
+	float:right;
+	position:static;
+	display:block;
+	width:85px;
+	height:16px;
+	text-transform:uppercase;
+	border-bottom: 5px solid;
+	border-top: 5px solid;
+	border-left: 10px solid;
+	border-right: 10px solid;
+	filter:alpha(opacity=100);
+    opacity:1;
+	}
+.max_slideBox h1 a, .max_slideBoxTable tr td p a, .max_slideBoxTable tr td label a {
+	text-decoration:none;
+	color:#FFF;
+	}
+	
+
+/*----	MAXFORD WOWSLIDER BACK GROUND	----*/
+.max_slideBox_Back{
+	display:block;
+	width:100%;
+	height:430px;
+	background:#066;
+	}

@@ -1,0 +1,5 @@
+ftp Server IP : 23.91.121.104
+Username :   maxfor6
+Password :    jU8is2@cAE#nAw
+Port : 21
+Control Panel URL : http://cp.maxford.lk OR http://cp.lkwindns.net

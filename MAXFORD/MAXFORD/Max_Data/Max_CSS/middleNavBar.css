@@ -1,0 +1,81 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----						******@@@@@@@@*******							----
+----						****@@@@O@@@@@@@*****							----
+----						***@@@@@@@@@@@@@@****							----
+----						**@@@@********@@@@***							----
+----						**@@@**********@@@**O							----
+----						**@@*******O****@@***							----
+----						***@************@****							----
+----						O**@****O*******@****							----
+----						****@**********@*****							----
+----						*****O********@******							----
+----						******@******@*******							----
+----						*******O@@@@@********							----
+--------------------------------------------------------------------------------
+----		Title		:	MAXFORD	MIDDLE NAV BAR							----
+----		Author      :	J. R. M. Jeewandara								----
+----		Contact     :	+947 7363 2682									----
+----		Email       :	jewandara@gmail.com								----
+----		Create date :	Wednesday, April  02, 2014						----
+----		Description :	This is css style of MIDDLE NAV BAR 			----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+
+/*--	MAXFORD	MIDDLE NAV BAR		--*/
+.sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.max_middle_nav_bar{
+	margin-left:auto;
+	margin-right:auto;
+	top:0px;
+	width:1000px;
+	height:60px;
+	display:block;	
+	background:#009191;
+	cursor:default;
+	z-index:100;
+}
+.max_middle_nav_bar ul{
+	list-style-type: none;
+}
+.max_middle_nav_bar ul li{
+	list-style-type: none;
+	display:inline-block;
+}
+.max_middle_nav_bar ul li a{
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	display: block;
+	width:auto;
+	padding:22px 20px 22px 20px;
+	color:#222;
+}
+.max_middle_nav_bar ul li a:hover{
+	text-decoration:underline;
+	color:#FFF;
+	background:#03AF89;
+}
+
+
+
+
+
+
+
+
+
+
+
+

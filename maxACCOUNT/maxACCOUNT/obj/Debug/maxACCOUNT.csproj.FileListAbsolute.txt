@@ -1,0 +1,4 @@
+E:\maxACCOUNT\maxACCOUNT\bin\maxACCOUNT.dll
+E:\maxACCOUNT\maxACCOUNT\bin\maxACCOUNT.pdb
+E:\maxACCOUNT\maxACCOUNT\obj\Debug\maxACCOUNT.dll
+E:\maxACCOUNT\maxACCOUNT\obj\Debug\maxACCOUNT.pdb

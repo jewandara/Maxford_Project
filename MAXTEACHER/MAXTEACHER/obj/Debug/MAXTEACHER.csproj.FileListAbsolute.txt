@@ -1,0 +1,4 @@
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\MAXTEACHER\MAXTEACHER\bin\MAXTEACHER.dll
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\MAXTEACHER\MAXTEACHER\bin\MAXTEACHER.pdb
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\MAXTEACHER\MAXTEACHER\obj\Debug\MAXTEACHER.dll
+C:\Users\ZIONX\Documents\Visual Studio 2010\Projects\MAXTEACHER\MAXTEACHER\obj\Debug\MAXTEACHER.pdb
